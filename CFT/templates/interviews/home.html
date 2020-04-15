@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<article>
+<h1>Interviews</h1>
+<p>Six fanfic writers--three who wrote <em>The Legend of Korra</em> and three who wrote <em>Game of Thrones</em> fanfic--share their experiences writing these fics, their perspectives on the fan community, and the ways in which they think about race, gender, sexuality, and/or culture in their fan engagement. Each....ADD</p>
+
+<section>
+  <h2>Learn About Each Critical Fan</h2>
+<div class="interview-grid">
+{%  include 'includes/_interview_grid.html'%}
+</div>
+
+<section>
+<h2>Explore Coding Numbers Here</h2>
+  <a class="btn btn-secondary btn-lg btn-block" style="color:white" data-toggle="collapse" href="#interview-table" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Click To See Coding Results
+      </a>
+
+  <div class="collapse" id="interview-table">
+    {%  include 'includes/_interviewtable.html'%}
+    </div>
+</section>
+
+
+</article>
+
+{% endblock %}

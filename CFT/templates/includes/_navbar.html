@@ -1,0 +1,56 @@
+<div class="topnav">
+  <div>
+    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+The Critical Fan Toolkit</a></div>
+
+    {% if current_user.is_authenticated %}
+    <a href="{{ url_for('logout') }}" class="butt">Logout</a>
+    <a href="{{ url_for('dashboard') }}" class="butt">Dashboard</a>
+    {% else %}
+    <a href="{{ url_for('login') }}" class="butt">Login</a>
+    <a href="{{ url_for('register') }}" class="butt">Register</a>
+    {% endif %}
+</div>
+
+<div class="sidenav">
+  <a href="{{ url_for('about') }}" class="side-button">About</a>
+<!-- DROPDOWN - CRITICAL FAN -->
+  <button class="dropdown-btn">Become a Critical Fan +
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <!-- <a href="/critical_fan/about">Who are Critical Fans?</a> -->
+    <a href="{{ url_for('cf_representations') }}">(mis)Representation</a>
+    <a href="{{ url_for('cf_agency_power') }}">Agency and Power</a>
+    <a href="{{ url_for('cf_tagging') }}">Tagging Practices</a>
+  </div>
+
+<!-- DROPDOWN: PLAY WITH DATA -->
+<button class="dropdown-btn">Explore Fanfic Data +
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="{{ url_for('ffd_numbers') }}">Fandom By Numbers</a>
+  <a href="{{ url_for('ffd_genre') }}">Genre Conventions</a>
+  <a href="{{ url_for('ffd_tagging_practices') }}s">Tagging Practices</a>
+</div>
+
+  <a href="{{ url_for('interviews') }}" class="side-button">Interviews</a>
+  <a href="{{ url_for('teaching') }}" class="side-button">Teaching Materials</a>
+
+  <!-- DROPDOWN: ABOUT THIS DISS -->
+  <button class="dropdown-btn">About this Dissertation +
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="{{ url_for('dis_framework') }}">Framework</a>
+    <a href="{{ url_for('dis_lit_review') }}">Literature Review</a>
+    <a href="{{ url_for('dis_methods') }}">Methods</a>
+    <a href="{{ url_for('dis_computational_essays') }}">Computational Essays</a>
+    <a href="{{ url_for('dis_about_cara') }}">About the Author</a>
+    <a href="{{ url_for('dis_acknowledgements') }}">Acknowledgements</a>
+  </div>
+
+    <a href="{{ url_for('bibliography') }}" class="side-button">Bibliography</a>
+
+</div>

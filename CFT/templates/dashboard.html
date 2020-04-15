@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Welcome {{ current_user.username }}!</h1>
+
+  <hr>
+  <p style="text-align: left">Thank you, {{ current_user.username }}, for agreeing to beta this website. Your commitment and dedication to helping this project come to fruition cannot be understated. </p>
+  <p style="text-align: left">Since this site is still under construction, so please mention any bugs or errors you run into to me! You can email me <a href="mailto:messina.c@husky.neu.edu">here.</a>
+  </p>
+  <p style="text-align: left">In the meantime, I hope you have fun exploring!</p>
+  <p style="text-align: left">-Cara</p>
+{% endblock %}

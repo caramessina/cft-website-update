@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Computational Essays</h1>
+
+<p>The computational essay is usually a markdown notebook that explains coders' particular choices while working with data, as well as describes some of the results. The computational essays created for this dissertation are made available for transparency purposes. This way, you can follow along with the choices made while preparing, analyzing data and interpreting results.</p>
+<p>Use this list to navigate to different notebooks:</p>
+<ul>
+<li><a href=#CEdataprep>Preparing Fanfiction Data</a></li>
+<li><a href=#CEdataanlytics>Basic Data Analytics</a></li>
+</ul>
+
+<h2 id="CEdataprep"> Preparing Fanfiction Data</h2>
+
+       <iframe src="{{url_for('static', filename='computational_essays/00-prepping_data.html')}}"></iframe>
+
+<h2 id="CEdataanlytics">Basic Data Analytics</h2>
+<iframe src="{{url_for('static', filename='computational_essays/01-metadata_analytics.html')}}"></iframe>
+
+{% endblock %}
