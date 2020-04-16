@@ -22,6 +22,7 @@ https://brandcolors.net/b/northwestern-university
 section{
   padding-bottom: 5px;
   padding-top: 5px;
+  width: auto;
 }
 
 .main {
@@ -33,6 +34,7 @@ section{
 
   body {
     font-family: 'PT Sans', sans-serif;
+    width: auto;
   }
 
   h1 {
