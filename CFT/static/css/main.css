@@ -78,6 +78,14 @@ section{
     z-index: 99997;
   }
 
+.sidebar.hide {
+  left: -100%;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
   .sidenav a, .dropdown-btn, .side-button {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
