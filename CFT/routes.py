@@ -61,7 +61,19 @@ def ffd_tagging_practices():
 
 @app.route("/teaching")
 def teaching():
-    return  render_template('teaching/home.html', title='Teaching Materials')
+    return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
+
+@app.route("/teaching/about_cfp")
+def about_cfp():
+    return  render_template('teaching/about_cfp.html', title='About Critical Fan Pedagogy')
+
+@app.route("/teaching/cfp_resources_instructors")
+def cfp_resources_instructors():
+    return  render_template('teaching/cfp_resources_instructors.html', title='Critical Fan Pedagogy Resources for Instructors')
+
+@app.route("/teaching/resources/Critical_Fan_Research_Methods_Syllabus")
+def cfp_syllabus01():
+    return  render_template('teaching/resources/cfp_syllabus.html', title='Critical Fan Research Methods Syllabus')
 
 @app.route("/about_dissertation/acknowledgements")
 def dis_acknowledgements():

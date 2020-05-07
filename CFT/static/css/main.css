@@ -30,45 +30,49 @@ section{
   margin-left: 270px; /* larger width because of side nav */
   font-size: 17px; /* Increased text to enable scrolling */
   padding: 90px 10px;
+  font-family: 'Lato', sans-serif;
 }
 
-  body {
-    font-family: 'PT Sans', sans-serif;
-    width: auto;
-  }
-
   h1 {
- font-family: PT Sans;
+ font-family: 'Lato', bold;
  font-size: 25px;
   }
 
   h2 {
- font-family: PT Sans;
+ font-family: 'Lato', bold;
  font-size: 20px;
   }
 
   h3 {
- font-family: PT Sans;
+ font-family: 'Lato', bold;
  text-align: left;
- font-size: 20px;
+ font-size: 18px;
+ text-decoration-style: solid;
   }
 
   p{
-    font-family: 'PT Sans';
+    font-family: 'Lato';
     padding: 2px;
+    font-size: 17px;
     text-align: left;
   }
 
-  ul{
+li{
   text-align: left;
   list-style-position: inside;
-   font-family: 'PT Sans';
-   margin-left: -20px;
+  font-family: 'Lato';
+  font-size: 17px;
+  margin-left: -20px;
+  }
+
+  blockquote{
+    font-family: 'Lato';
+    font-size: 18px;
   }
 
   .sidenav {
     height: 100%;
-    width: 235px;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +96,7 @@ section{
     font-size: 18px;
     color: #d1d1d1;
     display: block;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Poppins";
     border: none;
     background: none;
     text-align: left;
@@ -138,16 +142,16 @@ section{
     padding:17px 20px;
     text-decoration: none;
     font-size: 16px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Poppins";
   }
 
   .topnav .header {
     float: left;
     color: #d1d1d1;
-    font-size: 25px;
+    font-size: 35px;
     padding: 0px;
     text-decoration: none;
-    font-family: Fjalla One;
+    font-family: "Tangerine";
   }
 
   .topnav a.butt:hover {
@@ -232,7 +236,7 @@ font-size:10px
 }
 
 .home-grid-container-grid > a {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .home-grid-container >a:hover{
@@ -322,6 +326,50 @@ font-size:10px
     }
 }
 
+/*Teaching Materials*/
+.teaching-grid{
+  display: grid;
+  width: 800px;
+  grid-column-gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto;
+}
+
+.teaching-grid > section{
+background-color: #d6d9e3;
+padding: 10px;
+border: 2px solid #320E3B;
+text-align: center;
+}
+
+.teaching-grid > section >h3{
+font-weight: bold;
+text-align: center;
+}
+
+.teaching-grid > section >p{
+font-size: 15px;
+text-align: center;
+}
+
+.teaching-grid > section >a.button{
+  background-color: #9893C9;
+  color: white;
+  border: 2px solid #d6d9e3;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.teaching-grid > section >a.button:hover {
+  background-color: #9893C9;
+  color: #d6d9e3;
+  border: 2px solid #d6d9e3;
+  }
+
 /*Interviews*/
 /* Popup container */
   .code{
@@ -353,9 +401,14 @@ font-size:10px
   font-weight: bold;
 }
 
-.interview-grid > section {
+.interview-grid > section >p{
   font-size: 15px;
 }
+
+.interview-grid > section >li{
+  font-size: 15px;
+}
+
 
 .interview-grid >section:hover{
   background-color: #d1d1d1;
