@@ -9,14 +9,6 @@ Important colors:
  */
 
 
- /*
-Other colors
- Northwestern University
-https://brandcolors.net/b/northwestern-university
-
-Evernote
-https://brandcolors.net/b/northwestern-university
-
 
   */
 section{
@@ -35,12 +27,12 @@ section{
 
   h1 {
  font-family: 'Lato', bold;
- font-size: 25px;
+ font-size: 30px;
   }
 
-  h2 {
+h2 {
  font-family: 'Lato', bold;
- font-size: 20px;
+ font-size: 25px;
   }
 
   h3 {
@@ -54,7 +46,8 @@ section{
     font-family: 'Lato';
     padding: 2px;
     font-size: 17px;
-    text-align: left;
+    text-align: justify;
+
   }
 
 li{
@@ -172,18 +165,18 @@ iframe {
 }
 
 /* button stuff */
-  .button {
-    background-color: #5B7CD7;
-    color: white;
-    border: 2px solid;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+.button{
+  background-color: #9893C9;
+  color: white;
+  border: 2px solid #d6d9e3;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 .button1: {
   background-color: #5B7CD7;
@@ -191,11 +184,10 @@ iframe {
   }
 
   a.button:hover {
-    background-color: white;
-    color: #5C7CD6;
-    border: 2px solid #8FD4F0;
+    background-color: #9893C9;
+    color: #d6d9e3;
+    border: 2px solid #d6d9e3;
     text-decoration: none;
-    color: #8FD4F0;
     }
 
 .footer {
