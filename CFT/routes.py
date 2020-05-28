@@ -43,17 +43,25 @@ def cf_representations():
 def cf_tagging():
     return render_template('critical_fan/tagging.html', title='Tagging Practices ')
 
-@app.route("/fanfic_data/fandom_by_numbers")
+@app.route("/fanfic_data/fandom_by_numbers/")
 def ffd_numbers():
-    return  render_template('/fanfic_data/fandom_by_numbers.html', title='Fandom by Numbers')
+    return render_template('fanfic_data/fandom_by_numbers/home.html', title='Fandom by Numbers')
 
-@app.route("/fanfic_data/fandom_by_numbers_analysis")
+@app.route("/fanfic_data/fandom_by_numbers/analysis")
 def ffd_numbers_analysis():
-    return  render_template('fanfic_data/fandom_by_numbers_analysis.html', title='Fandom by Numbers - Analysis')
+    return render_template('fanfic_data/fandom_by_numbers/analysis.html', title='Fandom by Numbers - Analysis')
+
+@app.route("/fanfic_data/fandom_by_numbers/got")
+def ffd_numbers_got():
+    return render_template('fanfic_data/fandom_by_numbers/GOT.html', title='Fandom by Numbers - Game of Thrones')
+
+@app.route("/fanfic_data/fandom_by_numbers/tlok")
+def ffd_numbers_tlok():
+    return render_template('fanfic_data/fandom_by_numbers/tlok.html', title='Fandom by Numbers - The Legend of Korra')
 
 @app.route("/fanfic_data/genre_conventions")
 def ffd_genre():
-    return  render_template('fanfic_data/genre_conventions.html', title='Genre Conventions in Fanfic')
+    return render_template('fanfic_data/genre_conventions.html', title='Genre Conventions in Fanfic')
 
 @app.route("/fanfic_data/tagging_practices")
 def ffd_tagging_practices():

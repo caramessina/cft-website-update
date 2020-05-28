@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Fandoms by Numbers</h1>
+<section><p><cite>The Legend of Korra</cite> (TLoK) and <cite>Game of Thrones</cite> (GoT) online fanfiction communities on <em>Archive of Our Own</em> are vastly different. These different slides offer glimpses into the different stories and ideologies embedded in the larger patterns across the published fanfics. Each storyboard focuses around a particular point of metadata, or information input by each fanfic writer when they publish their texts on <cite>Archive of Our Own</cite>.</p>
+
+  <p>The below storyboard are <em>not</em> screen-reader friendly because they are visualizations. However, this toolkit includes longer write ups that are screen-reader friendly: visit the <a href="{{url_for('ffd_numbers_analysis')}}">more in-depth analysis here</a>.</p>
+
+<h2>Storyboards</h2>
+<a class="button" href="{{ url_for('ffd_numbers_got') }}">Game of Thrones</a>
+<a class="button" href="{{url_for('ffd_numbers_tlok') }}">The Legend of Korra</a>
+<a class="button" href="#">Comparison</a>
+<a class="button" href="{{url_for('ffd_numbers_analysis')}}">In-depth Analysis</a>
+
+{% endblock %}
