@@ -115,6 +115,10 @@ def bibliography():
 def interviews():
     return render_template('interviews/home.html', tite='Interviews')
 
+@app.route('/interviews/qualitative_coding')
+def interviews_qualitative_coding():
+    return render_template('interviews/qualitative_coding.html', tite='Qualitative Coding Description')
+
 @app.route('/interviews/writegirl')
 def interview_wg():
     return render_template('interviews/writegirl-interview-transcription.html', tite='Interview - Writegirl')
