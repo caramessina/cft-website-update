@@ -178,9 +178,20 @@ iframe {
   text-decoration: none;
 }
 
-.button1: {
-  background-color: #5B7CD7;
+
+.button1 {
+  background-color: #E8E8E8;
   color: white;
+  padding: 3px 3px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  cursor: pointer;
+  }
+
+  .dropdown{
+      color: white;
   }
 
   a.button:hover {

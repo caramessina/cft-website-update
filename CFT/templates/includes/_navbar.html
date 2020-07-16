@@ -14,28 +14,9 @@ The Critical Fan Toolkit</a></div>
 
 <div class="sidenav">
   <a href="{{ url_for('about') }}" class="side-button">About</a>
-<!-- DROPDOWN - CRITICAL FAN -->
-  <button class="dropdown-btn">Become a Critical Fan +
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <!-- <a href="/critical_fan/about">Who are Critical Fans?</a> -->
-    <a href="{{ url_for('cf_representations') }}">(mis)Representation</a>
-    <a href="{{ url_for('cf_agency_power') }}">Agency and Power</a>
-    <a href="{{ url_for('cf_tagging') }}">Tagging Practices</a>
-  </div>
-
-<!-- DROPDOWN: PLAY WITH DATA -->
-<button class="dropdown-btn">Explore Fanfic Data +
-  <i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-container">
-  <a href="{{ url_for('ffd_numbers') }}">Fandom By Numbers</a>
-  <a href="{{ url_for('ffd_genre') }}">Genre Conventions</a>
-  <a href="{{ url_for('ffd_tagging_practices') }}s">Tagging Practices</a>
-</div>
-
-  <a href="{{ url_for('interviews') }}" class="side-button">Interviews</a>
+  <a href="{{ url_for('ffd_numbers') }}" class="side-button">Fandoms by Numbers</a>
+  <a href="{{ url_for('interviews') }}" class="side-button">Interviews with Fans</a>
+  <a href="{{ url_for('cf_analysis') }}" class="side-button">Critical Fan Analysis</a>
   <a href="{{ url_for('teaching') }}" class="side-button">Teaching Materials</a>
 
   <!-- DROPDOWN: ABOUT THIS DISS -->

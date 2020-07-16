@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, request, jsonify
 from CFT import app, db, bcrypt
 #importing from files within this package
 from CFT.models import User
@@ -39,31 +39,31 @@ def cf_agency_power():
 def cf_representations():
     return render_template('critical_fan/representations.html', title='Representation')
 
-@app.route("/critical_fan/tagging")
-def cf_tagging():
-    return render_template('critical_fan/tagging.html', title='Tagging Practices ')
+@app.route("/critical_fan_analysis/")
+def cf_analysis():
+    return render_template('critical_fan/home.html', title='Critical Fan Analysis')
 
-@app.route("/fanfic_data/fandom_by_numbers/")
+@app.route("/fandom_by_numbers/")
 def ffd_numbers():
-    return render_template('fanfic_data/fandom_by_numbers/home.html', title='Fandom by Numbers')
+    return render_template('/fandom_by_numbers/home.html', title='Fandom by Numbers')
 
-@app.route("/fanfic_data/fandom_by_numbers/analysis")
+@app.route("/fandom_by_numbers/analysis")
 def ffd_numbers_analysis():
-    return render_template('fanfic_data/fandom_by_numbers/analysis.html', title='Fandom by Numbers - Analysis')
+    return render_template('fandom_by_numbers/analysis.html', title='Fandom by Numbers - Analysis')
 
-@app.route("/fanfic_data/fandom_by_numbers/got")
+@app.route("/fandom_by_numbers/got")
 def ffd_numbers_got():
-    return render_template('fanfic_data/fandom_by_numbers/GOT.html', title='Fandom by Numbers - Game of Thrones')
+    return render_template('fandom_by_numbers/GOT.html', title='Fandom by Numbers - Game of Thrones')
 
-@app.route("/fanfic_data/fandom_by_numbers/tlok")
+@app.route("/fandom_by_numbers/tlok")
 def ffd_numbers_tlok():
-    return render_template('fanfic_data/fandom_by_numbers/tlok.html', title='Fandom by Numbers - The Legend of Korra')
+    return render_template('fandom_by_numbers/tlok.html', title='Fandom by Numbers - The Legend of Korra')
 
-@app.route("/fanfic_data/genre_conventions")
+@app.route("/fandom_by_numbers/genre_conventions")
 def ffd_genre():
     return render_template('fanfic_data/genre_conventions.html', title='Genre Conventions in Fanfic')
 
-@app.route("/fanfic_data/tagging_practices")
+@app.route("/fandom_by_numbers/tagging_practices")
 def ffd_tagging_practices():
     return  render_template('fanfic_data/tagging_practices.html', title='Tagging Communities')
 
@@ -119,6 +119,10 @@ def interviews():
 def interviews_qualitative_coding():
     return render_template('interviews/qualitative_coding.html', tite='Qualitative Coding Description')
 
+@app.route("/interviews/search", methods=['GET', 'POST'])
+def interview_search():
+    return render_template('/interviews/search.html', title='Search Interviews')
+
 @app.route('/interviews/writegirl')
 def interview_wg():
     return render_template('interviews/writegirl-interview-transcription.html', tite='Interview - Writegirl')
@@ -171,6 +175,7 @@ def login():
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
+
 
 @app.route('/logout')
 def logout():

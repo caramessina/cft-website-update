@@ -1,0 +1,107 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Search the Interviews!</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="width:100%">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="button1">
+        <a class="nav-link" href="#codes-importantQuotes" data-toggle="collapse">Important Quotes</a>
+      </li>
+
+      <li class="button1">
+        <a class="nav-link" href="#codes-fan-communities" data-toggle="collapse">Fan Community Politics</a>
+      </li>
+
+      <li class="button1 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Uptake
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#codes-RGSuptake" data-toggle="collapse">All</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Critical Uptake (coming soon)</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Canon Compliant (coming soon)</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Canon Resistant (coming soon)</a>
+        </div>
+      </li>
+
+      <li class="button1 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Genre
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#codes-RGSgenre" data-toggle="collapse">All</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+        </div>
+      </li>
+
+      <li class="button1 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Writer Agency
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#codes-writer-agency" data-toggle="collapse">All</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+        </div>
+      </li>
+
+      <li class="button1 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Canon
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#codes-writer-agency" data-toggle="collapse">All</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+        </div>
+      </li>
+
+      <li class="button1 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Power and Identity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#codes-power-identity" data-toggle="collapse">All</a>
+          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+        </div>
+      </li>
+
+
+    <!-- SEARCH COMING SOON
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="button" type="submit">Search (coming Soon)</button>
+    </form> -->
+
+
+
+  </div>
+</nav>
+
+<div style="height:500px;width:100%;border:1px solid #ccc;overflow:auto;">
+{%  include 'includes/interview_searches/__important_quotes.html'%}
+
+{%  include 'includes/interview_searches/__fan-communities.html'%}
+
+{%  include 'includes/interview_searches/__uptake.html'%}
+
+</div>
+
+{% endblock %}
+
+
+<!-- <form method="POST" action="">
+    {{ form.hidden_tag() }}
+      <fieldset class="form-group">
+        <div class="form-group">
+            {{ form.subject.label(class="form-control-label") }}
+              {{ form.subject(class="form-control form-control-lg") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+      </fieldset>
+  </form> -->
