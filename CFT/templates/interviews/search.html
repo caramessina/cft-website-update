@@ -4,16 +4,18 @@
 
 <h1>Search the Interviews!</h1>
 
-<nav class="navbar navbar-expand-lg navbar-light" style="width:100%">
+<p><strong>Click</strong> the different themes below to read interview excerpts that relate to the theme. To hide the excerpts you finished reading, simply <strong>re-click</strong> the theme.</p>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div id="interviewSearch">
+<nav class="navbar navbar-expand-lg navbar-light" style="width:100%">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="button1">
-        <a class="nav-link" href="#codes-importantQuotes" data-toggle="collapse">Important Quotes</a>
+        <a class="nav-link" data-target="#codes-importantQuotes" data-toggle="collapse">Important Quotes</a>
       </li>
 
       <li class="button1">
-        <a class="nav-link" href="#codes-fan-communities" data-toggle="collapse">Fan Community Politics</a>
+        <a class="nav-link"  data-target="#codes-fan-communities" data-toggle="collapse">Fan Community Politics</a>
       </li>
 
       <li class="button1 dropdown">
@@ -21,10 +23,12 @@
           Uptake
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#codes-RGSuptake" data-toggle="collapse">All</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Critical Uptake (coming soon)</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Canon Compliant (coming soon)</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Canon Resistant (coming soon)</a>
+          <a class="dropdown-item" data-target="#codes-RGSuptake" data-toggle="collapse" data-parent="#interviewSearch">All</a>
+          <a class="dropdown-item" data-target="#critical-uptake" data-toggle="collapse" data-parent="#interviewSearch">Critical Uptake</a>
+          <a class="dropdown-item" data-target="#uptakeCanonCompliant" data-toggle="collapse" data-parent="#interviewSearch">Canon Compliant</a>
+          <a class="dropdown-item" data-target="#uptakeCanonResistant" data-toggle="collapse" data-parent="#interviewSearch">Canon Resistant</a>
+          <a class="dropdown-item" data-target="#uptakeImplicitExplicit" data-toggle="collapse" data-parent="#interviewSearch">Implicit-Explicit (subtext)</a>
+          <a class="dropdown-item" data-target="#uptakeFanPractices" data-toggle="collapse" data-parent="#interviewSearch">Fan Uptakes</a>
         </div>
       </li>
 
@@ -33,8 +37,15 @@
           Genre
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#codes-RGSgenre" data-toggle="collapse">All</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+          <a class="dropdown-item" data-target="#codes-RGSgenre" data-toggle="collapse" data-parent="#interviewSearch">All</a>
+          <a class="dropdown-item" data-target="#RGS-angst" data-toggle="collapse" data-parent="#interviewSearch">Angst</a>
+          <a class="dropdown-item" data-target="#RGS-fluff" data-toggle="collapse" data-parent="#interviewSearch">Fluff</a>
+          <a class="dropdown-item" data-target="#RGS-vignette" data-toggle="collapse" data-parent="#interviewSearch">Vignette</a>
+          <a class="dropdown-item" data-target="#RGS-fix" data-toggle="collapse" data-parent="#interviewSearch">Fix-It</a>
+          <a class="dropdown-item" data-target="#RGS-an" data-toggle="collapse" data-parent="#interviewSearch">Author's Note</a>
+          <a class="dropdown-item" data-target="#RGS-bending" data-toggle="collapse" data-parent="#interviewSearch">Identity Bending</a>
+          <a class="dropdown-item" data-target="#RGS-modern" data-toggle="collapse" data-parent="#interviewSearch">Modern Setting</a>
+          <a class="dropdown-item" data-target="#RGS-other" data-toggle="collapse" data-parent="#interviewSearch">Other Genres</a>
         </div>
       </li>
 
@@ -43,8 +54,14 @@
           Writer Agency
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#codes-writer-agency" data-toggle="collapse">All</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+          <a class="dropdown-item" data-target="#codes-writer-agency" data-toggle="collapse" data-parent="#interviewSearch">All</a>
+          <a class="dropdown-item" data-target="#writerReflection" data-toggle="collapse" data-parent="#interviewSearch">Reflection</a>
+          <a class="dropdown-item" data-target="#writerMotivation" data-toggle="collapse" data-parent="#interviewSearch">Motivation</a>
+          <a class="dropdown-item" data-target="#writerDrafting" data-toggle="collapse" data-parent="#interviewSearch">Drafting</a>
+          <a class="dropdown-item" data-target="#writerRevising" data-toggle="collapse" data-parent="#interviewSearch">Revising</a>
+          <a class="dropdown-item" data-target="#writerResearch" data-toggle="collapse" data-parent="#interviewSearch">Research</a>
+          <a class="dropdown-item" data-target="#writerAudience" data-toggle="collapse" data-parent="#interviewSearch">Audience</a>
+          <a class="dropdown-item" data-target="#writerReception" data-toggle="collapse" data-parent="#interviewSearch">Reception</a>
         </div>
       </li>
 
@@ -53,8 +70,10 @@
           Canon
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#codes-writer-agency" data-toggle="collapse">All</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+          <a class="dropdown-item" data-target="#codes-canon" data-toggle="collapse" data-parent="#interviewSearch">All</a>
+          <a class="dropdown-item" data-target="#canonCompliment" data-toggle="collapse" data-parent="#interviewSearch">Canon Compliment</a>
+          <a class="dropdown-item" data-target="#canonRelation" data-toggle="collapse" data-parent="#interviewSearch">Canon Relation</a>
+          <a class="dropdown-item" data-target="#canonCritique" data-toggle="collapse" data-parent="#interviewSearch">Canon Critique</a>
         </div>
       </li>
 
@@ -63,8 +82,18 @@
           Power and Identity
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#codes-power-identity" data-toggle="collapse">All</a>
-          <a class="dropdown-item" href="#" data-toggle="collapse">Coming Soon</a>
+          <a class="dropdown-item" data-target="#PI-lgbtq" data-toggle="collapse" data-parent="#interviewSearch">LGBTQ+</a>
+          <a class="dropdown-item" data-target="#PI-homophobia" data-toggle="collapse" data-parent="#interviewSearch">Homophobia/Transphobia</a>
+          <a class="dropdown-item" data-target="#PI-heteronormative" data-toggle="collapse" data-parent="#interviewSearch">Heteronormativity</a>
+          <a class="dropdown-item" data-target="#PI-culture" data-toggle="collapse" data-parent="#interviewSearch">Cultural Difference</a>
+          <a class="dropdown-item" data-target="#PI-antiracism" data-toggle="collapse" data-parent="#interviewSearch">Anti-Racism</a>
+          <a class="dropdown-item" data-target="#PI-racism" data-toggle="collapse" data-parent="#interviewSearch">Racism</a>
+          <a class="dropdown-item" data-target="#PI-sexism" data-toggle="collapse" data-parent="#interviewSearch">Sexism</a>
+          <a class="dropdown-item" data-target="#PI-feminism" data-toggle="collapse" data-parent="#interviewSearch">Feminism</a>
+          <a class="dropdown-item" data-target="#PI-class" data-toggle="collapse" data-parent="#interviewSearch">Class</a>
+          <a class="dropdown-item" data-target="#PI-disability" data-toggle="collapse" data-parent="#interviewSearch">Disability</a>
+          <a class="dropdown-item" data-target="#PI-abelism" data-toggle="collapse" data-parent="#interviewSearch">Abelism</a>
+          <a class="dropdown-item" data-target="#PI-other" data-toggle="collapse" data-parent="#interviewSearch">Other</a>
         </div>
       </li>
 
@@ -81,13 +110,43 @@
   </div>
 </nav>
 
-<div style="height:500px;width:100%;border:1px solid #ccc;overflow:auto;">
+<div class="interview-search">
 {%  include 'includes/interview_searches/__important_quotes.html'%}
 
 {%  include 'includes/interview_searches/__fan-communities.html'%}
 
 {%  include 'includes/interview_searches/__uptake.html'%}
 
+{%  include 'includes/interview_searches/__genre.html'%}
+
+{%  include 'includes/interview_searches/__writing_agency.html'%}
+
+{%  include 'includes/interview_searches/__canon.html'%}
+
+{%  include 'includes/interview_searches/__PI_lgbtplus.html'%}
+
+{%  include 'includes/interview_searches/__PI_homophobia.html'%}
+
+{%  include 'includes/interview_searches/__PI_heteronormative.html'%}
+
+{%  include 'includes/interview_searches/__PI_culture.html'%}
+
+{%  include 'includes/interview_searches/__PI_antiracism.html'%}
+
+{%  include 'includes/interview_searches/__PI_racism.html'%}
+
+{%  include 'includes/interview_searches/__PI_sexism.html'%}
+
+{%  include 'includes/interview_searches/__PI_feminism.html'%}
+
+{%  include 'includes/interview_searches/__PI_class.html'%}
+
+{%  include 'includes/interview_searches/__PI_disability.html'%}
+
+{%  include 'includes/interview_searches/__PI_abelism.html'%}
+
+{%  include 'includes/interview_searches/__PI_other.html'%}
+</div>
 </div>
 
 {% endblock %}

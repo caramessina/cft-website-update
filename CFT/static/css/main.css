@@ -51,7 +51,7 @@ h2 {
   }
 
 li{
-  text-align: left;
+  text-align: justify;
   list-style-position: inside;
   font-family: 'Lato';
   font-size: 17px;
@@ -181,14 +181,23 @@ iframe {
 
 .button1 {
   background-color: #E8E8E8;
-  color: white;
-  padding: 3px 3px;
+  color: black;
   text-align: center;
   display: inline-block;
   font-size: 15px;
   margin: 2px 2px;
   cursor: pointer;
   }
+
+  .buttonInterview {
+    background-color: #E8E8E8;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    cursor: pointer;
+    }
 
   .dropdown{
       color: white;
@@ -501,9 +510,17 @@ text-align: center;
 #interview-results th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: justify;
   background-color: #9893C9;
   color: white;
+}
+
+.interview-search {
+  height:400px;
+  width:100%;
+  border:1px solid #ccc;
+  overflow:auto;
+  padding:5px 20px 15px 20px;"
 }
 
 .content-section {
