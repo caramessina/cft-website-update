@@ -36,16 +36,16 @@ h2 {
   }
 
   h3 {
- font-family: 'Lato', bold;
+ font-family: 'Lato', bold, italic;
  text-align: left;
- font-size: 18px;
+ font-size: 19px;
  text-decoration-style: solid;
   }
 
   p{
     font-family: 'Lato';
     padding: 2px;
-    font-size: 17px;
+    font-size: 19px;
     text-align: justify;
 
   }
@@ -54,8 +54,9 @@ li{
   text-align: justify;
   list-style-position: inside;
   font-family: 'Lato';
-  font-size: 17px;
+  font-size: 18px;
   margin-left: -20px;
+  padding: 1px;
   }
 
   blockquote{
@@ -516,11 +517,20 @@ text-align: center;
 }
 
 .interview-search {
-  height:400px;
+  height:480px;
   width:100%;
-  border: 2px solid #ccc;
   overflow:auto;
-  padding:5px 50px 10px 30px;"
+  border: 2px solid #ccc;
+  padding:5px 30px 5px 30px;
+}
+
+.interview-search-analysis {
+  height:390px;
+  width:50%;
+    background: #ebebeb ;
+  overflow:auto;
+  float:left;
+  padding:5px 30px 5px 10px;
 }
 
 .content-section {
@@ -530,7 +540,6 @@ text-align: center;
   border-radius: 3px;
   margin-bottom: 20px;
 }
-
 
 .article-title {
   color: #444444;
