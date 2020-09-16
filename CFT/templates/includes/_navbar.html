@@ -1,6 +1,7 @@
 <div class="topnav">
   <div>
-    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+<img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+    <a href="{{ url_for('home') }}" class="header">
 The Critical Fan Toolkit</a></div>
 
     {% if current_user.is_authenticated %}
@@ -12,12 +13,13 @@ The Critical Fan Toolkit</a></div>
     {% endif %}
 </div>
 
-<div class="sidenav">
-  <a href="{{ url_for('about') }}" class="side-button">About</a>
-  <a href="{{ url_for('ffd_numbers') }}" class="side-button">Fandoms by Numbers</a>
-  <a href="{{ url_for('interviews') }}" class="side-button">Interviews with Fans</a>
-  <a href="{{ url_for('cf_analysis') }}" class="side-button">Critical Fan Analysis</a>
-  <a href="{{ url_for('teaching') }}" class="side-button">Teaching Materials</a>
+<div id="mySidebar" class="sidebar">
+  <button onclick="closeNav()" class="closebtn">x</button>
+  <a href="{{ url_for('about') }}" class="sidebutton">About</a>
+  <a href="{{ url_for('ffd_numbers') }}" class="sidebutton">Fandoms by Numbers</a>
+  <a href="{{ url_for('interviews') }}" class="sidebutton">Interviews with Fans</a>
+  <a href="{{ url_for('cf_analysis') }}" class="sidebutton">Critical Fan Analysis</a>
+  <a href="{{ url_for('teaching') }}" class="sidebutton">Teaching Materials</a>
 
   <!-- DROPDOWN: ABOUT THIS DISS -->
   <button class="dropdown-btn">About this Dissertation +
@@ -32,6 +34,7 @@ The Critical Fan Toolkit</a></div>
     <a href="{{ url_for('dis_acknowledgements') }}">Acknowledgements</a>
   </div>
 
-    <a href="{{ url_for('bibliography') }}" class="side-button">Bibliography</a>
-
+    <a href="{{ url_for('bibliography') }}" class="sidebutton">Bibliography</a>
 </div>
+
+<button class="openbtn" onclick="openNav()">☰ Menu</button>

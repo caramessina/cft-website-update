@@ -26,7 +26,7 @@
   <body>
     {%  include 'includes/_navbar.html'%}
     <main class="main">
-              <div>
+              <article>
                 {% with messages = get_flashed_messages(with_categories=true) %}
                   {% if messages %}
                     {% for category, message in messages %}
@@ -38,7 +38,7 @@
                 {% endwith %}
 
                 {% block body %}{% endblock %}
-              </div>
+              </article>
 
 <div class="footer">
   <p>Site created by <a href="http://caramartamessina.com">Cara Marta Messina</a>, 2019</p>
@@ -54,6 +54,18 @@
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
+
+/*FOR SIDEBAR*/
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
 
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
