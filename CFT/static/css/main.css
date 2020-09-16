@@ -18,10 +18,10 @@ section{
 }
 
 .main {
-  margin-right: 17%;
-  margin-left: 17%; /* larger width because of side nav */
+  margin-right: 15%;
+  margin-left: 15%;
   font-size: 17px; /* Increased text to enable scrolling */
-  padding: 90px 10px;
+  padding: 70px 10px;
   font-family: 'Lato', sans-serif;
 }
 
