@@ -139,6 +139,14 @@ li{
     background-color: #C2C7D6;
   }
 
+  @media only screen and (max-width: 600px) {
+    .sidebar>a, button{
+      font-size:10px;
+    }
+    .main{main-right: auto;
+      main-left: auto}
+  }
+
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
