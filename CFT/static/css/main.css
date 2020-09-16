@@ -25,6 +25,13 @@ main {
   font-family: 'Lato', sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+  main{
+    margin-right:20px;
+    margin-left: 20px;
+  }
+  }
+
 article{
   padding: 10px 20px 40px 20px;
   border: 1px solid #dddddd;
@@ -147,12 +154,6 @@ li{
     background-color: #C2C7D6;
   }
 
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 15px;}
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 15px;}
-  }
 
 /* TOP NAV */
   .topnav {
