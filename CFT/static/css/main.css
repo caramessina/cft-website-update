@@ -18,19 +18,28 @@ section{
 }
 
 main {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 250px;
+  margin-left: 250px;
   font-size: 17px; /* Increased text to enable scrolling */
   padding: 70px 10px;
   font-family: 'Lato', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   main{
     margin-right:20px;
     margin-left: 20px;
   }
+  .sidebar>a{
+    font-size: 10px;
   }
+  .sidebar>button{
+    font-size: 10px;
+  }
+  .sidebar>button.closebtn {
+    margin-left: 10px;
+  }
+}
 
 article{
   padding: 10px 20px 40px 20px;
@@ -92,7 +101,7 @@ li{
   .sidebar a, .sidebutton {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: #272838;
     display: block;
     font-family: "Poppins";
@@ -111,7 +120,7 @@ li{
     outline: none;
     border: none;
     background: none;
-    font-size: 15px;
+    font-size: 18px;
     padding: 6px 8px 6px 16px;
     font-family: "Poppins";
     width: 100%;
