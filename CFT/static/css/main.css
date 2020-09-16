@@ -141,10 +141,10 @@ li{
     z-index: 99999;
   }
 
-  .topnav>div>a.header {
+  a.header {
     color: #272838;
     font-size: 40px;
-    margin-left: 37%;
+    margin-left: auto;
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
