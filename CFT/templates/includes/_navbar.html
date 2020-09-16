@@ -31,11 +31,11 @@ The Critical Fan Toolkit</a></div>
     <a href="{{ url_for('bibliography') }}" class="sidebutton">Bibliography</a>
 <div class="signin-div">
     {% if current_user.is_authenticated %}
-    <button href="{{ url_for('logout') }}" class="sign-in">Logout</button>
-    <button href="{{ url_for('dashboard') }}" class="sign-in">Dashboard</button>
+    <a href="{{ url_for('logout') }}" class="sign-in">Logout</a>
+    <a href="{{ url_for('dashboard') }}" class="sign-in">Dashboard</a>
     {% else %}
-    <button href="{{ url_for('login') }}" class="sign-in">Login</button>
-    <button href="{{ url_for('register') }}" class="sign-in">Register</button>
+    <a href="{{ url_for('login') }}" class="sign-in">Login</a>
+    <a href="{{ url_for('register') }}" class="sign-in">Register</a>
     {% endif %}
 </div>
 </div>
