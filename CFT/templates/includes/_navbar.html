@@ -1,16 +1,10 @@
 <div class="topnav">
-  <div>
-<img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
-    <a href="{{ url_for('home') }}" class="header">
-The Critical Fan Toolkit</a></div>
 
-    {% if current_user.is_authenticated %}
-    <a href="{{ url_for('logout') }}" class="butt">Logout</a>
-    <a href="{{ url_for('dashboard') }}" class="butt">Dashboard</a>
-    {% else %}
-    <a href="{{ url_for('login') }}" class="butt">Login</a>
-    <a href="{{ url_for('register') }}" class="butt">Register</a>
-    {% endif %}
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+  <div>
+    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+
+The Critical Fan Toolkit</a></div>
 </div>
 
 <div id="mySidebar" class="sidebar">
@@ -35,6 +29,13 @@ The Critical Fan Toolkit</a></div>
   </div>
 
     <a href="{{ url_for('bibliography') }}" class="sidebutton">Bibliography</a>
+<div class="signin-div">
+    {% if current_user.is_authenticated %}
+    <button href="{{ url_for('logout') }}" class="sign-in">Logout</button>
+    <button href="{{ url_for('dashboard') }}" class="sign-in">Dashboard</button>
+    {% else %}
+    <button href="{{ url_for('login') }}" class="sign-in">Login</button>
+    <button href="{{ url_for('register') }}" class="sign-in">Register</button>
+    {% endif %}
 </div>
-
-<button class="openbtn" onclick="openNav()">☰ Menu</button>
+</div>
