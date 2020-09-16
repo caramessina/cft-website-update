@@ -33,7 +33,7 @@ main {
   .sidebar>a{
     font-size: 10px;
   }
-  .sidebar>button{
+  .sidebar>button.dropdown-btn{
     font-size: 10px;
   }
   .sidebar>button.closebtn {
@@ -129,7 +129,7 @@ li{
 
 
   .sidebar>button.closebtn {
-    margin-left: 160px;
+    margin-left: 200px;
     background: none;
     font-weight: bold;
     padding: 6px 6px 6px 6px;
