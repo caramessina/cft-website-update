@@ -76,7 +76,7 @@ li{
   .sidebar {
     height: 100%;
     width: 0%;
-    opacity: 0.8;
+    opacity: 0.95;
     position: fixed;
     background-color: #F3F4F7;
     overflow-x: hidden;
