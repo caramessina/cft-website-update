@@ -29,7 +29,3 @@ class LoginForm (FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(), Length(min=2)])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login In')
-
-class XMLSearches (Form):
-    subject= StringField('Search by themes!', validators=[DataRequired(), Length(min=2, max=20)])
-    submit = SubmitField('Search')

@@ -20,14 +20,14 @@ section{
 
 .main {
   max-width: 1080px;
-  margin: 0px auto 70px auto;
+  margin: 0px auto 0px auto;
   font-size: 17px; /* Increased text to enable scrolling */
-  padding: 70px 10px;
+  padding: 70px 0px;
   font-family: 'Lato', sans-serif;
 }
 
 article{
-  padding: 10px 20px 40px 20px;
+  padding: 10px 20px 20px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -394,7 +394,7 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button{
-  background-color: #C8D9E5;
+  background-color: #d6d9e3;
   color: white;
   border: 2px solid #d6d9e3;
   padding: 10px 15px;
@@ -424,10 +424,9 @@ text-align: center;
 
   .interview-grid{
     display: grid;
-    width: 700px;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    grid-template-columns: 300px 300px 300px;
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+    grid-template-columns: 330px 330px 330px;
     grid-template-rows: auto auto;
   }
 
@@ -539,12 +538,13 @@ text-align: center;
 }
 
 .interview-search {
-  height:480px;
   width:100%;
+  height: 500px;
   overflow:auto;
   border: 2px solid #ccc;
-  padding:5px 30px 5px 30px;
+  padding:5px 30px 20px 30px;
 }
+
 
 .interview-search-analysis {
   height:390px;
@@ -553,7 +553,7 @@ text-align: center;
   overflow:auto;
   float:left;
   border: 1px solid #ccc;
-  padding:5px 30px 5px 10px;
+  padding:2px 30px 5px 10px;
 }
 
 .interview-search-analysis>ul>li, p {

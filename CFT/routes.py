@@ -5,27 +5,11 @@ from CFT.models import User
 from CFT.forms import RegistrationForm, LoginForm
 from flask_login import login_user, current_user, logout_user, login_required
 
-posts_data=[
-{
-'author':'Cara',
-'title': 'blog post 1',
-'content': 'First post content',
-'date_posted': 'April 2020'
-},
-
-{
-'author':'bill',
-'title':'blog post 2',
-'content': 'Second post content',
-'date_posted': 'May 2020'
-}
-]
-
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html', posts=posts_data)
+    return render_template('home.html')
 
 @app.route("/about")
 def about():
@@ -139,11 +123,11 @@ def interview_gw():
 def interview_kittya():
     return render_template('interviews/kittya-interview-transcription.html', tite='Interview - Kittya')
 
-@app.route('/Interviews/valk')
+@app.route('/interviews/valk')
 def interview_valk():
     return render_template('interviews/valk-interview-transcription.html', tite='Interview - Valk')
 
-@app.route('/Interviews/aria')
+@app.route('/interviews/aria')
 def interview_aria():
     return render_template('interviews/aria-interview-transcription.html', tite='Interview - Aria')
 
