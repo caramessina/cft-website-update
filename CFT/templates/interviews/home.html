@@ -4,20 +4,19 @@
 
   <section>
 <h1>Interviews</h1>
-<p>Six fanfic writers—three who wrote <em>The Legend of Korra</em> and three who wrote <em>Game of Thrones</em> fanfics—share their experiences writing these fics, their perspectives on the fan community, and the ways in which they think about race, gender, sexuality, and/or culture in their fan engagement.  The transcribed interviews and demographic information have been published with each writers’ explicit consent through Northeastern University's IRB.</p>
+<p>Six fanfic authors — three who wrote <cite>The Legend of Korra</cite> and three who wrote <cite>Game of Thrones</cite> fanfics — share their experiences writing these fics, their perspectives on the fan community, and the ways in which they think about race, gender, sexuality, and/or culture in their fan engagement. The transcribed interviews and demographic information have been published with each writers’ explicit consent through Northeastern University's IRB.</p>
+<p>This interactive portion of the dissertation allows you to explore different angles of the fan authors' interviews. You can read each fan author's interview transcript, learn more about the fan author, read their fanfic that I interviewed them about, explore themes that occur across the interviews, learn about the qualitative coding process — in which interviews are marked up based on themes,and read an in-depth analysis of the interviews.</p>
 
-<h2>Interview Process and Analysis<h2>
-  <ul>
-    <li><a href="{{ url_for('interview_search') }}">Search across the interviews based on themes</a></li>
-    <li>Read the interview analysis (coming soon)</li>
-    <li><a href="{{ url_for('interviews_qualitative_coding') }}">Learn about the qualitative coding process</a></li>
-    <li>Read through each interview’s entire transcript (under “Learn About Each Fan”)</li>
-  </ul>
-
+  <div class="home-grid-container">
+  <a href="{{ url_for('interview_search') }}"><h3>Explore Interview Themes</h3></a>
+  <a href="#"><h3>Read In-Depth Analysis (coming soon)</h3></a>
+  <a href="{{ url_for('interviews_qualitative_coding') }}"><h3>Learn about Qualitative Coding</h3></a>
+</div>
 </section>
 <section>
   <h2>Learn About Each Critical Fan</h2>
-  <p>Each interview has been qualitatively coded (learn more about qualitative coding and my process here). The bolded font in each interviewee’s answer are the coded texts. You can click the <strong>bolded words</strong> to see how they were coded. <u>Underlined text</u> is also coded, but the code is specific to mentions of power and identity.</p>
+  <p>The six authors each provide unique experiences with writing, fandom engagement, and analyzing the canonical text. They each provided self-identified information about their age, gender, race, sexuality, and pronouns, which they agreed to have published on the site.</p>
+  <p>Each interview with the fan authors has been qualitatively coded (<a href="{{ url_for('interviews_qualitative_coding') }}">learn more about qualitative coding and my process here</a>). The bolded font in each author's answer are the coded texts. On the interview transcripts, you can click the <strong>bolded words</strong> to see how they were coded. <u>Underlined text</u> is also coded, but the code is specific to mentions of power and identity.</p>
 <div class="interview-grid">
 {%  include 'includes/_interview_grid.html'%}
 </div>

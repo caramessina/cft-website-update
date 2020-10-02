@@ -56,7 +56,7 @@ h2 {
     padding: 2px;
     text-align: justify;
     font-size: 19px;
-
+    text-justify: inter-word;
 
   }
 
@@ -448,6 +448,7 @@ text-align: center;
 
 .interview-grid > section >ul >li{
   font-size: 13px;
+  text-align: left;
 }
 
 
