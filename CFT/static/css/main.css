@@ -281,7 +281,7 @@ padding: 5px 10px 0px 20px;
 
 .home-grid-container > a{
   background-color: #d6d9e3;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .home-grid-container > a >h3{
@@ -291,34 +291,9 @@ padding: 5px 10px 0px 20px;
   text-align: center;
 }
 
-.home-grid-container-grid > a {
-  font-size: 12px;
-}
-
 .home-grid-container >a:hover{
   background-color: #C8D9E5;
   text-decoration: none;
-}
-
-.home-grid-container> a >p{
-  font-size:17px;
-  color: black;
-  text-align: center;
-}
-
-.home-grid-container h2{
-  font-weight: bold;
-}
-
-.home-grid-item {
-  padding: 20px;
-  background-color: #d6d9e3;
-  border: 2px;
-}
-
-.home-grid-item2 {
-  border: 0px;
-  border: 2px;
 }
 
 .carousel{
