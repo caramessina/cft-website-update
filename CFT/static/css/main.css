@@ -226,11 +226,11 @@ iframe {
   background-color: #d6d9e3;
   color: #272838;
   border: 2px solid #272838;
-  padding: 2px 2px 2px 2px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
   display: inline-block;
   font-size: 15px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 2px 0px 2px;
   cursor: pointer;
   text-decoration: none;
   }
