@@ -15,17 +15,17 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
-@app.route("/critical_fan/agency_and_power")
+@app.route("/blogposts/agency_and_power")
 def cf_agency_power():
-    return render_template('critical_fan/agency_and_power.html', title='Power and Agency')
+    return render_template('blogposts/agency_and_power.html', title='Power and Agency')
 
-@app.route("/critical_fan/representations")
-def cf_representations():
-    return render_template('critical_fan/representations.html', title='Representation')
+@app.route("/blogposts/missandei_deserves_better")
+def bp_missandei():
+    return render_template('blogposts/missandei.html', title='Snippet - Missandei Deserves Better')
 
-@app.route("/critical_fan_analysis/")
-def cf_analysis():
-    return render_template('critical_fan/home.html', title='Critical Fan Analysis')
+@app.route("/blogposts/")
+def bp_home():
+    return render_template('blogposts/home.html', title='Critical Fan Snippets')
 
 @app.route("/fandom_by_numbers/")
 def ffd_numbers():

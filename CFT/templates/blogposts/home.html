@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Critical Fan Snippets</h1>
+<h2>About</h2>
+<p>Critical Fan Snippets are a series of blogpost-styled analyses into specific aspects of critical fan practices and uptakes. Each can be read as standalone or in tandem with the larger narrative of the dissertation. These short snippets pull together the data, theories, and arguments from across the CFT.
+</p>
+
+<p>Across these snippets, themes of fans critiquing and resisting systems of power emerge. How do fans critically uptake generic conventions in both mainstream media and fandoms?</p>
+
+<!-- photos should be 300 width x 180 height-->
+<div class="blog-container">
+
+  <div class="blog-container-card">
+    <h2><a href="{{ url_for('bp_missandei') }}">Missandei Deserves Better</a></h2>
+    <a href="{{ url_for('bp_missandei') }}"><img class="img-prev" alt="A screenshot of Game of Thrones, Season 8 (2019). It depicts Missandei before her execution. She is looking down towards the camera, which is angled up to show her and the sky. Her hands are bound in chains." src="{{url_for('static', filename='images/missandei_img-prev.png')}}"/></a>
+    <p>How did fans take up, or not take up, Missandei's death? How are fans critically challenging white supremacy both in <cite>Game of Thrones</cite> and the fandom?</p>
+  </div>
+
+  <div class="blog-container-card">
+    <h2><a href="#">Ship is canon!</a></h2>
+    <a href="#"><img class="img-prev" alt="A screenshot from the final scene of The Legend of Korra. Korra and Asami stand facing each other, holding hands, and gazing into each other's eyes. They are back lit by a yellow spirit portal, which envelops them in a yellow glow." src="{{url_for('static', filename='images/korra-img-prev.jpg')}}"/></a>
+    <p>COMING SOON. How did fans take up Korra and Asami's growing relationship across the seasons?</p>
+  </div>
+
+<!-- photos should be 300 width x 180 height
+<div class="blog-container-card">
+  <h2>Missandei Deserves Better</h2>
+  <a href="#"><img class="img-prev" alt="TEXT" src=""/></a>
+  <p>TEXT</p>
+</div>
+-->
+</div>
+{% endblock %}
