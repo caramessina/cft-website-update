@@ -354,7 +354,7 @@ padding: 5px 10px 0px 20px;
 /*Teaching Materials*/
 .teaching-grid{
   display: grid;
-  width: 800px;
+  width: auto;
   grid-column-gap: 20px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
@@ -365,6 +365,7 @@ background-color: #d6d9e3;
 padding: 10px;
 border: 2px solid #320E3B;
 text-align: center;
+width: auto;
 }
 
 .teaching-grid > section >h3{
@@ -378,7 +379,7 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button{
-  background-color: #d6d9e3;
+  background-color: #272838;
   color: white;
   border: 2px solid #d6d9e3;
   padding: 10px 15px;
@@ -390,9 +391,7 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button:hover {
-  background-color: #C8D9E5;
-  color: #d6d9e3;
-  border: 2px solid #d6d9e3;
+color: white;
   }
 
 /*Interviews*/
