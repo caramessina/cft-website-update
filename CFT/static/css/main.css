@@ -93,6 +93,7 @@ li{
     z-index: 99997;
   }
 
+
   .sidebar a, .sidebutton {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -108,7 +109,7 @@ li{
     cursor: pointer;
   }
 
-  .sidebar>button.dropdown-btn {
+  button.dropdown-btn {
     text-decoration: none;
     color: #272838;
     display: block;
@@ -122,7 +123,6 @@ li{
     text-align: left;
     }
 
-
   .sidebar>button.closebtn {
     margin-left: 220px;
     background: #d6d9e3;
@@ -131,7 +131,15 @@ li{
     border-style: solid 2px;
   }
 
-  div>a.sign-in:hover, .dropdown-container>a:hover, .sidebutton:hover, .sidebar>button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
+  .sidebar>button.closebtnGloss {
+    margin-left: 300px;
+    background: #d6d9e3;
+    font-weight: bold;
+    padding: 6px 6px 6px 6px;
+    border-style: solid 2px;
+  }
+
+  div>a.sign-in:hover, .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
     background-color: #C2C7D6;
   }
 
@@ -154,16 +162,11 @@ li{
   a.header {
     color: white;
     font-size: 40px;
-    margin-left: 120px;
+    margin-left: 220px;
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
     font-family: "Tangerine";
-  }
-
-  .topnav>div>a.header:hover {
-    background-color: #6b5470;
-    text-decoration: none;
   }
 
   .logo {
@@ -199,27 +202,78 @@ li{
   border: none;
   font-family: "Poppins";
   z-index: 1;
-  position: fixed;
+  position: absolute;
 }
 
-  .openbtn:hover{
+.openbtnGloss {
+font-size: 18px;
+cursor: pointer;
+background-color: #320e3a;
+color: white;
+margin-left: 100px;
+padding: 12px 15px;
+border: none;
+font-family: "Poppins";
+z-index: 1;
+position: absolute;
+}
+
+  .openbtn:hover, .openbtnGloss:hover, .topnav>a.header:hover{
   background-color: #6b5470;
   text-decoration: none;
   border: none;
 }
 
+a.definitionButton{
+  color: #272838;
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.definition{
+  padding: 2px 15px 2px 15px;
+  font-size: 17px;
+  text-align: left;
+}
+
+a.definitionButton:hover{
+  background-color: #C8D9E5;
+  color: #272838;
+  text-decoration: none;
+}
 
 /* iFrame stuff */
 iframe {
-    width: 1200px;
-    height: 1000px;
+    width: 1050px;
+    height: 500px;
     border: none;
+}
+
+.sidebar>p>.button{
+  background-color: #d6d9e3;
+  color: #272838;
+  width: 340px;
+  border: 2px solid #272838;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* button stuff */
 .button{
   background-color: #d6d9e3;
   color: #272838;
+  width: auto;
   border: 2px solid #272838;
   padding: 10px 15px;
   text-align: center;

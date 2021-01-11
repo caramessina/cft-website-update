@@ -79,6 +79,23 @@ def dis_about_cara():
 def dis_computational_essays():
     return  render_template('/about_dissertation/computational-essays.html', title='Computational Essays')
 
+@app.route("/about_dissertation/computational_essays/data_preparation")
+def dis_computational_essays_dataPrep():
+    return  render_template('/about_dissertation/computational_essays/data_preparation.html', title='Computational Essay - Data Preparation')
+
+@app.route("/about_dissertation/computational_essays/metadata_analytics")
+def dis_computational_essays_metadata():
+    return  render_template('/about_dissertation/computational_essays/metadata_analysis.html', title='Computational Essay - Metadata Analytics')
+
+@app.route("/about_dissertation/computational_essays/tag_exploration")
+def dis_computational_essays_tagExploration():
+    return  render_template('/about_dissertation/computational_essays/tag_exploration.html', title='Computational Essay - Exploring Additional Tags')
+
+@app.route("/about_dissertation/computational_essays/missandei")
+def dis_computational_essays_missandei():
+    return  render_template('/about_dissertation/computational_essays/missandei.html', title='Computational Essay - Missandei Deserves Better')
+
+
 @app.route("/about_dissertation/framework")
 def dis_framework():
     return  render_template('/about_dissertation/framework.html', title='Dissertation Framework')

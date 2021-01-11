@@ -4,17 +4,18 @@
 <h1>Computational Essays</h1>
 
 <p>The computational essay is usually a markdown notebook that explains coders' particular choices while working with data, as well as describes some of the results. The computational essays created for this dissertation are made available for transparency purposes. This way, you can follow along with the choices made while preparing, analyzing data and interpreting results.</p>
-<p>Use this list to navigate to different notebooks:</p>
-<ul>
-<li><a href=#CEdataprep>Preparing Fanfiction Data</a></li>
-<li><a href=#CEdataanlytics>Basic Data Analytics</a></li>
-</ul>
 
-<h2 id="CEdataprep"> Preparing Fanfiction Data</h2>
+<h2><a href="{{url_for('dis_computational_essays_dataPrep')}}">Preparing Fanfiction Data</a></h2>
+<p>This computational essay demonstrates how to transform data collected from <cite>Archive of Our Own</cite>.
 
-       <iframe src="{{url_for('static', filename='computational_essays/00-prepping_data.html')}}"></iframe>
+<h2><a href={{url_for('dis_computational_essays_metadata')}}>Character and Shipping Analytics</a></h2>
+<p>This computational essay demonstrates how to play with some of the metadata from AO3, especially most used characters and relationships at different points. For example, which characters were most popular in <cite>The Legend of Korra</cite> before and after Korra and Asami's romantic relationship became canon?
 
-<h2 id="CEdataanlytics">Basic Data Analytics</h2>
-<iframe src="{{url_for('static', filename='computational_essays/01-metadata_analytics.html')}}"></iframe>
+<h2><a href={{url_for('dis_computational_essays_tagExploration')}}>Exploring Additional Tags</a></h2>
+<p>This computational essay builds off the previous computational essay and examines the "Additional Tags," which are author-selected tags. There are several Additional Tags that are widely used, while there are some that are unique to particular stories. Additional Tags help authors to reach their potential audience and help readers to find their ideal fanfics.</p>
+
+
+<h2><a href={{url_for('dis_computational_essays_missandei')}}>Missandei Deserves Better</a></h2>
+<p>This computational essay demonstrates and explains how I analyzed data for the "<a href="{{ url_for('bp_missandei') }}">Missandei Deserves Better</a>" case study.</p>
 
 {% endblock %}

@@ -25,6 +25,7 @@
   </head>
   <body>
     {%  include 'includes/_navbar.html'%}
+    {%  include 'includes/_glossary.html'%}
     <main class="main">
               <article>
                 {% with messages = get_flashed_messages(with_categories=true) %}
@@ -78,6 +79,19 @@ for (i = 0; i < dropdown.length; i++) {
   dropdownContent.style.display = "block";
   }
   });
+}
+
+
+
+/*FOR GLOSSARY SIDEBAR*/
+function openGlossNav() {
+  document.getElementById("myGlossSidebar").style.width = "350px"
+  document.getElementById("main").style.marginRight = "350px";
+}
+
+function closeGlossNav() {
+  document.getElementById("myGlossSidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
 }
 
 // For the carousels

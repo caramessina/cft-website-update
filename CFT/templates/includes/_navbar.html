@@ -1,11 +1,14 @@
 <div class="topnav">
 
   <button class="openbtn" onclick="openNav()">☰ Menu</button>
-  <div>
-    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+  <button class="openbtnGloss" onclick="openGlossNav()">☰ Glossary</button>
 
-The Critical Fan Toolkit</a></div>
+    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
+The Critical Fan Toolkit</a>
+
 </div>
+
+
 
 <div id="mySidebar" class="sidebar">
   <button onclick="closeNav()" class="closebtn">x</button>
@@ -38,4 +41,7 @@ The Critical Fan Toolkit</a></div>
     <a href="{{ url_for('register') }}" class="sign-in">Register</a>
     {% endif %}
 </div>
+
+<div id="glossary" class="glossary"></div>
+
 </div>
