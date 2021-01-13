@@ -3,16 +3,21 @@
 {% block body %}
 
   <section>
-<h1>Interviews</h1>
+<h1 align="center">Interviews</h1>
+<a href="{{ url_for('interview_viz') }}"><img width=350px style="float:left" src="{{url_for('static', filename='images/interviews_viz_preview.png')}}"/></a>
+
 <p>Six fanfic authors — three who wrote <cite>The Legend of Korra</cite> and three who wrote <cite>Game of Thrones</cite> fanfics — share their experiences writing these fics, their perspectives on the fan community, and the ways in which they think about race, gender, sexuality, and/or culture in their fan engagement. The transcribed interviews and demographic information have been published with each writers’ explicit consent through Northeastern University's IRB.</p>
 <p>This interactive portion of the dissertation allows you to explore different angles of the fan authors' interviews. You can read each fan author's interview transcript, learn more about the fan author, read their fanfic that I interviewed them about, explore themes that occur across the interviews, learn about the qualitative coding process — in which interviews are marked up based on themes,and read an in-depth analysis of the interviews.</p>
-
-  <div class="home-grid-container">
-  <a href="{{ url_for('interview_search') }}"><h3>Explore Interview Themes</h3></a>
-  <a href="#"><h3>Read In-Depth Analysis (coming soon)</h3></a>
-  <a href="{{ url_for('interviews_qualitative_coding') }}"><h3>Learn about Qualitative Coding</h3></a>
+<p>
+<hr>
+  <div class="interview-home-grid-container">
+  <a href="{{ url_for('interview_search') }}"><h3>Search Across Interviews</h3></a>
+  <a href="#"><h3>Interview Analysis (TBD)</h3></a>
+  <a href="{{ url_for('interview_viz') }}"><h3>Visualizations</h3></a>
+  <a href="{{ url_for('interviews_qualitative_coding') }}"><h3>Qualitative Coding</h3></a>
 </div>
 </section>
+<hr>
 <section>
   <h2>Learn About Each Critical Fan</h2>
   <p>The six authors each provide unique experiences with writing, fandom engagement, and analyzing the canonical text. They each provided self-identified information about their age, gender, race, sexuality, and pronouns, which they agreed to have published on the site.</p>

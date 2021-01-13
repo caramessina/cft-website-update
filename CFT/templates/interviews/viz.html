@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1 align="center">Qualitative Coding Visualizations</h1>
+
+<p>These two visualizations represent an adjacency matrix and a correlation matrix across the different qualitative codes used to mark up the interviews.</p>
+
+<iframe class="visualizations" src="{{url_for('static', filename='visualizations/correlation_and_cooccurrence.html')}}"></iframe>
+{% endblock %}

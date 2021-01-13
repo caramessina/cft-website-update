@@ -120,6 +120,14 @@ def interviews():
 def interviews_qualitative_coding():
     return render_template('interviews/qualitative_coding.html', tite='Qualitative Coding Description')
 
+@app.route('/interviews/analysis')
+def interview_analysis():
+    return render_template('interviews/analysis.html', tite='Interviews Analysis')
+
+@app.route('/interviews/vizualization')
+def interview_viz():
+    return render_template('interviews/viz.html', tite='Interview Vizualization')
+
 @app.route("/interviews/search", methods=['GET', 'POST'])
 def interview_search():
     return render_template('/interviews/search.html', title='Search Interviews')

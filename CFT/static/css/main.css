@@ -255,6 +255,12 @@ iframe {
     border: none;
 }
 
+iframe.visualizations {
+    width: 1000px;
+    height: 900px;
+    border: none;
+}
+
 .sidebar>p>.button{
   background-color: #d6d9e3;
   color: #272838;
@@ -449,6 +455,30 @@ color: white;
   }
 
 /*Interviews*/
+.interview-home-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 10px;
+}
+
+.interview-home-grid-container > a{
+  background-color: #d6d9e3;
+  padding: 10px 10px 20px 10px;
+}
+
+.interview-home-grid-container > a >h3{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.interview-home-grid-container >a:hover{
+  background-color: #C8D9E5;
+  text-decoration: none;
+}
+
+
 /* Popup container */
   .code{
     font-weight: bold;
