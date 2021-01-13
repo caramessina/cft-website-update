@@ -95,6 +95,9 @@ def dis_computational_essays_tagExploration():
 def dis_computational_essays_missandei():
     return  render_template('/about_dissertation/computational_essays/missandei.html', title='Computational Essay - Missandei Deserves Better')
 
+@app.route("/about_dissertation/computational_essays/XML_parser")
+def dis_computational_essays_XML():
+    return  render_template('/about_dissertation/computational_essays/XML_parser.html', title='Computational Essay - XML Parser')
 
 @app.route("/about_dissertation/framework")
 def dis_framework():

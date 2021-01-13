@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>XML Parser</h1>
+<p>This computational essay demonstrates and explains how I parsed the XML data from the interviews that I qualitatively coded. It describes step by step how to pull XML data and transform that data, especially attribute values, into a dictionary and then a dataframe. Using this dataframe, I create a co-occurrence matrix and a correlation matrix, which can be found in "<a href="{{ url_for('interview_viz') }}">Qualitative Coding Visualizations".</a></p>
+<iframe src="{{url_for('static', filename='computational_essays/07-parsing-XML.html')}}"></iframe>
+
+{% endblock %}
