@@ -99,6 +99,10 @@ def dis_computational_essays_missandei():
 def dis_computational_essays_XML():
     return  render_template('/about_dissertation/computational_essays/XML_parser.html', title='Computational Essay - XML Parser')
 
+@app.route("/about_dissertation/computational_essays/network_analysis")
+def dis_computational_essays_network():
+    return  render_template('/about_dissertation/computational_essays/network_analysis.html', title='Computational Essay - Network Analysis')
+
 @app.route("/about_dissertation/framework")
 def dis_framework():
     return  render_template('/about_dissertation/framework.html', title='Dissertation Framework')

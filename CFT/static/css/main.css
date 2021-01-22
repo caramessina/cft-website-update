@@ -37,6 +37,7 @@ article{
   h1 {
  font-family: 'Lato', bold;
  font-size: 30px;
+ text-align: center;
   }
 
 h2 {
@@ -48,7 +49,7 @@ h2 {
  font-family: 'Lato', bold, italic;
  text-align: left;
  font-size: 19px;
- text-decoration-style: solid;
+ font-weight: bold;
   }
 
   p{
@@ -93,8 +94,18 @@ li{
     z-index: 99997;
   }
 
+  .sidebar-gloss {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    background-color: #F3F4F7;
+    overflow-x: hidden;
+    padding-top: 50px;
+    z-index: 99997;
+  }
 
-  .sidebar a, .sidebutton {
+
+  a.sidebutton {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 18px;
@@ -131,7 +142,7 @@ li{
     border-style: solid 2px;
   }
 
-  .sidebar>button.closebtnGloss {
+  .sidebar-gloss>button.closebtnGloss {
     margin-left: 300px;
     background: #d6d9e3;
     font-weight: bold;
@@ -147,6 +158,20 @@ li{
     display: none;
     background-color: #d6d9e3;
     padding-left: 15px;
+  }
+
+  .dropdown-container a{
+    text-decoration: none;
+    color: #272838;
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 6px 8px 6px 16px;
+    font-family: "Poppins";
+    width: 100%;
+    text-align: left;
   }
 
 /* TOP NAV */
@@ -224,21 +249,21 @@ position: absolute;
   border: none;
 }
 
-a.definitionButton{
+.definitionButton{
   color: #272838;
   width: 300px;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
 }
 
-div.definition{
-  padding: 2px 15px 2px 15px;
-  font-size: 17px;
+.definition{
+  padding: 2px 15px 20px 15px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -320,6 +345,7 @@ iframe.visualizations {
     border: 2px solid #272838;
     text-decoration: none;
     }
+
 
 .footer {
  position: fixed;

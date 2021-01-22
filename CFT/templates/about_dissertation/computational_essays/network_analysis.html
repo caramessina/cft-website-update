@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Network Analysis</h1>
+<p>In this computational notebook, I create a network analysis of frequent "Additional Tags" in <cite>The Legend of Korra</cite> fanfiction. I transform the data into a matrix, which shows how often particular additional tags co-occur, and then transform that into nodes and edges data. I found creating this notebook particularly important because there are very little resources that demonstrate step by step how to transform a dataframe into nodes and edges datasets that can be used for networking.</p>
+<p>To explore the network analysis graph, check out "<a href="{{ url_for('ffd_numbers') }}">Fandom by Numbers</a>."</p>
+<iframe src="{{url_for('static', filename='computational_essays/05-network_analysis.html')}}"></iframe>
+
+{% endblock %}

@@ -3,11 +3,21 @@
 {% block body %}
 
 <h1>Fandoms by Numbers</h1>
-<section><p><cite>The Legend of Korra</cite> (TLoK) and <cite>Game of Thrones</cite> (GoT) online fanfiction communities on <em>Archive of Our Own</em> are vastly different. These different slides offer glimpses into the different stories and ideologies embedded in the larger patterns across the published fanfics. Each storyboard focuses around a particular point of metadata, or information input by each fanfic writer when they publish their texts on <cite>Archive of Our Own</cite>.</p>
+<p><cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> online fanfiction communities on <em>Archive of Our Own</em> are vastly different. The visualizations in this section offer glimpses into the different stories and ideologies embedded in the larger patterns across the published fanfics. Each visualization focuses around a particular point of metadata, or information input by each fanfic writer when they publish their texts on <cite>Archive of Our Own</cite>.</p>
+<p>You can learn more about the "<a href="{{url_for('dis_methods')}}">Methods</a>" used to collect, analyze, and visualize  the data as well as read the "<a href="{{url_for('dis_computational_essays')}}">Computational Essays</a>" that provide documentation about how I transformed the data. Visit the <a href="{{url_for('ffd_numbers_analysis')}}">in-depth analysis</a> for a screen-reader friendly write up.</p>
+<h2>TLOK Fanfiction "Additional Tags" Network Graph</h2>
+<iframe src="{{url_for('static', filename='visualizations/network_graph_korra.html')}}" width="" height=""></iframe>
+<p>This network graph visualizes the most frequent TLOK fanfiction "Additional Tags" that are paired together. If an additional tag appears with another tag more than 15 times, both are mapped on the graph with lines (edges) drawn between them, depicting that they were used together. This network and the clusters visualized demonstrate how fan authors create and establish community and community practices using additional tags. You can analyze the graph yourself or read an analysis here:
+<a class="button" data-toggle="collapse" href="#NA-TLOK" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Further Network Analysis
+    </a></p>
+  <div class="collapse" id="NA-TLOK">
+<p>There are additional tags that are connected frequently to other tags, demonstrating their centrality in the network. These tags, including "fluff" and "angst," are the most frequently used and appear at the center of the main cluster. They connect to each other as well as other tags. There is also the "Alternate Universe - Modern Setting," which also appears frequently with other tags. Specifically, this tag branches off and is often connected to similar "Alternate Universe" tags, including "College/University," "No Bending," and "High school."</p>
+<p>There are also clusters of additional tags that appear together more frequently than other tags. For instance, the triangle cluster on the left side of the graph shows that 'multiverse', 'crossover', and 'multiple crossovers' are used together often. Each tag has its own purpose, as crossover suggests one or more crossovers, while multiple crossovers mean there are definitely more than one crossover. Fan authors may use tags together as potential readers may search multiple types of tags.</p>
+<p>There is also a branch off "smut" (which is the fan term for explicit sex) that leads to additional tags with specific sexual acts. "Oral sex" is centered within these tags, suggesting that in these different sexual scenes, usually between Korrasami since they are the most-used ship, center around oral pleasure. What makes this so important is that women's sexual pleasure is often overlooked in popular culture; oral sex, specifically between two women characters, focuses specifically on women's pleasure.</p>
+</div>
 
-  <p>The below storyboard are <em>not</em> screen-reader friendly because they are visualizations. However, this toolkit includes longer write ups that are screen-reader friendly: visit the <a href="{{url_for('ffd_numbers_analysis')}}">more in-depth analysis here</a>.</p>
-
-<h2>Storyboards</h2>
+<h2>Other Visualizations</h2>
 <a class="button" href="{{ url_for('ffd_numbers_got') }}">Game of Thrones</a>
 <a class="button" href="{{url_for('ffd_numbers_tlok') }}">The Legend of Korra</a>
 <a class="button" href="#">Comparison</a>
