@@ -13,7 +13,7 @@
 <p>This activity builds upon <a href="http://fandomstats.org/">Fandom Stats</a> and <a href="https://destinationtoast.tumblr.com/">Destination Toast</a>. Fandom Stats visualizes and shows the statistics of a particular fandom, such as how many works are published, the ratings used, and the most popular categories. Similarly, Destination Toast performs descriptive statistics on particular fandoms and writes brief analyses. Fandom Stats is interactive, while Destination Toast is a blog site. These two sites for statistics demonstrate, first, basic understandings of AO3 metadata practices, and second, how descriptive statistics can be used to better understand fandoms and fan politics.</p>
 <p>For this activity, you will follow along with Destination Toast’s post “<a href="https://destinationtoast.tumblr.com/post/137065429834/how-do-i-gather-data-about-the-ships-in-my-fandom">How do I find/gather data about the ships in my fandom on AO3?</a>” Destination Toast uses AO3’s “Sort and filter” function in each fandom to map out the most popular relationship categories.</p>
 <h2>Example for Scaffolding</h2>
-<p>	Let’s say I am interested in the representation and inclusion of Black characters in fandoms. I may choose two popular movies where at least one main character is Black: <a href="https://archiveofourown.org/tags/Star%20Wars%20Sequel%20Trilogy/works">Star Wars (Sequel Trilogy)</a> and <a href="https://archiveofourown.org/tags/Black%20Panther%20(2018)/works">Black Panther</a>. I followed Destination Toast’s guide for using the “Sort and filter” function on the right side and collected the raw counts of the top 10 character information.</p>
+<p>	Let’s say I am interested in the representation and inclusion of Black characters in fandoms. I may choose two popular movies where at least one main character is Black: <a href="https://archiveofourown.org/tags/Star%20Wars%20Sequel%20Trilogy/works"><cite>Star Wars</cite> (Sequel Trilogy)</a> and <a href="https://archiveofourown.org/tags/Black%20Panther%20(2018)/works"><cite>Black Panther</cite></a>. I followed Destination Toast’s guide for using the “Sort and filter” function on the right side and collected the raw counts of the top 10 character information.</p>
 <h3>Data Description and Download</h3>
 <p>	On October 15th, 2020, I collected the data in this spreadsheet, which can be used to practice quantitative analysis and visualizations with Excel or a similar spreadsheet editor. If you do not have access to Excel, other spreadsheet editors like Google Sheets use similar functions. I have made it into a CSV (comma-separated value) file, which can be opened up on any spreadsheet editor. A CSV file is a data file that does not contain hidden formatting, unlike an Excel file. There are four columns: the name of the fandom, the character’s name, and the raw count of the top 10 characters used in this fandom. I also included an extra row for each fandom to include the total number of fandoms. This way, you can also calculate percentages.</p>
 <p>	Here are some discussion questions to move use as you practice calculating percentages and creating charts:</p>
@@ -27,15 +27,15 @@
 <ul>
   <li>Why may Kylo Ren/Ben Solo appear so often and with different aliases? How does this impact the data collection and analysis?</li>
   <li>Why do you think Armitage Hux so popular? Why do you think Finn, Leia, Luke, and Rose are less popular?</li>
-  <li>Why do you think certain Avengers characters appear in the Black Panther fandom?</li>
-  <li>Why might Nakia be less popular in the Black Panther fandom?</li>
+  <li>Why do you think certain Avengers characters appear in the <cite>Black Panther</cite> fandom?</li>
+  <li>Why might Nakia be less popular in the <cite>Black Panther</cite> fandom?</li>
 </ul>
 <h3>Calculating Percentages</h3>
-<p>When making arguments based on which characters are used in fanfics more often, a stronger argument comes if you incorporate percentages, not raw numbers. Currently, the CSV file only has raw numbers. Percentages, though, shows you how often a particular character appears in relation to the amount of fanfics published in that fandom. For instance, Star Wars has a lot more fanfics published than Black Panther, so looking at percentages to compare the two fandoms is much more effective.</p>
+<p>When making arguments based on which characters are used in fanfics more often, a stronger argument comes if you incorporate percentages, not raw numbers. Currently, the CSV file only has raw numbers. Percentages, though, shows you how often a particular character appears in relation to the amount of fanfics published in that fandom. For instance, <cite>Star Wars</cite> has a lot more fanfics published than <cite>Black Panther</cite>, so looking at percentages to compare the two fandoms is much more effective.</p>
 <p>To calculate percentages, open the .CSV file in Excel. Create a new column for percentages by writing “Percentages,” in cell D1. As I mentioned, I included the total number of fanfics published for each fandom (row 2 and row 13). You will use these numbers to calculate the percentage of how often particular characters appear. The equation for calculating percentage looks like: <code>(Part/Whole) x 100</code>. In order to calculate this in Excel, you can create your own function! To signify to Excel you are creating a function, go to a blank cell and type the equal sign (=). Then, you can put in your calculations.</p>
-<p>Because Excel is a spreadsheet editor and can calculate a mass amount of numbers automatically, you can input just the cell ID instead of a number for your calculation. So, if you want to calculate the percentage that Rey appears in the Star Wars Trilogy, you would write in cell D3 (Rey’s empty percentage cell):</p>
+<p>Because Excel is a spreadsheet editor and can calculate a mass amount of numbers automatically, you can input just the cell ID instead of a number for your calculation. So, if you want to calculate the percentage that Rey appears in the <cite>Star Wars</cite> Trilogy, you would write in cell D3 (Rey’s empty percentage cell):</p>
 <code>= (C3/C2)*100 (then press “Return” or “Enter” on your keyboard)</code>
-<p>What you are doing here is telling Excel to divide the total Star Wars fics published (C2 = 62784) by the number of fics Rey appears (C3 = 32231) and multiply that result by 100, which is how you calculate percentage. The C3 and C2 indicate the cells with which you’re pulling data from. This way, if you update information, your calculation updates along with it. You can then do this for each character! This video visualizes these instructions:</p>
+<p>What you are doing here is telling Excel to divide the total <cite>Star Wars</cite> fics published (C2 = 62784) by the number of fics Rey appears (C3 = 32231) and multiply that result by 100, which is how you calculate percentage. The C3 and C2 indicate the cells with which you’re pulling data from. This way, if you update information, your calculation updates along with it. You can then do this for each character! This video visualizes these instructions:</p>
 <center>
   <video width="600" controls>
   <source src="{{url_for('static', filename='videos/Excel-Percentage.mp4')}}" type="video/mp4">
@@ -47,7 +47,7 @@ Your browser does not support the video tag.
 <ul>
   <li>Copy all the data from Column B (“Character”).</li>
   <li>Right click Column D (“Percentage”) and choose “Insert Copies Cells.”</li>
-  <li>Highlight the information you want to graph. Let’s start with the Star Wars Trilogy. Highlight the Sta Wars character names and percentages (D & E) from row 3, where Rey’s data is, to row 12, where Rose’s data is. This way, you highlight both the “Character” and the “Percentage” (Figure 1).</li>
+  <li>Highlight the information you want to graph. Let’s start with the <cite>Star Wars</cite> Trilogy. Highlight the Sta Wars character names and percentages (D & E) from row 3, where Rey’s data is, to row 12, where Rose’s data is. This way, you highlight both the “Character” and the “Percentage” (Figure 1).</li>
   <li>Go to “Insert” on your toolbar.</li>
   <li>Click “Recommended Charts” and choose which you prefer. The bar graph is always an easy, but effective choice!</li>
 </ul>
@@ -55,14 +55,14 @@ Your browser does not support the video tag.
   <img src="{{url_for('static', filename='images/activities-excel-highlight.png')}}" alt="Trulli" style="width:300px">
   <figcaption>Fig.1 - Example of Highlight Character Name and Perctanges.</figcaption>
 </figure>
-<p>Now you should have a chart that looks like Figure 3. I changed the title by double-clicking the title and adding my own descriptive title. You can do the same thing for the Black Panther data, too (Figure 2 & 3)!</p>
+<p>Now you should have a chart that looks like Figure 3. I changed the title by double-clicking the title and adding my own descriptive title. You can do the same thing for the <cite>Black Panther</cite> data, too (Figure 2 & 3)!</p>
 <figure>
   <img src="{{url_for('static', filename='images/activities-ao3characterfig1.png')}}" alt="Trulli" style="width:600px">
-  <figcaption>Fig.2 - Bar Graph Depicting Top Ten Characters Used in Star Wars AO3 Fandom.</figcaption>
+  <figcaption>Fig.2 - Bar Graph Depicting Top Ten Characters Used in <cite>Star Wars</cite> AO3 Fandom.</figcaption>
 </figure>
 <figure>
   <img src="{{url_for('static', filename='images/activities-ao3characterfig2.png')}}" alt="Trulli" style="width:600px">
-  <figcaption>Fig.3 - Bar Graph Depicting Top Ten Characters Used in Black Panther AO3 Fandom.</figcaption>
+  <figcaption>Fig.3 - Bar Graph Depicting Top Ten Characters Used in <cite>Black Panther</cite> AO3 Fandom.</figcaption>
 </figure>
 <h2>Your Turn!</h2>
 <p>Now that you have the basics down of working with spreadsheet data and have a model for how to create data, it is your turn to make data based on two fandoms! Before choosing your fandoms, think about what critical lens you may want to apply such as feminist, anti-racist, queer, or disability representation. These lenses, of course, can overlap! <a href="#instructional-vid">I am also including a video (below) with a step-by-step guide for finding the correct AO3 metadata, building your data, and creating charts</a>.</p>
