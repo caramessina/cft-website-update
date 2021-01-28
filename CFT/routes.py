@@ -67,6 +67,10 @@ def cfp_resources_instructors():
 def cfp_syllabus01():
     return  render_template('teaching/resources/cfp_syllabus.html', title='Critical Fan Research Methods Syllabus')
 
+@app.route("/teaching/resources/activity-fandom-statistics")
+def cfp_activity_fanstats():
+    return  render_template('teaching/resources/activity-fandom-statistics.html', title='Teaching Activity - Fandom Statistics')
+
 @app.route("/about_dissertation/acknowledgements")
 def dis_acknowledgements():
     return  render_template('/about_dissertation/acknowledgements.html', title='Dissertation Acknowledgements')
