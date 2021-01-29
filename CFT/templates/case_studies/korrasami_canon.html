@@ -2,20 +2,451 @@
 
 {% block body %}
 
-<h1>SHIP IS CANON: Tracing Representations of Gender & Sexuality</h1>
-<p>Full article published and available in the <cite>Journal of Writing Analytics</cite>: "<a href="https://wac.colostate.edu/docs/jwa/vol3/messina.pdf">Tracing Fan Uptakes: Tagging, Language, and Ideological Practices in The Legend of Korra Fanfictions</a>" (Messina, 2019)</p>
+<h1>'SHIP IS CANON': Tracing Representations of Gender & Sexuality</h1>
+<p>Full article published and available in the <cite>Journal of Writing Analytics</cite>: "<a href="https://wac.colostate.edu/docs/jwa/vol3/messina.pdf">Tracing Fan Uptakes: Tagging, Language, and Ideological Practices in <cite>The Legend of Korra</cite> Fanfictions</a>" (Messina, 2019)</p>
 
-<!--
+<p>SOON TO COME: PERSPECTIVES FROM INTERVIEW PARTICIPANTS</p>
+<h2>Introduction</h2>
+<p>On December 19, 2014, fans gathered on forums and discussion boards, eagerly waiting for the series finale of <cite>The Legend of Korra</cite>. One hope reverberated across posts: would there be confirmation that Korra and Asami’s relationship is a romantic one? Fans waited in anticipation, hoping their relationship would become canon. As fans watched the finale, they live posted, Tweeted, and commented about the exciting moments in the show and the pressing question was finally answered in the last two minutes of the show. Korra and Asami decide to take a vacation together to the Spirit World and walk hand-in-hand through the Spirit Portal (Figure 1). The Korrasami ship set sail and many fans couldn’t be happier.</p>
+<figure>
+  <img src="{{url_for('static', filename='images/korra-fig1.jpg')}}" alt="A screenshot of Korra and Asami holding hands and gazing into each other's eyes. A soft, yellow glow from the Spirit Portal engulfs them." style="width:30%">
+  <figcaption>Figure 1 - Screencap from <cite>The Legend of Korra</cite> Season Finale.</figcaption>
+</figure>
+<p>	This case study will trace fans’ uptakes of TLOK, tracing both uptakes that replicate heteronormativity as well as critical uptakes that resist heteronormativity and carve out queer spaces. Fan uptakes—the action of reimagining an already-created cultural material through writing—demonstrate the ways in which fan writers read subtext, challenge normalized narratives in their work, expand identity and story representation, and develop audience awareness and their own voices. Freadman (1994; 2002) defines uptakes as anticipated generic responses to a genre; expectations are constructed by context, form, and time. Bawarshi (2016) extends Freadman’s argument to argue that uptakes can reveal the boundaries of genre conventions -- which types of uptakes are expected and why. Anticipated responses usually reflect dominant ideology, but fan uptakes resist completely flip the original definition of uptakes. Who defines anticipated responses in fan communities? The fan! Examining fan uptakes demonstrates how fans shape and articulate expectations within their own discourse communities and genres. The uptake artifacts—the fanfictions—represent fans’ uptakes of the original cultural materials, provide a glimpse into the what ifs fans ask themselves when they watch shows and movies or read books, and reveal the ways in which fans resist or reinforce the ideologies perpetuated in the original cultural materials.</p>
+<p>In this piece, I define several types of fan uptakes: canon compliant uptakes, implicit-explicit uptakes, and canon resistant uptakes. I trace these uptakes through linguistic and tagging patterns that appear in the analysis of the data. The data collected for this case study are 3,759 fanfictions published on AO3 in 2011–January 2015.In order to define and trace fan uptakes, particularly TLoK fan uptakes, I implement computational temporal analysis.  I define computational temporal analysis as a method of tracing changes across time in a database, looking specifically at changes in metadata patterns and language patterns as well as in the ideologies embedded in these patterns. The corpus contains TLoK fanfiction data collected from AO3, both the fanfic metadata and the actual texts. This analysis demonstrates how TLOK fans were already resisting heteronormative representations from the show through their uptakes, specifically queer sexualities and gender norms.</p>
+
 <h2>Why <cite>The Legend of Korra</cite> Fandom?</h2>
 <p>TLOK, the canon material, already breaks generic conventions and demonstrates critical ideologies that subvert systems of power and oppression, especially around its representations of diverse races and sexualities. Since this case study explores fan uptakes, particularly fans’ critical uptakes, I chose a show that is already justice-centered in its ideologies because the fan community—those who choose to watch and engage with the original cultural material—may be more critically conscious than viewers of television shows that demonstrate more exclusive ideologies, like <cite>Game of Thrones</cite>.</p>
 <p>As Ebony Elizabeth Thomas (2019) and so many other cultural and fan studies scholars have argued, representation for people of color in mainstream cultural materials is limited. The “imagination gap” Thomas (2019) describes—or the ways in which science and speculative fiction often represent the same groups of people—demonstrates creators’ and producers’ lack of imagination in character representation because characters of color or other marginalized characters may be “unlikeable” to the larger public; the public, in this case, is coded as white, cisgender viewers, completely ignoring the viewers of color or viewers from other marginalized groups.  TLOK already bridges this gap by having the main character in a cartoon fantasy series be a powerful and vulnerable woman of color—Korra—who in the end is confirmed bisexual when she begins a romantic relationship Asami, another woman character. As one of the creators, Bryan Konietzo states:</p>
 <blockquote cite="https://bryankonietzko.tumblr.com/post/105916338157/korrasami-is-canon-you-can-celebrate-it-embrace">But this particular decision [to pair Korra and Asami together] wasn’t only done for us. We did it for all our queer friends, family, and colleagues. It is long overdue that our media (including children’s media) stops treating non-heterosexual people as nonexistent, or as something merely to be mocked. I’m only sorry it took us so long to have this kind of representation in one of our stories.</blockquote>
-<p>The show invites fans to challenge particular exclusive ideologies around gender, race, and sexuality: the ‘happy ending’ in the show challenges heteronormativity, suggesting an adventure to come, a grand vacation, and a new love that breaks boundaries.</p>
+<p>The show invites fans to challenge particular exclusive ideologies around gender, race, and sexuality: the ‘happy ending’ in the show challenges heteronormativity by resisting domesticity, suggesting an adventure to come and a love that breaks boundaries.</p>
 <h2>Tracing Ships Across Time</h2>
-<p>The importance of Korrasami being confirmed canon is a larger popular culture win for queer representation. However, queer representation is often front-and-center in fandoms, with fans reimagining same-gendered characters as romantic partners (CITE). This first section will trace the interdependent, cyclic uptake enactments from the TLoK creators and fans. The creators acknowledge an awareness of fans’ desires for queer representation, while fans restory the content imagined by TLoK creators. Specifically, this section traces how fanfiction “Relationship” patterns changed across time, mirroring or challenging the canon TLOK material.</p>
+<p>The importance of Korrasami being confirmed canon is a larger popular culture win for queer representation. However, queer representation is often front-and-center in fandoms, with fans reimagining same-gendered characters as romantic partners. This first section will trace the interdependent, cyclic uptake enactments from the TLoK creators and fans. The creators acknowledge an awareness of fans’ desires for queer representation, while fans restory the content imagined by TLoK creators. Specifically, this section traces how fanfiction “Relationship” patterns changed across time, mirroring or challenging the canon TLOK material.</p>
 <p>To begin exploring how fanfiction authors take up the original cultural material, the first place to begin is by pairing publishing dates in the corpus with dates in which important events on the TLoK were first aired. Table 1 shows a written timeline that highlights specific trends from the corpus with events from TLoK advertising or episode airs; Figure 1 is a visual representation of the amount of fanfictions published across months and years as well as the amount of Korra/Asami Sato and Korra/Mako relationship tags used per month. The date represents the date of the trend or event; the middle column represents when important moments from the show aired; the third column represents data collected from the corpus of TLoK fanfictions published on AO3 that pair two points of metadata: “publishing date” and “relationship.” I used the publishing date to count how many fanfictions were published in each month along with the most popular relationship tags used and cross-referenced this with the events from the original cultural materials.</p>
-TABLE 1
+<table>
+  <p>Table 1</p>
+  <tr>
+    <th>Date</th>
+    <th>Original Cultural Material</th>
+    <th>Fanfiction Corpus Patterns</th>
+  </tr>
+  <tr>
+    <td>05/2011</td>
+    <td>Nickelodeon advertises for TLoK, sequel to <cite>Avatar: The Last Airbender</cite>.</td>
+    <td>The first TLoK fanfiction is published on AO3.</td>
+  </tr>
+  <tr>
+    <td>04/2012</td>
+    <td>The first episode of TLoK airs on Nickelodeon.</td>
+    <td>84 TLoK fanfictions are published this month.</td>
+  </tr>
+  <tr>
+    <td>05–06/2012</td>
+    <td>The episode “The Spirit of Competition” airs in which Korra first kisses Mako, a male character.</td>
+    <td>The first large spike of TLoK fanfictions published on AO3.
+<ul>
+  <li>May: 120 fanfictions published.</li>
+<li>June: 197 fanfictions published.</li>
+</ul>
+  </td>
+  </tr>
+  <tr>
+    <td>08–10/2014</td>
+    <td>The season three finale, “Venom of the Red Lotus” airs with hints of Korra and Asami’s budding romance.</td>
+    <td>The second large spike of TLoK fanfictions published on AO3:
+<ul>
+  <li>August: 81 published.</li>
+<li>September: 125 published.</li>
+<li>October: 225 published.</li>
+</ul>
+  </td>
+  </tr>
+  <tr>
+    <td>12/2014–01/2015</td>
+    <td>The series finale, “The Last Stand” airs on December 14; Korra and Asami’s romance is confirmed canon.</td>
+    <td>The third large spike of TLoK fanfictions published on AO3:
+<ul>
+  <li>November: 165 published.</li>
+<li>December: 359 published.</li>
+<li>January: 400 published.</li>
+</ul>
+  </td>
+  </tr>
+</table>
 <p>By examining the uptake artifacts from the corpus, this timeline demonstrates several aspects of fan uptake enactments, or the actions fans take to participate in fanfiction genres and react to the original cultural material: canon complicit, implicit-explicit, and canon resistant uptake enactments. These type of fan uptakes relate directly to the ways in which the fans reimagine the original cultural materials: some choose to explore what is already canon (canon-complicit), some choose to make explicit the argumeable subtext in the original cultural material (implicit-explicit), and some choose to resist the canon entirely (canon resistant).</p>
--->
+<p>In order to examine these fan uptakes, I will examine the “relationship” tags used for each month, specifically looking at “Korra/Asami Sato” and “Korra/Mako” (see Figure 1). Relationship tags on AO3 are used by writers to signal to their potential audiences which characters will be involved romantically by using the forward slash between character names.</p>
+<figure>
+  <img src="{{url_for('static', filename='images/korra-relationship-trends.png')}}" alt="A line graph that depicts TLOK publishing trends across all the months, from March 2012 to January 2015. There are three lines: the overall fanfics published each month, the Korra/Mako fanfics published each month, and the Korra/Asami fanfics published each month. At first, Korra/Mako was much more popular. Then, around August 2014, Korra and Asami become extremely popular and the number of pieces published increases overall." style="width:100%">
+  <figcaption>Figure 2 - A line graph comparing Korra/Mako and Korra/Asami fanfictions published across time.</figcaption>
+</figure>
+<p>First, and most unsurprising, trends in the publishing dates and relationship tags reflect events in the show. When fans watch Korra and Mako kiss in an episode aired on May 2012, the excitement about the new relationship inspires fanfiction writers and begin publishing their own imagined romances between Korra and Mako, as shown in the Korra and Mako being one of the highest picked relationship tags in May and June 2012. In December 2014 Korra and Asami, a beloved ship—relationship—in TLoK fandom, is confirmed official on the show; fans’ enthusiasm can be traced in a large spike of fan fictions published from 165 in November to 359 in December). This uptake enactment, which I will call the canon compliant uptake, is fanfiction or fan genre created celebrating and following an event in the original source material. “Canon compliant” is a frequently used AO3 “additional tag”; the canon compliant works are fanfictions or fan art that follow the canon.</p>
+<p>	The next form of uptake that this timeline demonstrates is implicit-explicit uptake enactments, in which fans analyze the subtext of the show and make the subtext explicit in their fanfictions. This implicit-explicit uptake will come as no surprise to both fans and fanfiction scholars; fanfiction often builds off canonical moments in the show, exploring the potential stories hidden between the lines, such as the Kirk/Spock slashfic written and disseminated in the late 1970s and beyond (Russ, 1985/2014) or reimaging the story from a side characters’ perspective. As Jones (2002/2014) points out, the cult television genre “implicity ‘resists’ the conventions of heterosexuality; the slash fiction stories written by some of its fans render explicit this implicit function” (p. 128). Jones’ reading of cult television shows, or shows with a cult-like dedicated fandom following, are already subversive in their takes on culture and ideology; although I would argue this, of course, depends on the consumers’ analysis of the text as there is no Truth that exists within a text. Jones’ argument signals to the potential of an underlying narrative in the original cultural texts that resists heteronormative, white supremacist ideologies–the problem, is though, that these readings are usually buried in subtext and can be ignored by other fans. This is why fans’ implicit-explicit uptakes are necessary.</p>
+<p>	Tracing fan uptakes using computational temporal analysis shows that fans typically react to moments of tension or potential romance by making this romance explicit, and TLoK is no different. As the second spike of TLoK fanfictions published on AO3 in August, September, and October 2014 demonstrates, fans’ often take up the potential stories and make them explicit. In the episode “Venom of the Red Lotus” (aired online at the end of August 2014), Korra must fight Zaheer, an anarchist with a strong connection to the Spirit World; she defeats Zaheer, but is traumatized physically and mentally in the process. The final few minutes of the episode show wheelchair-bound Korra seemingly disconnected from the celebrations occurring around her as she suffers with the traumas she endured. Asami is right by Korra’s side for every scene, helping her get ready, pushing her where she needs to go, and standing besides her during the final few minutes of the episode as a ceremony takes place. While Asami helps Korra get ready, she kneels besides Korra and takes her hand to tell her, “I want you to know that I’m here for you. If you ever want to talk or [pause] anything.” Fans read into the Asami’s pause and her lingering on the word “anything,” as demonstrated in the sudden rise of published TLoK fanfictions and the Korra/Asami Sato relationship tag, jumping from 19 in August to 54 in October 2014. In fact, around October 2014, the count of the “Total published” texts match almost identically with the count of the “Korra/Asami” relationship tags; the amount of Korra/Asami fanfiction published from October 2014 and beyond heavily impacts the amount of total published fanfictions because the relationship is so popular in the fandom. This demonstrates fans’ implicit-explicit uptakes enactments, exploring what is unsaid and hidden in the subtext to celebrate diverse stories, specifically diverse queer stories.</p>
+<p>	The third fan uptake enactment the data shows is canon resistant uptakes, or when fans actively resist both the implicit and explicit canonical choices made in the original cultural material. One of the more surprising moments for me during this research—and a result that I honestly should have seen coming—is Korra and Mako are not the most popular relationship tag chosen during the month Korra and Mako’s romantic relationship was built up and finally begins with a kiss. The most popular relationship tag chosen in May 2012 is Korra and Tahno (at 29, as opposed to Korra/Mako at 27), who is a competitor she faces during a sports event in the first season. Korra/Bolin ships—Bolin is Mako’s brother—also come up quite frequently and, even though Korra and Bolin tried dating at the beginning of the series, their relationship became platonic after Korra and Mako became a couple. Another insistence of canon resistance uptakes demonstrated through relationship tags is the common pairing of Korra and Kuvira, another woman character; Kuvira is the main villain is Season 4 and is often paired with Korra in fanfiction published later in the series and past the series. Canon resistant uptakes and implicit-explicit uptakes may overlap varying on the fans’ or the researchers’ reading of the original cultural material. For example, some fans may argue there was implicit sexual tension between Korra and Tahno, which is not my own reading of Korra and Tahno’s relationship.</p>
+<table>
+  <p>Table 4</p>
+  <tr>
+    <th>Date</th>
+    <th>Total Fanfictions Published</th>
+    <th>Fanfics that use “Korra/Mako” Tag</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>2012-04</td>
+    <td>84</td>
+    <td>29</td>
+    <td>34.52%</td>
+  </tr>
+  <tr>
+    <td>2012-05</td>
+    <td>120</td>
+    <td>27</td>
+    <td>22.5%</td>
+  </tr>
+  <tr>
+    <td>2012-06</td>
+    <td>197</td>
+    <td>21</td>
+    <td>10.66%</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>401</td>
+    <td>77</td>
+    <td>19.2%</td>
+  </tr>
+</table>
+<p>	Examining different forms of uptake through relationship tags demonstrates the different types of fan uptakes, but also provides a glimpse into the exigency of fan uptakes. As Table 2 shows, while Korra and Mako was originally one of the more popular ships, the percentage of Korra/Asami relationship tags to the count of fanfiction texts published around the first season (April–June 2012) was only 19.51%. As Table 3 shows, when TLoK subtext hints at Korra and Asami’s potential romantic relationship (August–November 2019), the “Korra/Asami Sato” relationship tag is used in 44.08% of the fanfictions published.</p>
+<table>
+  <p>Table 2</p>
+  <tr>
+    <th>Date</th>
+    <th>Total Fanfictions Published</th>
+    <th>Fanfics that use “Korra/Asami” Tag</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>2014-08</td>
+    <td>81</td>
+    <td>19</td>
+    <td>23.46%</td>
+  </tr>
+  <tr>
+    <td>2014-09</td>
+    <td>125</td>
+    <td>54</td>
+    <td>43.2%</td>
+  </tr>
+  <tr>
+    <td>2014-10</td>
+    <td>225</td>
+    <td>117</td>
+    <td>52%</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>431</td>
+    <td>190</td>
+    <td>44.08%</td>
+  </tr>
+</table>
+<p>The difference between the “Korra/Mako” published texts when their relationship was canon as opposed to the percentage of “Korra/Asami” published texts when subtextual hints of their relationship appeared demonstrates a collective desire for a canonical queer relationship in the TLoK fandom. As Thomas and Stornaiuolo’s (2016) argue for young writers of color who restory texts, “we applaud young people’s resilient efforts to author themselves in order to be heard, seen, and noticed—to assert that their lives matter—by bending the world around them” (p. 333). For fanfiction writers who both enacted implicit-explicit uptakes as well as canonical compliant uptakes around Korra and Asami’s relationship, they assert queer lives matter and queer characters (people) are protagonists.</p>
+<h2>Exploring Representations of Gender and Sexuality in the Corpus</h2>
+<p>	In order to work with the actual fanfiction texts, I split the published fanfictions up into three separate corpora by published month (see Table 4): the first corpus is a collection of all the fanfictions published before August 2014, when season 3 was airing and the show hinted at Korra and Asami’s potential romance; the second corpus is a collection of all the fanfictions published from August 2014–November 2014, before the series finale confirmed Korra and Asami’s romantic relationship was canon; the third corpus is a collection of all the fanfictions published from December 2014–March 2015, when and after the series finale confirmed Korra and Asami’s romance. Similar to the results from the “published dates” and “relationship tags,” these three corpora reflect when important moments in the show aired, especially around Korra’s relationship with Asami. This section will examine the different language patterns in the three corpora, how these language patterns reflect fan writers’ uptakes of the original show, and the ideologies embedded within these uptakes, especially around representations of gender and sexuality.</p>
+<table>
+  <p>Table 3</p>
+  <tr>
+    <th>Corpus Name</th>
+    <th>Corpus Description</th>
+    <th>Corpus Word Count</th>
+  </tr>
+  <tr>
+    <td>Pre-Korrasami</td>
+    <td>TLoK fanfictions published between February 2011 and July 2014</td>
+    <td>4,148,808</td>
+  </tr>
+  <tr>
+    <td>Subtext-Korrasami</td>
+    <td>TLoK fanfictions published between August 2014 and November 2014</td>
+    <td>1,506,803</td>
+  </tr>
+  <tr>
+    <td>Post-Korrasami</td>
+    <td>TLoK fanfictions published between December 2014 and March 2015</td>
+    <td>6,156,530</td>
+  </tr>
+</table>
+<p>Once the three corpora were created, I ran different forms of corpus preparation to prepare each for computational text analysis. I lowered all the capital letters, removed basic stopwords, removed all punctuation (including punctuation specific to the corpora such as “``” and “--”), and stemmed all the words using NLTK’s Porter Stemmer (<a href="https://github.com/caramessina/tracing_fan_uptakes/blob/master/02-preparing_textual_data.ipynb">the code available for the data preparation stage is available on my GitHub</a>). Stemming transforms words like “masculine,” “bisexual,” and “breathlessly,” to “masculin,” “bisexu,” and “breathlessli” in order to combine the similar words with different suffixes; for example, “bisexual” and “bisexuality” are now both labeled “bisexu.”</p>
+<p>In order to better trace the contexts in which particular words are used, I created three separate word embedding models of the corpora with Python’s gensim library (<a href="https://github.com/caramessina/tracing_fan_uptakes/blob/master/03-computational_text_analysis.ipynb">find the word embedding model code available on my GitHub</a>). Word embedding models, or Word2Vec, measure and compare the relationships of a word’s context and finds the cosine similarity of other words in that corpus that appear in similar contexts. Schmidt (2015) advocates for analyzing texts with word embedding models because they “offer something slightly more abstract, but equally compelling: a spatial analogy to relationships between words. WEMs (to make up for this post a blanket abbreviation for the two major methods) take an entire corpus, and try to encode the various relations between word into a spatial analogue.” A classic example might be that “queen” is closely related to “king” in that each word is used in similar contexts. Depending on the corpus, however, the results will vary. The results will also vary based on the parameters provided during the creation of the model. In the word embedding models I created, I chose to include words that appear in at least 10 times across each corpus. This means if a word is not included in the word embedding model, it appears less than 10 times in that specific corpus. By creating a word embedding model for each corpus, I compare the ways in which particular terms are used across the three corpora based on the words that are most likely to appear in similar contexts.</p>
+<p>The best example to begin with are the three separate results for the words that are most similar to “Asami” across all three corpora. In the pre-Korrasami corpus, some of the words most similar to “Asami” are “cheerlead” (cheerleader, cosine 0.6560); “quarterback” (0.6462); “heiress” (0.6236); and “girlfriend” (0.5158). In the subtext-Korrasami corpus, some of the words most similar to “Asami” are “engin” (engine or engineer, 0.7524); “korra” (0.7403); “softli” (softly, 0.6208); and “mumbl” (0.5618). In fanfiction, common nicknames are given to characters—especially when writing romantic scenes between characters of the same gender—because relying on pronouns to describe interactions can make for confusing prose. These nicknames often appear across many fanfiction texts, as fanfiction authors seem to be borrowing each others’ nicknames. For example, "the heiress,” “the engineer,” or “the inventor” may be used as a nickname for Asami, as shown in the results; other popular examples may include describing characters based on their physical features, such as “the taller one” or “the raven-haired woman”.</p>
+<p>Between just the pre-Korrasami corpus and the subtext-Korrasami corpus, there are already significant differences in the words that are most commonly related to Asami. In the pre-Korrasami corpus, there is more of a focus on classic highschool romance tales–the cheerleader and the quarterback pop up as the most similar words to Asami. Canonically, there is no football, quarterbacks, or explicit cheerleaders in TLok show, so the appearance of these words implies Asami often appears in alternate universe fanfictions where she is the cheerleader interacting with a quarterback. In the subtext-Korrasami corpus, the word “engine” is most similar to Asami, which aligns canonically with the show; Asami is an inventor a, so fanfictions where she appears may be using the word engineer to describe her or engineer might appear in similar situations as the word “Asami.” The word “mumbl” and “softli” appears, demonstrating interactions between Asami and other characters or Asami’s own actions. These adverbs and verbs demonstrate in the subtext-Korrasami corpus, writers may write her as more active, rather than just describing her through the roles she takes on. Finally, in the post-Korrasami corpus, the words most similar to “Asami” are “Korra” (0.86), “girlfriend” (0.67); “heiress” (0.58); “babe” (0.54); and “mmm” (0.51). At first glance, there are similar results between the pre- and post-Korrasami corpora, such as “Asami” being related to words like “girlfriend” and “heiress.” The post-Korrasami corpus results, however, suggest Asami’s role has shifted–words most related to her name revolve around activity, particularly romantic activity: “mmm,” “softli,” “shyli,” and “blush,” suggest romantic actions, and as the temporal analysis above suggests, these activities probably involve her interactions with Korra in these fanfictions. This basic analysis demonstrates the ways in which word embedding model results shift based on the corpus and how these results may insights for each corpus.</p>
+<p>Table 5 shows the results across all three corpora for different words. I queried these words in each word embedding model and in the table, I highlight some of the top results along with their cosine similarity. I chose to query words that mark either gender and sexuality and, as the results show, the representations of gender and sexuality differ widely across the corpora. I specifically decided to query identity-based words such as “masculine,” “feminine,” “bisexual,” and “gender”; different gendered actions and roles such as “marry,” “pregnant,” and “girlfriend;” and representations of Asami using the term “heiress” which is a nickname provided to her by fanfiction writers.</p>
+<table>
+  <p>Table 2</p>
+  <tr>
+    <th>Date</th>
+    <th>Total Fanfictions Published</th>
+    <th>Fanfics that use “Korra/Mako” Tag</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>2012-04</td>
+    <td>84</td>
+    <td>29</td>
+    <td>34.52%</td>
+  </tr>
+  <tr>
+    <td>2012-05</td>
+    <td>120</td>
+    <td>27</td>
+    <td>22.5%</td>
+  </tr>
+  <tr>
+    <td>2012-06</td>
+    <td>197</td>
+    <td>21</td>
+    <td>10.66%</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>401</td>
+    <td>77</td>
+    <td>19.2%</td>
+  </tr>
+</table>
+<p>	Examining different forms of uptake through relationship tags demonstrates the different types of fan uptakes, but also provides a glimpse into the exigency of fan uptakes. As Table 2 shows, while Korra and Mako was originally one of the more popular ships, the percentage of Korra/Asami relationship tags to the count of fanfiction texts published around the first season (April–June 2012) was only 19.51%. As Table 3 shows, when TLoK subtext hints at Korra and Asami’s potential romantic relationship (August–November 2019), the “Korra/Asami Sato” relationship tag is used in 44.08% of the fanfictions published.</p>
+<table>
+  <p>Table 5</p>
+  <tr>
+    <th>Word Query</th>
+    <th>Pre-Korrasami Results</th>
+    <th>Subtext-Korrasami Results</th>
+    <th>Post-Korrasami Results</th>
+  </tr>
+  <tr>
+    <td>heiress</td>
+    <td>gorgeou*, 0.63
+<br>asami, 0.62
+<br>girl, 0.59
+<br>quarterback, 0.57
+</td>
+    <td>breathlessli*, 0.77
+<br>flush, 0.74
+<br>arch, 0.73
+<br>a-asami, 0.72
+</td>
+    <td>omega, 0.69
+<br>alpha, 0.66
+<br>inventor, 0.65
+<br>squirm, 0.62
+</td>
+  </tr>
+  <tr>
+    <td>feminin*</td>
+    <td>eleg*, 0.78
+<br>accentu*, 0.76
+<br>complement, 0.75
+<br>facial, 0.74
+</td>
+    <td>brunett*, 0.91
+<br>creami*, 0.88
+<br>repeatedli*, 0.86
+<br>vagina, 0.85
+</td>
+    <td>allur*, 0.73
+<br>contrast,  0.73
+<br>eleg*, 0.71
+<br>masculin*, 0.70
+</td>
+  </tr>
+  <tr>
+    <td>masculin*</td>
+    <td>undeni*, 0.71
+<br>mixtur*, 0.71
+<br>throat*', 0.69
+<br>enchant'*, 0.68
+</td>
+    <td>porn, 0.92
+<br>inexperienc*, 0.91
+<br>pervert, 0.91
+<br>envi*, 0.91
+</td>
+    <td>epitom*, 0.70
+<br>feminin*, 0.70
+<br>qualiti*, 0.70
+<br>gender, 0.69
+</td>
+  </tr>
+  <tr>
+    <td>gender</td>
+    <td>inspir*, 0.77
+<br>interpret, 0.75
+<br>writer, 0.74
+<br>genr*, 0.74
+</td>
+    <td>reput*, 0.93
+<br>wage, 0.93
+<br>specul*, 0.92
+<br>inventor, 0.92
+</td>
+    <td>biolog*, 0.74
+<br>common, 0.73
+<br>stereotyp*, 0.73
+<br>renown, 0.72
+</td>
+  </tr>
+  <tr>
+    <td>bisexual</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>lesbian, 0.74
+<br>fangirl, 0.68
+<br>gay, 0.68
+<br>heterosexu*, 0.67
+</td>
+  </tr>
+  <tr>
+    <td>marri*</td>
+    <td>wed*, 0.70
+<br>wife, 0.70
+<br>pregnant, 0.69
+<br>sixteen, 0.68
+</td>
+    <td>proud, 0.78
+<br>marriag*, 0.77
+<br>daughter, 0.77
+<br>husband, 0.76
+</td>
+    <td>marriag*, 0.73
+<br>wed*, 0.65
+<br>propos*, 0.63
+<br>wife, 0.60
+</td>
+  </tr>
+  <tr>
+    <td>pregnant</td>
+    <td>marri*, 0.69
+<br>babi', 0.63
+<br>fourteen-year-old, 0.61
+<br>wife, 0.60
+</td>
+    <td>husband, 0.89
+<br>wife, 0.86
+<br>daughter, 0.74
+<br>warmli*, 0.73
+</td>
+    <td>birth, 0.64
+<br>husband, 0.63
+<br>sire, 0.61
+<br>wife, 0.60
+</td>
+  </tr>
+  <tr>
+    <td>girlfriend</td>
+    <td>boyfriend, 0.84
+<br>date, 0.78
+<br>jealou*, 0.75
+<br>cute, 0.66
+</td>
+    <td>cute, 0.8325
+<br>chuckl*, 0.83
+<br>date, 0.82
+<br>wink, 0.81
+</td>
+    <td>korra, 0.6986
+<br>asami, 0.67
+<br>dork, 0.63
+<br>ador*, 0.63</td>
+  </tr>
+</table>
+<p>	Table 5 results suggest there are shifts in ideological underpinnings through the relationships between words. Continuing the Asami example from above, the word “heiress” is in the pre-Korrasami model follows traditional gender roles for women: words like gorgeous, quarterback, and girl appear. In the subtext- and post-Korrasami models, however, “heiress” is used in words that relate explicitly to sexuality and sexual relationships: “arch” refers to someone’s back and body arching during a passionate act; “a-asami” refers to intimate speech; and “alpha” and “omega” are labels used across fandoms to refer to the sexual and romantic dynamic between two characters of the same gender. The transformation for how fans represent Asami across the three corpora also demonstrates a shift in ideologies. In earlier fan uptakes of the show, Asami is represented through more traditional gender roles and notions of femininity. She is represented as beautiful, wealthy, and distant from the main story. The subtext-Korrasami model implicit-explicit uptake demonstrates a dramatic shift in representations of Asami, recognizing Asami not just as a distant feminine figure, but an intimate part of the story, especially Korra’s story, where their romance is made explicit.</p>
+<p>	The next group of word queries are words that signify identity markers: “feminine,” “masculine,” “gender,” and “bisexual.”  The word “feminine” across the three corpora reflects traditional descriptors of femininity: elegance, creamy, brunette, and alluring. However, femininity in the subtext-Korrasami corpus uses more explicit vocabulary, implying feminine is often used in intimate scenes; femininity in the post-Korrasami model seems to be used in “contrast” to “masculine,” potentially implying a feminine/masculine divide between Korra and Asami. The “masculine” query in the post-Korrasami model reinforces this idea: masculinity and femininity is often paired together. Meanwhile, “masculine” in the pre-Korrasami corpus seems to be more of a descriptor, although the word “mixture” implies less rigidity in gender performance. Finally, the query results for “gender” and “bisexual” in the post-Korrasami yield the most interesting results: both results suggest writers’ critical awareness of identity markers. “Biolog*” (biology/biological) paired with “gender” suggests and awareness of gender theory, particularly around gender labels; although, the concordance tool results for “biolog*” show biological is mostly used to refer to parentage and biology is used to refer to the school subject. “Bisexual*” (bisexual, bisexuality) does not even appear in the first two models, which means the word was used less than 10 times in those corpora, meanwhile the appears in the post-Korrasami model with other markers of sexuality.</p>
+<p>	The final word queries relate to gendered actions and labels: “marri,” “pregnant,” and “girlfriend.”  The words most similar to marri* and pregnant across the three models still suggest forms of heteronormative roles: wife, husband, propose; there are some surprises in these results, including “fourteen-year-old” in the pre-Korrasami model and “sire”–the male breeding position, but also sometimes used in fanfiction and fantastical genres to refer to a mystical forms of parentage–in the post-Korrasami model. “Girlfriend” across the three models provide a more explicit trajectory from traditional representations of girlfriends in the pre-Korrasami corpus to the queer, intimate representations in the post-Korrasami corpus. In the pre-Korrasami corpus, the word most related to “girlfriend” is “boyfriend,” and other terms like “jealous” and “cute” appear. In the post-Korrasami corpus, however, “girlfriend” has a less patronizing portrayal: obviously “korra” and “asami” are most related, but the word “adore," "adorable," and “dork” are also closely related, two words which portray intimacy and playfulness.</p>
+<p>	While word embedding models provide overall patterns in contextual relationships between words, diving into the text is a necessary step to better understand how these models may reflect or not reflect specific moments in the text (Messina, 2018). Using <a href="https://github.com/sgsinclair/alta/blob/a482d343142cba12030fea4be8f96fb77579b3ab/ipynb/utilities/Concordances.ipynb">a concordance Python function created by Geoffrey Rockwell</a>, I queried several words from the word embedding model to examine how these words are used in specific contexts (see Table 6). Quinn (2020) refers to this method as “folding back,” in which researchers use computational models to then investigate specific moments in the original corpus. Table 6 shows some chosen excerpts from the concordance results. These results are not necessarily representative of each corpus, yet I want to include them to demonstrate the necessity of going back to the text after performing computational text analysis.</p>
+<table>
+  Table 6
+  <tr>
+    <th>Word</th>
+    <th>Quote</th>
+    <th>Corpus</th>
+    <th>Fan Author</th>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>"You and your gender roles can bite me"</td>
+    <td>Pre-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/480729">Lapin</a></td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>“were lingering stories of past gender inequality in the Water Tribes”</td>
+    <td>Post-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/2833961/chapters/6358040">Kittya Cullen</a></td>
+  </tr>
+  <tr>
+    <td>Girlfriend</td>
+    <td>"'This is Asami; my girlfriend,' Korra introduced Asami."</td>
+    <td>Pre-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/1284583/chapters/2661916 AND https://archiveofourown.org/works/1285369">Nightworldlove</a></td>
+  </tr>
+  <tr>
+    <td>Girlfriend</td>
+    <td>"'Guys meet my amazing, beautiful girlfriend Asami!" Korra announced loudly"</td>
+    <td>Sub-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/2421665/chapters/5358407">korrasamishipper</a></td>
+  </tr>
+  <tr>
+    <td>Feminine</td>
+    <td>"She's beautiful, feminine and she has Mako"</td>
+    <td>Pre-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/589268/chapters/1059732">FitzgeraldWappingers</a></td>
+  </tr>
+  <tr>
+    <td>Feminine</td>
+    <td>"just the right mix of masculine and feminine."</td>
+    <td>Post-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/3284171/chapters/7165784">avesnongrata</a></td>
+  </tr>
+  <tr>
+    <td>Gay</td>
+    <td>"I will not tolerate a son of mine being gay."</td>
+    <td>Pre-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/472779/chapters/818168">Aewin</a></td>
+  </tr>
+  <tr>
+    <td>Gay</td>
+    <td>"Because Korra could not be gay. She just simply could never marry a woman."</td>
+    <td>Sub-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/2464925">autumnmycat</a></td>
+  </tr>
+  <tr>
+    <td>Gay</td>
+    <td>"police really liked to harass butch women at gay bars, especially those of us who used underwear as one of our items."</td>
+    <td>Post-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/3583326/chapters/7900731">Aria</a></td>
+  </tr>
+  <tr>
+    <td>Lesbian</td>
+    <td>"How?! There isn't a lesbian version of Grindr. Is there?"</td>
+    <td>Sub-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/2595557">Dandybear</a></td>
+  </tr>
+  <tr>
+    <td>bi/bisexual</td>
+    <td>"'I'm bi, er, bisexual' Korra announced, her voice just as shaky"</td>
+    <td>Sub-Korrasami</td>
+    <td><a href="https://archiveofourown.org/works/2395991/chapters/5295806">GillyWulf</a></td>
+  </tr>
+</table>
+<p><em>All fanfiction authors have provided me with consent to use excerpts from their fanfics and their usernames or real names in this article.</em></p>
+<p>	As Table 6 demonstrates, the findings in the word embedding model do not fully capture the nuances of each corpus. For example, in the word embedding models, the word “bisexual” does not appear in the first and second model, but the words “bisexual” and “bi” are used in the pre- and subtext-Korrasami corpora in ways that suggest writers are thinking deeply about representations of sexuality, particularly around the fluidity of sexuality as well as the “coming out” narrative. In the pre-Korrasami corpus, Nightworldlove’s text demonstrates canon-resistant uptakes as they writing about Korra and Asami’s romance in late 2012. Table 6 shows, especially in the “lesbian” and “gay” results, the anxieties around coming out and merely existing as a queer person. For example, autumnmycat’s fanfiction takes places in TLoK universe, yet autmnmycat maintains realistic anxieties around embracing one’s non-normative identity: “Because Korra could not be gay. She just simply could never marry a woman.” As Yoder, Breitfeller, and Rosé (2019) argue in their sentiment analysis of fanfiction published about the most popular fandoms in AO3, the negative sentiment analysis around queer identity markers like “trans,” “gay,” and “queer,” more reflects genre conventions in fanfiction, rather than actual negative sentiment towards queer identities. One of the most popular fanfiction tags on AO3 is “Angst,” and angst paired with representations of queer identities may manifest through anxieties around a lack of acceptance, isolation, and violence. For example, in the “lesbian” search, one writer in their universe discusses the violent policing of butch lesbian women, which the author also points to as a historical reality. Even if these are fictional reimaginings of a fictional universe, the anxieties are very real: people who are queer are constantly threatened by damaging rhetoric and slurs, homophobic individuals and groups, and systems of oppression that encourage violence towards people who are queer.</p>
+<p>Even though the word embedding models suggest fan writers’ uptakes become more critical as the show moved forward, some fan writers seem to always-already be concerned around representations of sexuality and non-traditional genders and gender roles. As Lapin writes in an excerpt from the Pre-Korrasami corpus: “You and your gender roles can bite me.” The goal is for researchers to discern the type of rhetorical choices fans make in their uptake of original texts, and how these uptakes reflect ideologies that are critical of systems of oppression and want to represent diverse identities, particuarly queer identities, in ways that reflect the real anxieties, joys, and all the nuances between.</p>
+
+<h2>Conclusion: TLOK as Critical Fan Uptakes Case Study</h2>
+<p>Fan studies scholars are becoming more invested in critical fandom practices (Booth, 2015; Lothian, 2018; De Kosnik and carrington, 2019). The final form of uptake I will define are fans’ critical uptake enactments. These uptakes may include implicit-explicit, canon resistant, or canon compliant uptake practices, but critical upakes specifically deal with resisting exclusive and oppressive ideologies by embracing justice-centered practices in writers’ choices. The above analyses demonstrate several ways in which fans take up the justice-centered ideologies in the text, particularly around the representation of queer identities through Korra and Asami’s relationship.</p>
+<p> While there are multiple ways fans incorporate critical practices as they take up texts, this research note is particularly interested in fans’ critical uptake enactments around the representation of identities. Critical uptakes reflect Thomas and Stornaiuolo’s definition of “restorying,” which are uptake enactments that “reshap[e] narratives to better reflect a diversity of perspectives and experiences” (p. 314). Fan scholars trace critical fandoms by examining fans practices that suggest fans are thinking critically about gender, sexuality, race, neurodiversity, and diverse abilities, even when the original cultural material does not reflect critical forms of representation (Summers, 2010; carrington, 2013; Lothian, 2018; Dym et al., 2018; De Kosnik & carrington, 2019).</p>
+<p>Critical uptakes can be traced through the characters fans choose to write about, the relationships fans choose, and how fans choose to portray particular characters, such as through race-bending, gender-bending, or perspective-bending (Thomas & Stornaiuolo, 2016).  For the metadata analysis as shown in Figure 1 and Table 1, critical uptakes are represented through fans’ relationship tag choices. Because so much of fanfiction revolves around romance, particular ideologies may be parsed by examining relationship tag choices. Figure 1 shows there are several fan who imagined Korra/Asami’s potential–even before there were any implicit or subtextual hints of their relationship–pushing against the original heteronormative romantic arc in the first season of the show. In May and June 2012, towards the end of season 1 when Korra and Mako’s relationship is canon on the original cultural material, the Korra/Asami relationship tag is used 3 times in May and 5 times in June. In January 2013, before season 2 was released, there is a spike in Korra/Asami tags–the month count jumps from 1 to 22 times used, demonstrating a new interest in the fan community between Korra and Asami as a potential relationship.</p>
+<p>As for the computational text analysis section, the word embedding models and the concordance results for the three corpora demonstrate the ways in which fans’ ideologies shifted as the show continued to air. The implicit-explicit uptakes in the “subtext-Korrasami” corpus demonstrate how fans take up the subtext to explore queer identities, especially Korra and Asami’s identities. The representations of gender and sexuality, particularly around labels like “lesbian,” “gay,” and “bisexual,” demonstrate an awareness of navigating a society in which systems in place attempt to do violence upon these identities; these representations also reflect, however, the joys of finding love, being accepted, and having the freedom to claim and establish one’s identity. </p>
+<p>Fanfiction can be a form of escapism, ownership, and subverting exclusive cultural and societal narratives. When fans critically take up the original cultural materials, they  play in the “gaps and margins,” (Jenkins, 1992/2014, p. 372), “restorying” texts to push against exclusionary or violent narratives against marginalized groups (Thomas & Stornaiuolo, 2016). Fanfiction is not just about who and what are missing in popular culture, but carving out space for their stories.</p>
 
 {% endblock %}

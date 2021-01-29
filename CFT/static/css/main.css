@@ -346,14 +346,17 @@ iframe.visualizations {
     text-decoration: none;
     }
 
+.figure{
+  align-items: center;
+}
 
 .footer {
- position: fixed;
- bottom: 0px;
- right: 0px;
- width: 30%;
- background-color: #E9F6FB;
- color: #3885A3;
+  position: fixed;
+     left: 0;
+     bottom: 0;
+ width: 100%;
+ background-color: #d6d9e3;
+ color: black;
  text-align: right;
 }
 
@@ -605,6 +608,12 @@ color: white;
 
 
 /*Tables*/
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+}
+
 #interview-results {
   border-collapse: collapse;
   width: 100%;

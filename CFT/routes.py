@@ -67,9 +67,13 @@ def cfp_resources_instructors():
 def cfp_syllabus01():
     return  render_template('teaching/resources/cfp_syllabus.html', title='Critical Fan Research Methods Syllabus')
 
+@app.route("/teaching/resources/assignment-restoring-for-justice")
+def cfp_assignment_justice():
+    return  render_template('teaching/resources/assignment-restorying-for-justice.html', title='Assignment - Restorying for Justice')
+
 @app.route("/teaching/resources/activity-fandom-statistics")
 def cfp_activity_fanstats():
-    return  render_template('teaching/resources/activity-fandom-statistics.html', title='Teaching Activity - Fandom Statistics')
+    return  render_template('teaching/resources/activity-fandom-statistics.html', title='Activity - Fandom Statistics')
 
 @app.route("/about_dissertation/acknowledgements")
 def dis_acknowledgements():
