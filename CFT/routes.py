@@ -83,6 +83,10 @@ def dis_acknowledgements():
 def dis_about_cara():
     return  render_template('/about_dissertation/cara_marta_messina.html', title='About Cara Marta Messina')
 
+@app.route("/about_dissertation/research_ethics")
+def dis_ethics():
+    return  render_template('/about_dissertation/research_ethics.html', title='Research Ethics')
+
 @app.route("/about_dissertation/computational_essays")
 def dis_computational_essays():
     return  render_template('/about_dissertation/computational-essays.html', title='Computational Essays')
