@@ -536,10 +536,27 @@ color: white;
 .interview-grid > section >h2{
   font-weight: bold;
 }
+.interview-grid > section >h2 > a{
+  color: #320e3a;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.interview-grid > section >h2 > a:hover{
+  background-color: #320e3a;
+  color: white;
+}
+
 
 .interview-grid > section >p{
   font-size: 15px;
 }
+
 
 .interview-grid > section >ul >li{
   font-size: 13px;
@@ -559,7 +576,7 @@ color: white;
     cursor: pointer;
   }
 
-.interview-grid > section >a.button:hover {
+.interview-grid > section >a.button:hover, {
     color: white;
     }
 

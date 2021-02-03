@@ -11,6 +11,18 @@ from flask_login import login_user, current_user, logout_user, login_required
 def home():
     return render_template('home.html')
 
+@app.route("/homepath_teacher")
+def homepath_teacher():
+    return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
+
+@app.route("/homepath_fan")
+def homepath_fan():
+    return  render_template('homepath_fan.html', title='Path - Fan Users')
+
+@app.route("/homepath_scholar")
+def homepath_scholar():
+    return  render_template('homepath_scholar.html', title='Path - Scholar Users')
+
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
@@ -55,6 +67,11 @@ def ffd_tagging_practices():
 def teaching():
     return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
 
+@app.route("/homepath_teaching")
+def homepath_teaching():
+    return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
+
+
 @app.route("/teaching/about_cfp")
 def about_cfp():
     return  render_template('teaching/about_cfp.html', title='About Critical Fan Pedagogy')
@@ -74,6 +91,10 @@ def cfp_assignment_justice():
 @app.route("/teaching/resources/activity-fandom-statistics")
 def cfp_activity_fanstats():
     return  render_template('teaching/resources/activity-fandom-statistics.html', title='Activity - Fandom Statistics')
+
+@app.route("/about_dissertation/")
+def dis_home():
+    return  render_template('/about_dissertation/home.html', title='About this Dissertation')
 
 @app.route("/about_dissertation/acknowledgements")
 def dis_acknowledgements():

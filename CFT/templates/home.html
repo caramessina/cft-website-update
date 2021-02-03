@@ -9,10 +9,10 @@
 <p>The Critical Fan Toolkit (CFT) is a digital dissertation created by <a href="http://caramartamessina.com/" aria-labelledby="Link to Cara's website.">Cara Marta Messina</a> that explores and highlights critical fan practices, specifically fanfiction, for a diverse audience. Critical fans are fans of any cultural material or icon(s) who challenges or subverts systems of oppression–such as racism, misogyny, heteronormativity, homophobia, and ableism–through their everyday fan engagements, such as writing/reading fanfiction, posting on social media or forums, and creating fan art.</p>
 <p>This toolkit is a collection of resources designed for fans, teachers, and researchers who are invested in integrating critical fan practices into their online and in-person fan interactions, their teaching, and research. These resources include:</p>
 <ul>
-  <li>interactive <strong>data</strong> from <cite>Archive of Our Own</cite>,</li>
-  <li><strong>interviews</strong> from fans who implement critical practices into their everyday work,</li>
-  <li>media and fandom <strong>analysis posts</strong> for fans who want to continue investing in challenging systems of oppression,</li>
-  <li><strong>teaching</strong> materials.</li>
+  <li><a href="{{ url_for('ffd_numbers') }}">interactive data</a> from <cite>Archive of Our Own</cite>,</li>
+  <li><a href="{{ url_for('interviews') }}">interviews</a> from fans who implement critical practices into their everyday work,</li>
+  <li>media and fandom <a href="{{ url_for('bp_home') }}">case studies</a> on how fanfiction can challenge systems of oppression,</li>
+  <li><a href="{{ url_for('homepath_teacher') }}">teaching</a> materials.</li>
 </ul>
 </section>
 <br/>
@@ -49,25 +49,25 @@
 <br/>
 
 <section>
-<h2>Getting Started: Choose Your Path (Coming Soon)</h2>
-<p>Dissertations are typically written with an academic audience in mind. One of this dissertation's main goals, however, is to reach a wide audience, recognizing all those who may find this resource valuable. Below are three separate identities: fan, scholar, and teacher. The CFT is a resource for teachers, students, and fans alike. Because of the broad audience, each visitor may each have particular purposes for coming to this toolkit. You may be a fan interested in further developing your own critical practices; you may be a teacher interested in integrating critical fan pedagogy into your classroom; or you may be a researcher invested in fan studies, rhetoric/composition, or a similar discipline that analyzes fandom composing practices. </p>
-<p>These identities are not necessarily exclusive but each choice gives you a path to navigating this toolkit based on your particular position you most want to explore. You may be a scholar, teacher, and fan, so you can explore all the different paths. Even if you do not directly identify with one of these positions, you may still find these different paths relevant to your own position.
-</p>
-  <div class="home-grid-container">
-    <a href="#">
-      <h3>Fans (coming soon)</h3>
+<h2>Getting Started: Choose Your Path!</h2>
+<div class="home-grid-container">
+  <a href="{{ url_for('homepath_fan') }}">
+    <h3>Fans </h3>
+    <!--<p>Description</p>-->
+    </a>
+
+    <a href="{{ url_for('homepath_scholar') }}">
+      <h3>Scholars</h3>
       <!--<p>Description</p>-->
       </a>
 
-      <a href="#">
-        <h3>Scholars (coming soon)</h3>
-        <!--<p>Description</p>-->
+      <a href="{{ url_for('homepath_teacher') }}">
+        <h3>Teachers</h3>
         </a>
-
-        <a href="{{ url_for('teaching') }}">
-          <h3>Teachers</h3>
-          </a>
-    </div>
+  </div>
+<p>Dissertations are typically written with an academic audience in mind. One of this dissertation's main goals, however, is to reach a wide audience, recognizing all those who may find this resource valuable. Below are three separate identities: fan, scholar, and teacher. The CFT is a resource for teachers, students, and fans alike. Because of the broad audience, each visitor may each have particular purposes for coming to this toolkit. You may be a fan interested in further developing your own critical practices; you may be a teacher interested in integrating critical fan pedagogy into your classroom; or you may be a researcher invested in fan studies, rhetoric/composition, or a similar discipline that analyzes fandom composing practices. </p>
+<p>These identities are not necessarily exclusive but each choice gives you a path to navigating this toolkit based on your particular position you most want to explore. You may be a scholar, teacher, and fan, so you can explore all the different paths. Even if you do not directly identify with one of these positions, you may still find these different paths relevant to your own position.
+</p>
 </section>
 
 

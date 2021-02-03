@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>For Fans!</h1>
+<p>The goal of the Critical Fan Toolkit is to give back to the people and communities that have taught me so much about writing and how to analyze and critique the world. I invite you to explore as much as the CFT as you desire, and please feel free to email me with any questions.</p>
+
+<p>I created a "Glossary" in case you run against any theoretical terms you would like to see further or better defines. I also compiled some particularly interesting or useful pages of the CFT, though, that I encourage you to either begin with or come back to!</p>
+
+<div class="interview-grid">
+  <section>
+    <h2><a href="{{ url_for('dis_framework') }}">Framework</a></h2>
+  <p>This page concisely describes the theoretical frameworks I use to think through all steps of this project, from when I first imagined it to its final version, which you're currently navigating! I describe the overall theoretical frameworks I employ and how these theories work together. These theoretical frameworks I use are critical fan studies and rhetorical genre studies. </p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('ffd_numbers') }}">Fandom by Numbers</a></h2>
+  <p>The Fandom by Numbers section provides a bunch of different data visualizations that invite you to explore metadata practices in both <cite>Game of Thrones</cite> and <cite>The Legend of Korra</cite> fanfics. I analyze some of the visualizations, and I encourage you to also conduct your own analysis based on your familiarity with fanfiction and even GOT/TLOK fandoms!</p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('ffd_numbers') }}">Explore Interview Themes</a></h2>
+  <p>I interviewed six fanfiction authors from <cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> fandoms. On this page, you can search across all six of these interviews based on different themes. I chose these themes, such as how fans talk about a specific fanfic genre. For each theme, you can read a description of the theme, the fan quotes that match that theme, and my analysis of their perspectives.</p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('cfp_activity_fanstats') }}">Practice Fan Statistics</a></h2>
+  <p>Ever wanted to learn how to collect data and create charts? This activity follows recommendations from Destination Toast! and shows examples using AO3 data. There is also a step-by-step video on collecting data, putting it in a spreadsheet, and creating charts. This activity  may be used in a classroom or workshop space, but you can also do this activity on your own.</p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('ffd_numbers') }}">Case Studies</a></h2>
+  <p>The case studies are longer pieces of writing that examine data from a particular social justice practice in fanfiction writing. One case study examines how fans incorporate or do not incorporate Missandei from <cite>Game of Thrones</cite> and why. The other case study demonstrates how fans embrace queer gender and sexuality identities in <cite>The Legend of Korra</cite> fanfics. Each case study includes specific data and visualizations!</p>
+  </section>
+
+  <section>
+    <h2><a href="#">Tell me About Your Experience!</a></h2>
+  <p>(coming soon) I hope to use the CFT to invite fans to analyze data and celebrate the critical practices we include when participating in fandoms. This section is a brief survey that invites you to share your perpsectives either about CFT as a whole, your analysis of the data, and theoretical concepts. I invite you to use this space to write to me and potentially other fans. If I want to include your perspective anywhere, I will first ask your permission and give you credit.</p>
+  </section>
+</div>
+
+{% endblock %}

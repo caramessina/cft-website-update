@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>For Scholars</h1>
+<p>As a scholar, your interest in this project may vary. This page will provide a few options for you to begin with. Some of the options follow more traditional scholarship, such as the literature review and methods section. Other options invite you to both read about my analysis of data and analyze the data, yourself!</p>
+<h2>About this Dissertation</h2>
+<p>You may be most interested in the meta-work of research and project-building. For instance, you may want to learn about the methodology that drives this entire project, the other literature I am working with, and the processes I followed in my data collection and analysis. You may also be interested in learning how to adapt these methods in your own scholarship!</p>
+<p>The "<a href="{{ url_for('dis_home') }}">About this Dissertation</a>" portion of the CFT offers you a chance to dive into the literature/disciplines I work with, the methods I implement, my research ethics and commitments, and more.</p>
+
+<h2>Fandom by Numbers</h2>
+<p>The "<a href="{{ url_for('ffd_numbers') }}">Fandoms by Numbers</a>" section provides visualizations and brief analyses of the visualizations using the fanfiction data collected from <cite>Archive of Our Own</cite>. I invite you to both read my analysis as well as potentially come up with your own analysis!</p>
+
+<h2>Interviews with Fans</h2>
+<p>The "<a href="{{ url_for('interviews') }}">Interviews with Fans</a>" portion provides several layers of data and data analysis. There are the transcriptions from each interview with the codes I used to mark up these transcriptions; there is a "<a href="{{ url_for('interview_search') }}">Search Across Interviews</a>" section that provides a way to analyze themes across the interviews; then there are "<a href="{{ url_for('interview_viz') }}">Visualizations</a>" of the qualitative codes and a longer analysis.
+<p>What you may find important, too, is the "<a href="{{ url_for('interviews_qualitative_coding') }}">Qualitative Coding</a>" portion, which describes my qualitative coding process and also contains my codebook! This may be especially useful if you're interested in using XML in your own qualitative coding or would like to learn some of the basic, but important approaches for qualitative coding.</p>
+
+<h2>Case Studies</h2>
+<p>The "<a href="{{ url_for('bp_home') }}">Critical Fan Case Studies</a>" portion of the CFT provides descriptions of particular cases in <cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> fandoms and writing practices. These are longer pieces written for both academic and non-acdemic audiences.</p>
+
+<h2>Teaching Materials</h2>
+<p>If your scholarly interests intersect with your pedagogy, check out the "<a href="{{ url_for('teaching') }}">Teaching Materials</a>" portion, which provides a syllabus and a few activities to use in the classroom. I also describe "<a href="{{ url_for('about_cfp') }}">Critical Fan Pedagogy</a>" using popular pedagogues, such as bell hooks and Paulo Freire</p>
+
+{% endblock %}
