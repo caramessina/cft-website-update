@@ -2,22 +2,38 @@
 
 {% block body %}
 <h1>For Scholars</h1>
-<p>As a scholar, your interest in this project may vary. This page will provide a few options for you to begin with. Some of the options follow more traditional scholarship, such as the literature review and methods section. Other options invite you to both read about my analysis of data and analyze the data, yourself!</p>
-<h2>About this Dissertation</h2>
-<p>You may be most interested in the meta-work of research and project-building. For instance, you may want to learn about the methodology that drives this entire project, the other literature I am working with, and the processes I followed in my data collection and analysis. You may also be interested in learning how to adapt these methods in your own scholarship!</p>
-<p>The "<a href="{{ url_for('dis_home') }}">About this Dissertation</a>" portion of the CFT offers you a chance to dive into the literature/disciplines I work with, the methods I implement, my research ethics and commitments, and more.</p>
+<p>As a scholar, your interest in this project may vary. This page will provide a few options for you to begin with. Some of the options follow more traditional scholarship, such as the literature review and methods section. I created a "Glossary" in case you run against any theoretical or fan terms you would like to see further or better defines. Other options invite you to both read about my analysis of data and analyze the data, yourself!</p>
 
-<h2>Fandom by Numbers</h2>
-<p>The "<a href="{{ url_for('ffd_numbers') }}">Fandoms by Numbers</a>" section provides visualizations and brief analyses of the visualizations using the fanfiction data collected from <cite>Archive of Our Own</cite>. I invite you to both read my analysis as well as potentially come up with your own analysis!</p>
+<div class="interview-grid">
+  <section>
+    <h2><a href="{{ url_for('dis_home') }}">About this Dissertation</a></h2>
+  <p>This portion of the CFT offers the more conventional dissertation and scholarly forms. In this portion, I articulate my theoretical framework (critical fandoms and rhetorical genre studies); review the literature; describe my methods and methodology; commit to feminist research praxis; and more.
+  </section>
 
-<h2>Interviews with Fans</h2>
-<p>The "<a href="{{ url_for('interviews') }}">Interviews with Fans</a>" portion provides several layers of data and data analysis. There are the transcriptions from each interview with the codes I used to mark up these transcriptions; there is a "<a href="{{ url_for('interview_search') }}">Search Across Interviews</a>" section that provides a way to analyze themes across the interviews; then there are "<a href="{{ url_for('interview_viz') }}">Visualizations</a>" of the qualitative codes and a longer analysis.
-<p>What you may find important, too, is the "<a href="{{ url_for('interviews_qualitative_coding') }}">Qualitative Coding</a>" portion, which describes my qualitative coding process and also contains my codebook! This may be especially useful if you're interested in using XML in your own qualitative coding or would like to learn some of the basic, but important approaches for qualitative coding.</p>
+  <section>
+    <h2><a href="{{ url_for('ffd_numbers') }}">Fandom by Numbers</a></h2>
+  <p>This section provides interactive visualizations and brief analyses of the visualizations using the fanfiction data collected from <cite>Archive of Our Own</cite>. I mainly focus on metadata from AO3, particularly "Additional Tags," "Character," and "Relationship" metadata to trace community writing practices and ideology.</p>
+  </section>
 
-<h2>Case Studies</h2>
-<p>The "<a href="{{ url_for('bp_home') }}">Critical Fan Case Studies</a>" portion of the CFT provides descriptions of particular cases in <cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> fandoms and writing practices. These are longer pieces written for both academic and non-acdemic audiences.</p>
+  <section>
+    <h2><a href="{{ url_for('interviews') }}">Explore Interview Themes</a></h2>
+  <p>This portion provides several layers of data and data analysis. There are the transcriptions from each interview with the codes I used to mark up these transcriptions. You can also"<a href="{{ url_for('interview_search') }}">Search Across Interviews</a>" to analyze themes across the six interviews.</p>
+  </section>
 
-<h2>Teaching Materials</h2>
-<p>If your scholarly interests intersect with your pedagogy, check out the "<a href="{{ url_for('teaching') }}">Teaching Materials</a>" portion, which provides a syllabus and a few activities to use in the classroom. I also describe "<a href="{{ url_for('about_cfp') }}">Critical Fan Pedagogy</a>" using popular pedagogues, such as bell hooks and Paulo Freire</p>
+  <section>
+    <h2><a href="{{ url_for('interviews_qualitative_coding') }}">Qualitative Coding & Codebook</a></h2>
+  <p>I qualitatively coded all six of the interviews. This portion describes my qualitative coding process, a description of XML to qualitatively code, why I used XML, and also my codebook. I also have <a href="{{ url_for('interview_viz') }}">interactive adjacency and a correlation matrices</a> that represent the relationships between codes.</p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('bp_home') }}">Case Studies</a></h2>
+  <p>The case studies are longer pieces of writing that examine data from a particular social justice practice in fanfiction writing. One case study examines how fans incorporate or do not incorporate Missandei from <cite>Game of Thrones</cite> and why. The other case study demonstrates how fans embrace queer gender and sexuality identities in <cite>The Legend of Korra</cite> fanfics. These are longer pieces written for both academic and non-acdemic audiences.</p>
+  </section>
+
+  <section>
+    <h2><a href="{{ url_for('teaching') }}">Teaching Materials</a></h2>
+  <p>This portion intersects empirical research and pedagogy, as my research and teaching inform each other. I define "<a href="{{ url_for('about_cfp') }}">Critical Fan Pedagogy</a>" using popular pedagogues like bell hooks and Paulo Freire. I also offer different teaching materials, including a syllabus and several activities.</p>
+  </section>
+</div>
 
 {% endblock %}

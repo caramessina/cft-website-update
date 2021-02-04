@@ -355,7 +355,7 @@ iframe.visualizations {
      left: 0;
      bottom: 0;
  width: 100%;
- background-color: #d6d9e3;
+ background-color: #E7E9EF;
  color: black;
  text-align: right;
 }
@@ -538,6 +538,11 @@ color: white;
 }
 .interview-grid > section >h2 > a{
   color: #320e3a;
+  background-color: #C2C7D6;
+  /* color: #272838; */
+  width: auto;
+  border: 2px solid #272838;
+  width: 300px;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
@@ -548,8 +553,7 @@ color: white;
 }
 
 .interview-grid > section >h2 > a:hover{
-  background-color: #320e3a;
-  color: white;
+  background-color: #C8D9E5;
 }
 
 
