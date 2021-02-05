@@ -7,6 +7,7 @@ Important colors:
   LIGHT BLUE (for hovers and accents): #C8D9E5
   LIGHT LIGHT LAVENDER: #E7E9EF (very light lavender for interview grid)
   GREEN: #57A773
+  Link color, blue: 2F72B1;
  */
 
 
@@ -24,6 +25,16 @@ section{
   font-size: 17px; /* Increased text to enable scrolling */
   padding: 70px 0px;
   font-family: 'Lato', sans-serif;
+}
+
+p>a{
+  color: #2F72B1;
+  font-weight: bold;
+}
+
+li>a{
+  color: #2F72B1;
+  font-weight: bold;
 }
 
 article{
@@ -395,7 +406,9 @@ padding: 5px 10px 0px 20px;
 
 .home-grid-container > a{
   background-color: #d6d9e3;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #320e3a;
+  color: #320e3a;
 }
 
 .home-grid-container > a >h3{
