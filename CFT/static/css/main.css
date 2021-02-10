@@ -343,6 +343,26 @@ iframe.visualizations {
   text-decoration: none;
 }
 
+.viz-button{
+  background-color: #d6d9e3;
+  color: #272838;
+  width: 400px;
+  border: 2px solid #272838;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.viz-button:hover{
+  text-decoration: none;
+  color: #272838;
+  background: white;
+}
+
 .button-interview-search {
   background-color: #d6d9e3;
   color: #272838;
