@@ -115,7 +115,6 @@ li{
     z-index: 99997;
   }
 
-
   a.sidebutton {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -212,12 +211,28 @@ li{
      margin-top: -15px;
   }
 
-  .signin-div{
-      margin-top: 15px;
-      width: 150px;
+
+  a.engage{
+    border: none;
+    background-color: #320e3a;
+    color: #d6d9e3;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 150px;
+    border: 2px solid #320e3a;
+    cursor: pointer;
+        padding: 5px 5px 5px 5px;
+        margin-top: 2px;
   }
 
-  div>a.sign-in{
+  .engage:hover{
+    background-color: #d6d9e3;
+    color: #320e3a;
+  }
+
+  /* div>a.sign-in{
     color: #272838;
     float: center;
     padding: 5px 5px 5px 5px;
@@ -228,7 +243,7 @@ li{
     text-align: center;
     outline: auto 1px;
     font-family: "Poppins";
-  }
+  } */
 
   .path-button{
   background-color: #C2C7D6;
@@ -289,7 +304,8 @@ text-decoration: none;
   font-weight: bold;
 }
 
-.definition{
+
+.definition>p{
   padding: 2px 15px 20px 15px;
   font-size: 15px;
   text-align: left;

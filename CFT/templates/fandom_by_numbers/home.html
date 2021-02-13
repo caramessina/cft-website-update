@@ -3,27 +3,36 @@
 {% block body %}
 
 <h1>Fandoms by Numbers</h1>
-<p><cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> online fanfiction communities on <em>Archive of Our Own</em> are vastly different. The visualizations in this section offer glimpses into the different stories and ideologies embedded in the larger patterns across the published fanfics. Each visualization focuses around a particular point of metadata, or information input by each fanfic writer when they publish their texts on <cite>Archive of Our Own</cite>.</p>
-<p>You can learn more about the "<a href="{{url_for('dis_methods')}}">Methods</a>" used to collect, analyze, and visualize  the data as well as read the "<a href="{{url_for('dis_computational_essays')}}">Computational Essays</a>" that provide documentation about how I transformed the data. Visit the <a href="{{url_for('ffd_numbers_analysis')}}">in-depth analysis</a> for a screen-reader friendly write up.</p>
+<p><cite>The Legend of Korra</cite> and <cite>Game of Thrones</cite> online fanfiction communities on <em>Archive of Our Own</em> are vastly different. The visualizations in this section offer glimpses into the different stories and ideologies embedded in the larger patterns across the published fanfics. Each visualization focuses around a particular point of metadata, or information input by each fanfic writer when they publish their texts on <cite>Archive of Our Own</cite>. The visualizations themselves are not screen reader friendly, so each visualization has a detailed description paired along with it foor screen readers.</p>
 
 <center>
   <h2>TLOK Fanfiction "Additional Tags" Network Graph</h2>
-<iframe src="{{url_for('static', filename='visualizations/network_graph_korra.html')}}" width="" height=""></iframe>
-</center>
-<p>This network graph visualizes the most frequent TLOK fanfiction "Additional Tags" that are paired together. If an additional tag appears with another tag more than 15 times, both are mapped on the graph with lines (edges) drawn between them, depicting that they were used together. This network and the clusters visualized demonstrate how fan authors create and establish community and community practices using additional tags. You can analyze the graph or
-<a data-toggle="collapse" href="#NA-TLOK" role="button" aria-expanded="false" aria-controls="collapseExample">
-    read my analysis of the network graph.
-    </a></p>
-  <div class="collapse" id="NA-TLOK">
-<p>There are additional tags that are connected frequently to other tags, demonstrating their centrality in the network. These tags, including "fluff" and "angst," are the most frequently used and appear at the center of the main cluster. They connect to each other as well as other tags. There is also the "Alternate Universe - Modern Setting," which also appears frequently with other tags. Specifically, this tag branches off and is often connected to similar "Alternate Universe" tags, including "College/University," "No Bending," and "High school."</p>
-<p>There are also clusters of additional tags that appear together more frequently than other tags. For instance, the triangle cluster on the left side of the graph shows that 'multiverse', 'crossover', and 'multiple crossovers' are used together often. Each tag has its own purpose, as crossover suggests one or more crossovers, while multiple crossovers mean there are definitely more than one crossover. Fan authors may use tags together as potential readers may search multiple types of tags.</p>
-<p>There is also a branch off "smut" (which is the fan term for explicit sex) that leads to additional tags with specific sexual acts. "Oral sex" is centered within these tags, suggesting that in these different sexual scenes, usually between Korrasami since they are the most-used ship, center around oral pleasure. What makes this so important is that women's sexual pleasure is often overlooked in popular culture; oral sex, specifically between two women characters, focuses specifically on women's pleasure.</p>
-</div>
+  <p>For screen readers, <a href="#networkDescription">skip the visualization to read the description</a>.</p>
+  <iframe src="{{url_for('static', filename='visualizations/network_graph_korra.html')}}" width="" height=""></iframe>
+  </center>
+
+
+  <hr id="networkDescription">
+  <p>This network graph visualizes the most frequent TLOK fanfiction "Additional Tags" that are paired together. If an additional tag appears with another tag more than 15 times, both are mapped on the graph with lines (edges) drawn between them, depicting that they were used together. This network and the clusters visualized demonstrate how fan authors create and establish community and community practices using additional tags. You can analyze the graph yourself or <a data-toggle="collapse" href="#NA-TLOK" role="button" aria-expanded="false" aria-controls="collapseExample">click to read a detailed description of the network analysis.</a> </p>
+    <div class="collapse" id="NA-TLOK">
+  <p>There are additional tags that are connected frequently to other tags, demonstrating their centrality in the network. These tags, including "fluff" and "angst," are the most frequently used and appear at the center of the main cluster. They connect to each other as well as other tags. There is also the "Alternate Universe - Modern Setting," which also appears frequently with other tags. Specifically, this tag branches off and is often connected to similar "Alternate Universe" tags, including "College/University," "No Bending," and "High school."</p>
+  <p>There are also clusters of additional tags that appear together more frequently than other tags. For instance, the triangle cluster on the left side of the graph shows that 'multiverse', 'crossover', and 'multiple crossovers' are used together often. Each tag has its own purpose, as crossover suggests one or more crossovers, while multiple crossovers mean there are definitely more than one crossover. Fan authors may use tags together as potential readers may search multiple types of tags.</p>
+  <p>There is also a branch off "smut" (which is the fan term for explicit sex) that leads to additional tags with specific sexual acts. "Oral sex" is centered within these tags, suggesting that in these different sexual scenes, usually between Korrasami since they are the most-used ship, center around oral pleasure. What makes this so important is that women's sexual pleasure is often overlooked in popular culture; oral sex, specifically between two women characters, focuses specifically on women's pleasure.</p>
+  </div>
+
 
 <center>
 <h2>Other Visualizations</h2>
 <a class="viz-button" href="{{ url_for('ffd_numbers_got') }}">Game of Thrones</a>
 <a class="viz-button" href="{{url_for('ffd_numbers_tlok') }}">The Legend of Korra</a>
 </center>
+
+<h2>Want to Learn More?</h2>
+<p>This project provides several different ways to approach this section, including providing step-by-step documentation on how to engage with and transform AO3 data. To learn more, read these sections:</p>
+  <ul>
+     <li><a href="{{url_for('dis_methods')}}">Methods for Collection, Analysis and Visualizing</a>: Read the methods section of the CFT for a full understanding of the methods used for this dissertation, including my choices for creating these visualizations.</li>
+     <li><a href="{{url_for('dis_computational_essays')}}">The Coding Process with Computational Essays</a>: These computational essays provide all the codes used to transform and visualize data as well as basic documentation to help guide other people interested in working with similar datasets.
+    <li><a href="{{url_for('ffd_numbers_analysis')}}">In-Depth Analysis of Fandom by Numbers</a>: While each visualization provides textual arguments to demonstrate what they show, this in-depth analysis goes a bit more into comparing the different data results.
+   </ul>
 
 {% endblock %}

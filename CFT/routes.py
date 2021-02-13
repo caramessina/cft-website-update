@@ -27,6 +27,10 @@ def homepath_scholar():
 def about():
     return render_template('about.html', title='About')
 
+@app.route("/cite")
+def cite():
+    return render_template('cite.html', title='How to Cite the Critical Fan Toolkit')
+
 @app.route("/case_studies/korrasami_canon")
 def bp_korrasami():
     return render_template('case_studies/korrasami_canon.html', title='Power and Agency')
