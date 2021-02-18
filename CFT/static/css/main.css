@@ -842,3 +842,55 @@ a.article-title:hover {
 .epigraph>p>cite{
   font-style: normal;
 }
+.card-container {
+  display: flex;
+  max-width: 100%;
+  display: flex;
+   justify-content: center;
+   /* You can set flex-wrap and
+      flex-direction individually */
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* Or do it all in one line
+     with flex flow */
+   flex-flow: row wrap;
+   /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+   align-content: flex-end;
+   border: none;
+}
+
+
+.card {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: content-box;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: none;
+}
+
+    .card .img-top {
+        display: none;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+       .card .img-bott {
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+    }

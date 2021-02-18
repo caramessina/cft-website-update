@@ -92,6 +92,11 @@ def cfp_syllabus01():
 def cfp_assignment_justice():
     return  render_template('teaching/resources/assignment-restorying-for-justice.html', title='Assignment - Restorying for Justice')
 
+@app.route("/teaching/resources/research-project")
+def cfp_assignment_research():
+    return  render_template('teaching/resources/research_project.html', title='Assignment - Restorying for Justice')
+
+
 @app.route("/teaching/resources/activity-fandom-statistics")
 def cfp_activity_fanstats():
     return  render_template('teaching/resources/activity-fandom-statistics.html', title='Activity - Fandom Statistics')
