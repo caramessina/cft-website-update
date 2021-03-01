@@ -7,7 +7,14 @@ Important colors:
   LIGHT BLUE (for hovers and accents): #C8D9E5
   LIGHT LIGHT LAVENDER: #E7E9EF (very light lavender for interview grid)
   GREEN: #57A773
+  light grey: d6d9e3
   Link color, blue: 2F72B1;
+ */
+ /*
+NEW COLORS:
+  top nav: 320e3a to 564787
+  dark purple outline: 320e3a
+LIGHT BLUE (for hovers and accents): #C8D9E5
  */
 
 
@@ -161,8 +168,8 @@ li{
   }
 
   div>a.sign-in:hover, .path-button:hover, .sidebar-gloss>button.closebtnGloss:hover,  .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
-    color: #C2C7D6;
-    background-color: #320e3a;
+    color: #320e3a;
+    background-color: #C8D9E5;
     text-decoration: none;
   }
 
@@ -228,7 +235,7 @@ li{
   }
 
   .engage:hover{
-    background-color: #d6d9e3;
+    background-color: #C8D9E5;
     color: #320e3a;
   }
 
@@ -346,10 +353,10 @@ iframe.visualizations {
 
 /* button stuff */
 .button{
-  background-color: #d6d9e3;
+  background-color: #320e3a;
   color: #272838;
   width: auto;
-  border: 2px solid #272838;
+  border: 2px solid #320e3a;
   padding: 10px 15px;
   text-align: center;
   display: inline-block;
@@ -375,8 +382,8 @@ iframe.visualizations {
 
 .viz-button:hover{
   text-decoration: none;
-  color: #272838;
-  background: white;
+  color: #320e3a;
+  background: #C8D9E5;
 }
 
 .button-interview-search {
@@ -405,8 +412,8 @@ iframe.visualizations {
 
   .button:hover, .button-interview-search:hover {
     background-color: #C8D9E5;
-    color: #272838;
-    border: 2px solid #272838;
+    color: #320e3a;
+    border: 2px solid #320e3a;
     text-decoration: none;
     }
 
@@ -534,9 +541,9 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button{
-  background-color: #272838;
-  color: white;
-  border: 2px solid #d6d9e3;
+  background-color: #320e3a;
+  color: #d6d9e3;
+  border: 2px solid #320e3a;
   padding: 10px 15px;
   text-align: center;
   display: inline-block;
@@ -546,7 +553,9 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button:hover {
-color: white;
+color: #320e3a;
+background-color: #C8D9E5;
+border: 2px solid #320e3a;
   }
 
 /*Interviews*/
@@ -607,7 +616,7 @@ color: white;
   background-color: #C2C7D6;
   /* color: #272838; */
   width: auto;
-  border: 2px solid #272838;
+  border: 2px solid #320e3a;
   width: 300px;
   padding: 10px 15px;
   text-align: center;
@@ -635,9 +644,9 @@ color: white;
 
 
 .interview-grid > section >a.button{
-    background-color: #272838;
+    background-color: #320e3a;
     color: #d6d9e3;
-    border: 2px solid #d6d9e3;
+    border: 2px solid #320e3a;
     padding: 10px 15px;
     text-align: center;
     display: inline-block;
@@ -646,8 +655,9 @@ color: white;
     cursor: pointer;
   }
 
-.interview-grid > section >a.button:hover, {
-    color: white;
+.interview-grid > section >a.button:hover {
+    color: #320e3a;
+    background-color: #C8D9E5;
     }
 
                     .popup {
@@ -723,8 +733,8 @@ table, th, td {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: justify;
-  background-color: #C8D9E5;
-  color: white;
+  background-color: #320e3a;
+  color: #d6d9e3;
 }
 
 .interview-search {
