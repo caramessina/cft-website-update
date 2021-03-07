@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm, Form
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from CFT.models import User
+from CFT.models import User, WebText
 
 class SearchForm(FlaskForm):
     searchTerm = StringField('Search Term', validators=[DataRequired()])

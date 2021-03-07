@@ -4,7 +4,10 @@
 
 <h1 align="center">Qualitative Coding Visualizations</h1>
 
-<p>These two visualizations represent an adjacency matrix and a correlation matrix across the different qualitative codes used to mark up the interviews. The code for creating these visualizations using the XML-encoded interview transcripts is available in the<a href={{url_for('dis_computational_essays_XML')}}>XML Parser Computational Notebook</a></p>
+<p>These two visualizations represent an adjacency matrix and a correlation matrix across the different qualitative codes used to mark up the interviews. The analysis of this visualization is available on the "<a href="{{ url_for('interview_analysis') }}">Interview Analysis: Fan Authors' Perspectives of Fandom Politics, Genres, and their Uptakes</a>" section. The below visualization is not screen-reader friendly, but the analysis is!</p> 
 
 <iframe class="visualizations" src="{{url_for('static', filename='visualizations/correlation_and_cooccurrence.html')}}"></iframe>
+
+<p>The code for creating these visualizations using the XML-encoded interview transcripts is available in the<a href={{url_for('dis_computational_essays_XML')}}>XML Parser Computational Notebook</a></p>
+
 {% endblock %}

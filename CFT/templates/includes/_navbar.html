@@ -26,21 +26,18 @@ The Critical Fan Toolkit</a>
   <a href="{{ url_for('bibliography') }}" class="sidebutton">Bibliography</a>
 <br>
 <center>
-  <a class="engage" href="https://docs.google.com/forms/d/e/1FAIpQLScwGqiubQVqV3IapQmGdz3oDcDZRntaXNqEAhNO7KVbrPP8iA/viewform" >Give feedback</a>
-  <a class="engage" href="https://forms.gle/bugZCxuMsp6uymsX6">Guestbook</a>
-  <a class="engage" href="{{ url_for('cite') }}" >How to Cite</a>
-</center>
-<!-- <center>
 <div class="signin-div">
     {% if current_user.is_authenticated %}
-    <a href="{{ url_for('logout') }}" class="sign-in">Logout</a>
-    <a href="{{ url_for('dashboard') }}" class="sign-in">Dashboard</a>
+    <a href="{{ url_for('logout') }}" class="engage">Logout</a>
+    <a href="{{ url_for('dashboard') }}" class="engage">Dashboard</a>
     {% else %}
-    <a href="{{ url_for('login') }}" class="sign-in">Login</a>
-    <a href="{{ url_for('register') }}" class="sign-in">Register</a>
+    <a href="{{ url_for('login') }}" class="engage">Login</a>
+    <a href="{{ url_for('register') }}" class="engage">Register</a>
     {% endif %}
 </div>
-</center> -->
+<hr>
+  <a class="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLScwGqiubQVqV3IapQmGdz3oDcDZRntaXNqEAhNO7KVbrPP8iA/viewform">Give feedback</a>
+</center>
 
 <div id="glossary" class="glossary"></div>
 

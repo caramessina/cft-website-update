@@ -17,8 +17,6 @@ NEW COLORS:
 LIGHT BLUE (for hovers and accents): #C8D9E5
  */
 
-
-
   */
 section{
   padding-bottom: 5px;
@@ -61,6 +59,15 @@ article{
 h2 {
  font-family: 'Lato', bold;
  font-size: 25px;
+  }
+
+  h2::before, h3::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   h3 {
@@ -167,7 +174,7 @@ li{
     border-style: solid 2px;
   }
 
-  div>a.sign-in:hover, .path-button:hover, .sidebar-gloss>button.closebtnGloss:hover,  .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
+    .path-button:hover, .sidebar-gloss>button.closebtnGloss:hover,  .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
     color: #320e3a;
     background-color: #C8D9E5;
     text-decoration: none;
@@ -234,23 +241,31 @@ li{
         margin-top: 2px;
   }
 
+  a.feedback{
+    border: none;
+    background-color: #d6d9e3;
+    color: #320e3a;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 200px;
+    border: 2px solid #320e3a;
+    cursor: pointer;
+        padding: 5px 5px 5px 5px;
+        margin-top: 2px;
+  }
+
   .engage:hover{
     background-color: #C8D9E5;
     color: #320e3a;
   }
 
-  /* div>a.sign-in{
-    color: #272838;
-    float: center;
-    padding: 5px 5px 5px 5px;
-    margin-top: 5px;
-    text-decoration: none;
-    background-color: #d6d9e3;
-    font-size: 15px;
-    text-align: center;
-    outline: auto 1px;
-    font-family: "Poppins";
-  } */
+  .feedback:hover{
+    background-color: #320e3a;
+    color: #C8D9E5;
+  }
+
 
   .path-button{
   background-color: #C2C7D6;
@@ -437,7 +452,7 @@ color: #4424D6;
 }
 
 .footer p {
-font-size:10px;
+font-size:12px;
 padding: 5px 10px 0px 20px;
 }
 
