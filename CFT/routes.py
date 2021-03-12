@@ -31,6 +31,7 @@ def about():
 def cite():
     return render_template('cite.html', title='How to Cite the Critical Fan Toolkit')
 
+##############CASE STUDIES################
 @app.route("/case_studies/korrasami_canon")
 def bp_korrasami():
     return render_template('case_studies/korrasami_canon.html', title='Power and Agency')
@@ -43,6 +44,7 @@ def bp_missandei():
 def bp_home():
     return render_template('case_studies/home.html', title='Critical Fan Snippets')
 
+##############FANDOM BY NUMBERS################
 @app.route("/fandom_by_numbers/")
 def ffd_numbers():
     return render_template('/fandom_by_numbers/home.html', title='Fandom by Numbers')
@@ -67,6 +69,7 @@ def ffd_genre():
 def ffd_tagging_practices():
     return  render_template('fanfic_data/tagging_practices.html', title='Tagging Communities')
 
+##############TEACHING RESOURCES################
 @app.route("/teaching")
 def teaching():
     return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
@@ -74,7 +77,6 @@ def teaching():
 @app.route("/homepath_teaching")
 def homepath_teaching():
     return  render_template('teaching/home.html', title='Critical Fan Pedagogy')
-
 
 @app.route("/teaching/about_cfp")
 def about_cfp():
@@ -96,14 +98,19 @@ def cfp_assignment_justice():
 def cfp_assignment_research():
     return  render_template('teaching/resources/research_project.html', title='Assignment - Restorying for Justice')
 
-
 @app.route("/teaching/resources/activity-fandom-statistics")
 def cfp_activity_fanstats():
     return  render_template('teaching/resources/activity-fandom-statistics.html', title='Activity - Fandom Statistics')
 
+##############ABOUT DISSERTATION################
+
 @app.route("/about_dissertation/")
 def dis_home():
     return  render_template('/about_dissertation/home.html', title='About this Dissertation')
+
+@app.route("/about_dissertation/abstract")
+def dis_abstract():
+    return  render_template('/about_dissertation/abstract.html', title='Dissertation Abstract')
 
 @app.route("/about_dissertation/acknowledgements")
 def dis_acknowledgements():
@@ -112,6 +119,10 @@ def dis_acknowledgements():
 @app.route("/about_dissertation/cara_marta_messina")
 def dis_about_cara():
     return  render_template('/about_dissertation/cara_marta_messina.html', title='About Cara Marta Messina')
+
+@app.route("/about_dissertation/implications")
+def dis_implications():
+    return  render_template('/about_dissertation/implications.html', title='Dissertation Implications')
 
 @app.route("/about_dissertation/research_ethics")
 def dis_ethics():
@@ -161,6 +172,7 @@ def dis_methods():
 def bibliography():
     return  render_template('/bibliography.html', title='Bilbiography')
 
+##############INTERVIEWS#############
 @app.route('/interviews')
 def interviews():
     return render_template('interviews/home.html', tite='Interviews')
@@ -204,7 +216,6 @@ def interview_valk():
 @app.route('/interviews/aria')
 def interview_aria():
     return render_template('interviews/aria-interview-transcription.html', tite='Interview - Aria')
-
 
 ##############SEARCHES#############
 @app.route("/search", methods=['GET', 'POST'])
