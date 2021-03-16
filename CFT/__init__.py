@@ -9,7 +9,7 @@ app = Flask(__name__) #placeholder for current module
 app.config['SECRET_KEY'] = 'iHateMyLife1960FUUUUCK'
 
 #pointing to the SQL databse within the files
-app.config['DATABASE_URL'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
