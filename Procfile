@@ -1,1 +1,1 @@
-web: gunicorn cft-website-update.wsgi
+web: gunicorn run:app
