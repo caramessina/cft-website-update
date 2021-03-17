@@ -10,13 +10,23 @@ Important colors:
   light grey: d6d9e3
   Link color, blue: 2F72B1;
  */
- /*
-NEW COLORS:
-  top nav: 320e3a to 564787
-  dark purple outline: 320e3a
-LIGHT BLUE (for hovers and accents): #C8D9E5
- */
 
+/* --------------ALYSSA'S COLOR SUGGESTIONS------------- */
+/*
+TOP NAV, PURPLE: #320e3a -> #493d7c
+OUTLINES (DARKER PURPLE -> BLUE): #C2C7D6 -> #0D3268
+  TOP NAV HOVER: #6b5470 -> #A1A1D6 (ligher purple)
+  BUTTONS (Green): #C2C7D6 -> #2F6375
+  PATHS (pink): #7C3874 and lighter #F7E4F7
+  LIGHT BLUE (for hovers and accents): #C8D9E5 -> C1D5E5
+LIGHT LIGHT LAVENDER: #E7E9EF (very light lavender for interview grid & footer)
+light grey: d6d9e3
+Link color, blue: 2F72B1 -> 2F6375
+
+*/
+
+
+/* --------------MAIN------------- */
   */
 section{
   padding-bottom: 5px;
@@ -32,13 +42,13 @@ section{
   font-family: 'Lato', sans-serif;
 }
 
-p>a{
-  color: #2F72B1;
+p>a, li>a, em>a, cite>a, a>cite{
+  color: #2F6375;
   font-weight: bold;
 }
 
 li>a{
-  color: #2F72B1;
+  color: #2F6375;
   font-weight: bold;
 }
 
@@ -73,7 +83,7 @@ h2 {
   h3 {
  font-family: 'Lato', bold, italic;
  text-align: left;
- font-size: 19px;
+ font-size: 20px;
  font-weight: bold;
   }
 
@@ -81,24 +91,29 @@ h2 {
     font-family: 'Lato';
     padding: 2px;
     text-align: justify;
-    font-size: 19px;
+    font-size: 20px;
     text-justify: inter-word;
   }
 
 figure{
   padding: 10px 15% 10px 15%;
   text-align: center;
+  align-items: center;
 }
 figure>img{
   display: block;
    margin: 0 auto;
 }
 
+.figure{
+  align-items: center;
+}
+
 li{
   text-align: justify;
   list-style-position: inside;
   font-family: 'Lato';
-  font-size: 18px;
+  font-size: 19px;
   margin-left: -20px;
   padding: 1px;
   }
@@ -107,6 +122,35 @@ li{
     font-family: 'Lato';
     font-size: 18px;
   }
+
+  /* --------------TOP NAV------------- */
+
+  .topnav {
+    overflow: hidden;
+    background-color:#0D3268;
+    width: 100%;
+    height:50px;
+    position: fixed;
+    z-index: 99999;
+  }
+
+  a.header {
+    color: white;
+    font-size: 33px;
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: -5px;
+    text-decoration: none;
+    font-family: "Garamond", serif;
+  }
+
+  .logo {
+     height: 40px;
+     margin-top: -5px;
+  }
+
+
+  /* --------------SIDEBAR------------- */
 
   .sidebar {
     height: 100%;
@@ -174,9 +218,9 @@ li{
     border-style: solid 2px;
   }
 
-    .path-button:hover, .sidebar-gloss>button.closebtnGloss:hover,  .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
-    color: #320e3a;
-    background-color: #C8D9E5;
+    .sidebar-gloss>button.closebtnGloss:hover,  .dropdown-container>a:hover, .sidebutton:hover, button.dropdown-btn:hover, .sidebar>button.closebtn:hover{
+    color: #2F6375;
+    background-color: #C1D5E5;
     text-decoration: none;
   }
 
@@ -200,92 +244,71 @@ li{
     text-align: left;
   }
 
-/* TOP NAV */
-  .topnav {
-    overflow: hidden;
-    background-color:#320e3a;
-    width: 100%;
-    height:50px;
-    position: fixed;
-    z-index: 99999;
-  }
-
-  a.header {
-    color: white;
-    font-size: 40px;
-    margin-left: 220px;
-    padding: 12px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Tangerine";
-  }
-
-  .logo {
-     height: 40px;
-     margin-top: -15px;
-  }
-
-
   a.engage{
     border: none;
-    background-color: #320e3a;
-    color: #d6d9e3;
+    background-color: #0D3268;
+    color: WHITE;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     width: 150px;
-    border: 2px solid #320e3a;
-    cursor: pointer;
-        padding: 5px 5px 5px 5px;
-        margin-top: 2px;
-  }
-
-  a.feedback{
-    border: none;
-    background-color: #d6d9e3;
-    color: #320e3a;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    width: 200px;
-    border: 2px solid #320e3a;
+    border: 2px solid #0D3268;
     cursor: pointer;
         padding: 5px 5px 5px 5px;
         margin-top: 2px;
   }
 
   .engage:hover{
-    background-color: #C8D9E5;
-    color: #320e3a;
+    background-color: #C1D5E5;
+    color: #0D3268;
+  }
+
+  a.feedback{
+    border: none;
+    background-color: #d6d9e3;
+    color: #0D3268;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 200px;
+    border: 2px solid #0D3268;
+    cursor: pointer;
+        padding: 5px 5px 5px 5px;
+        margin-top: 2px;
   }
 
   .feedback:hover{
-    background-color: #320e3a;
-    color: #C8D9E5;
+    background-color: #0D3268;
+    color: #C1D5E5;
   }
 
-
   .path-button{
-  background-color: #C2C7D6;
+  background-color: #493D7C;
   border: none;
-  color: #320e3a;
+  color: WHITE;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   width: 100px;
-  border: 2px solid #320e3a;
+  border: 2px solid #493D7C;
   cursor: pointer;
   border-radius: 50%;
   }
 
+  .path-button:hover{
+    background-color: #C9C9E2;
+    border: 2px solid #493D7C;
+    color: #493D7C;
+      text-decoration: none;
+  }
   .openbtn {
   font-size: 18px;
   cursor: pointer;
-  background-color: #320e3a;
+  background-color: #0D3268;
   color: white;
   padding: 12px 15px;
   border: none;
@@ -297,7 +320,7 @@ li{
 .openbtnGloss {
 font-size: 18px;
 cursor: pointer;
-background-color: #320e3a;
+background-color: #0D3268;
 color: white;
 margin-left: 100px;
 padding: 12px 15px;
@@ -309,47 +332,9 @@ text-decoration: none;
 }
 
   .openbtn:hover, .openbtnGloss:hover, .topnav>a.header:hover{
-  background-color: #6b5470;
+  background-color: #779BBf;
   text-decoration: none;
   border: none;
-}
-
-.definitionButton{
-  color: #272838;
-  width: 300px;
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
-.definition>p{
-  padding: 2px 15px 20px 15px;
-  font-size: 15px;
-  text-align: left;
-}
-
-a.definitionButton:hover{
-  background-color: #C8D9E5;
-  color: #272838;
-  text-decoration: none;
-}
-
-/* iFrame stuff */
-iframe {
-    width: 1050px;
-    height: 500px;
-    border: none;
-}
-
-iframe.visualizations {
-    width: 1000px;
-    height: 900px;
-    border: none;
 }
 
 .sidebar>p>.button{
@@ -366,12 +351,73 @@ iframe.visualizations {
   text-decoration: none;
 }
 
-/* button stuff */
-.button{
-  background-color: #320e3a;
-  color: #d6d9e3;
+/* ---------------GLOSSARY---------------- */
+div.sidebar-gloss>p>a.button{
+  background-color: #2F6375;
+  color: #D3EDEF;
   width: auto;
-  border: 2px solid #320e3a;
+  border: 2px solid #2F6375;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div.sidebar-gloss>p>a.button:hover{
+  background-color: #D3EDEF;
+  color: #2F6375;
+  border: 2px solid #2F6375;
+  text-decoration: none;
+}
+
+.definitionButton{
+  color: #272838;
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.definition>p{
+  padding: 2px 15px 20px 15px;
+  font-size: 15px;
+  text-align: left;
+}
+
+a.definitionButton:hover{
+  background-color: #D3EDEF;
+  color: #272838;
+  text-decoration: none;
+}
+
+/* ---------------IFRAME---------------- */
+iframe {
+    width: 1050px;
+    height: 500px;
+    border: none;
+}
+
+iframe.visualizations {
+    width: 1000px;
+    height: 900px;
+    border: none;
+}
+
+
+/* ---------------BUTTONS---------------- */
+.button{
+  background-color: #2F6375;
+  color: #D3EDEF;
+  width: auto;
+  border: 2px solid #2F6375;
   padding: 10px 15px;
   text-align: center;
   display: inline-block;
@@ -382,10 +428,10 @@ iframe.visualizations {
 }
 
 .viz-button{
-  background-color: #d6d9e3;
-  color: #272838;
+  background-color: #2F6375;
+  color: #D3EDEF;
   width: 400px;
-  border: 2px solid #272838;
+  border: 2px solid #2F6375;
   padding: 10px 15px;
   text-align: center;
   font-size: 20px;
@@ -397,44 +443,19 @@ iframe.visualizations {
 
 .viz-button:hover{
   text-decoration: none;
-  color: #320e3a;
-  background: #C8D9E5;
+  color: #2F6375;
+  background-color: #D3EDEF;
 }
 
-.button-interview-search {
-  background-color: #d6d9e3;
-  color: #272838;
-  border: 2px solid #272838;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
-  margin: 0px 2px 0px 2px;
-  cursor: pointer;
-  text-decoration: none;
-  }
-
-  .buttonInterview {
-    background-color: #E8E8E8;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    margin: 2px 2px;
-    cursor: pointer;
-    }
-
-
-  .button:hover, .button-interview-search:hover {
-    background-color: #C8D9E5;
-    color: #320e3a;
-    border: 2px solid #320e3a;
+  .button:hover {
+    background-color: #D3EDEF;
+    color: #2F6375;
+    border: 2px solid #2F6375;
     text-decoration: none;
     }
 
-.figure{
-  align-items: center;
-}
+
+/* ---------------FOOTER---------------- */
 
 .footer {
   position: fixed;
@@ -448,13 +469,16 @@ iframe.visualizations {
 
 
 .footer a {
-color: #4424D6;
+color: #0D3268;
+font-size:13px;
 }
 
 .footer p {
-font-size:12px;
+font-size:13px;
 padding: 5px 10px 0px 20px;
 }
+
+/* ---------------HOME GRID---------------- */
 
 .home-grid-container {
   display: grid;
@@ -463,23 +487,22 @@ padding: 5px 10px 0px 20px;
 }
 
 .home-grid-container > a{
-  background-color: #d6d9e3;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid #320e3a;
-  color: #320e3a;
+  background-color: #493d7c;
+  padding: 10px 10px 5px 10px;
+  border: 2px solid #493d7c;
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
-.home-grid-container > a >h3{
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-}
 
 .home-grid-container >a:hover{
-  background-color: #C8D9E5;
+  background-color: #C9C9E2;
   text-decoration: none;
+  color: #493d7c;
 }
+
+/* ---------------CAROUSEL (DON'T USE ANYMORE)---------------- */
 
 .carousel{
   width: 900px;
@@ -528,19 +551,19 @@ padding: 5px 10px 0px 20px;
 }
 
 
-/*Teaching Materials*/
+/* ---------------TEACHING MATERIALS---------------- */
 .teaching-grid{
   display: grid;
   width: auto;
   grid-column-gap: 20px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
 }
 
 .teaching-grid > section{
-background-color: #d6d9e3;
+background-color: #e9f0f2;
 padding: 10px;
-border: 2px solid #320E3B;
+border: 2px solid #2F6375;
 text-align: center;
 width: auto;
 }
@@ -556,9 +579,9 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button{
-  background-color: #320e3a;
-  color: #d6d9e3;
-  border: 2px solid #320e3a;
+  background-color: #2F6375;
+  color: #e9f0f2;
+  border: 2px solid #2F6375;
   padding: 10px 15px;
   text-align: center;
   display: inline-block;
@@ -568,12 +591,12 @@ text-align: center;
 }
 
 .teaching-grid > section >a.button:hover {
-color: #320e3a;
-background-color: #C8D9E5;
-border: 2px solid #320e3a;
+color: #2F6375;
+background-color: #e9f0f2;
+border: 2px solid #2F6375;
   }
 
-/*Interviews*/
+  /* ---------------INTERVIEW HOMEPAGE---------------- */
 .interview-home-grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -581,34 +604,23 @@ border: 2px solid #320e3a;
 }
 
 .interview-home-grid-container > a{
-  background-color: #d6d9e3;
-  padding: 10px 10px 20px 10px;
-}
-
-.interview-home-grid-container > a >h3{
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+  background-color: #493D7C;
+  padding: 10px 10px 10px 10px;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid #493D7C;
 }
 
 .interview-home-grid-container >a:hover{
-  background-color: #C8D9E5;
+  background-color: #C9C9E2;
+  color: #493D7C;
   text-decoration: none;
+  border: 2px solid #493D7C;
 }
 
-
-/* Popup container */
-  .code{
-    font-weight: bold;
-    color: #320E3B;
-  }
-
-  .power-identity {
-      text-decoration: underline;
-  }
-
-  .interview-grid{
+.interview-grid{
     display: grid;
     grid-row-gap: 12px;
     grid-column-gap: 12px;
@@ -620,48 +632,26 @@ border: 2px solid #320e3a;
   background-color: #E7E9EF;
   padding: 5px;
   text-align: center;
-  border: 2px solid #272838;
+  border: 2px solid #493D7C;
 }
 
 .interview-grid > section >h2{
   font-weight: bold;
 }
-.interview-grid > section >h2 > a{
-  color: #320e3a;
-  background-color: #C2C7D6;
-  /* color: #272838; */
-  width: auto;
-  border: 2px solid #320e3a;
-  width: 300px;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.interview-grid > section >h2 > a:hover{
-  background-color: #C8D9E5;
-}
-
 
 .interview-grid > section >p{
   font-size: 15px;
 }
-
 
 .interview-grid > section >ul >li{
   font-size: 13px;
   text-align: left;
 }
 
-
 .interview-grid > section >a.button{
-    background-color: #320e3a;
-    color: #d6d9e3;
-    border: 2px solid #320e3a;
+    background-color: #493D7C;
+    color: white;
+    border: 2px solid #493D7C;
     padding: 10px 15px;
     text-align: center;
     display: inline-block;
@@ -671,55 +661,115 @@ border: 2px solid #320e3a;
   }
 
 .interview-grid > section >a.button:hover {
-    color: #320e3a;
-    background-color: #C8D9E5;
+    color: #493D7C;
+    background-color: #C9C9E2;
     }
 
-                    .popup {
-                        position: relative;
-                        display: inline;
-                        cursor: pointer;
-                    }
+/* -----------SEARCH ACROSS INTERVIEWS--------- */
+    .interview-search {
+      width:100%;
+      height: 500px;
+      overflow:auto;
+      border: 2px solid #ccc;
+      padding:5px 30px 20px 30px;
+    }
 
-                    /* The actual popup (appears on top) */
-                    .popuptext {
-                        visibility: hidden;
-                        width: 200px;
-                        background-color: #C8D9E5;
-                        color: black;
-                        text-align: center;
-                        border: 1px solid #320E3B;
-                        border-radius: 8px;
-                        padding: 6px 0;
-                        position: absolute;
-                        z-index: 1;
-                        bottom: 100%;
-                        display:inline-block;
-                    }
+  .interview-search-analysis {
+      height:390px;
+      width:50%;
+      background: #E7E9EF ;
+      overflow:auto;
+      float:left;
+      border: 1px solid #493D7C;
+      padding:2px 30px 5px 10px;
+    }
 
-                    .systems-of-power-popuptext {
-                        visibility: hidden;
-                        width: 200px;
-                        background-color: #d6d9e3;
-                        color: black;
-                        text-align: center;
-                        border: 1px solid #320E3B;
-                        border-radius: 8px;
-                        padding: 6px 0;
-                        position: absolute;
-                        z-index: 1;
-                        bottom: 100%;
-                        margin-left: 250px;
-                        display: block;
-                    }
+    .interview-search-analysis>ul>li, p {
+      text-align: left;
+    }
 
-                    /* Toggle this class when clicking on the popup container (hide and show the popup) */
-                    .popup .show {
-                        visibility: visible;
-                    }
+  .button-interview-search {
+    background-color: #C9C9E2;
+    border: 2px solid #493D7C;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 2px 0px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    }
 
+  /* .buttonInterview {
+    background-color: #E8E8E8;
+    color: #493D7C;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    cursor: pointer;
+    } */
 
-/*Tables*/
+  .button-interview-search:hover {
+    background-color: #493D7C;
+    border: 2px solid #493D7C;
+    text-decoration: none;
+    }
+/* --------------INTERVIEW TRANSCRIPTS------------- */
+.popup {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #C1D5E5;
+  color: black;
+  text-align: center;
+  border: 1px solid #320E3B;
+  border-radius: 8px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  display:inline-block;
+}
+
+.systems-of-power-popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #d6d9e3;
+  color: black;
+  text-align: center;
+  border: 1px solid #320E3B;
+  border-radius: 8px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  margin-left: 250px;
+  display: block;
+}
+
+/* Popup container */
+  .code{
+    font-weight: bold;
+    color: #320E3B;
+  }
+
+  .power-identity {
+      text-decoration: underline;
+  }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+}
+
+/*---------------TABLES---------*/
 
 table, th, td {
   border: 1px solid black;
@@ -748,33 +798,11 @@ table, th, td {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: justify;
-  background-color: #320e3a;
+  background-color: #0D3268;
   color: #d6d9e3;
 }
 
-.interview-search {
-  width:100%;
-  height: 500px;
-  overflow:auto;
-  border: 2px solid #ccc;
-  padding:5px 30px 20px 30px;
-}
-
-
-.interview-search-analysis {
-  height:390px;
-  width:50%;
-  background: #E7E9EF ;
-  overflow:auto;
-  float:left;
-  border: 1px solid #ccc;
-  padding:2px 30px 5px 10px;
-}
-
-.interview-search-analysis>ul>li, p {
-  text-align: left;
-}
-
+/* ---------ARTICLE INFORMATION----------- */
 .content-section {
   background: #ffffff;
   padding: 10px 20px;
@@ -814,6 +842,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 
+/* ---------------BLOG POST HOMEPAGE STUFF------------ */
 .blog-container{
   display: flex;
   max-width: 100%;
@@ -825,20 +854,28 @@ a.article-title:hover {
 
 .blog-container-card {
     position: relative;
-    background-color: #f1f1f1;
+    background-color: #fcf7fc;
     display: inline-block;
     border-style: solid;
     border-width: 1px;
     box-sizing: content-box;
     width: 300px;
     height: 350px;
-    padding: 10px 5px 10px 10px;
+    margin-left: 20px;
+    padding: 5px 5px 5px 5px;
 }
 
 .blog-container-card>h2>a {
-  text-align: left;
-  text-decoration: none;
   color: black;
+  width: auto;
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .blog-container-card>a>img {
@@ -853,9 +890,11 @@ a.article-title:hover {
 
 .blog-container-card>h2>a:hover, .blog-container-card>a>img:hover {
   text-decoration: none;
-  color: black;
+  color: #7C3874;
   opacity: 0.8;
 }
+
+/* ---------------IN THE BLOG POSTS------------ */
 
 .epigraph, .epigraph>p{
   text-align: center;
@@ -867,6 +906,79 @@ a.article-title:hover {
 .epigraph>p>cite{
   font-style: normal;
 }
+
+/* ---------------COLUMN CARDS FOR CHAPTERS/INFO------------ */
+
+.chap-grid{
+    display: grid;
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: auto auto;
+  }
+
+.chap-grid > section{
+  background-color: #E7E9EF;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #272838;
+}
+
+..chap-grid > section >h2{
+  font-weight: bold;
+}
+.chap-grid > section >h2 > a{
+  color: white;
+  background-color: #493D7C;
+  width: auto;
+  border: 2px solid #493D7C;
+  width: 300px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.chap-grid > section >h2 > a:hover{
+  background-color: #C9C9E2;
+  color:#493D7C;
+  text-decoration: none;
+}
+
+.chap-grid > section >p{
+  font-size: 15px;
+}
+
+.chap-grid > section >ul >li{
+  font-size: 13px;
+  text-align: left;
+}
+
+
+.chap-grid > section >a.button{
+    background-color: #0D3268;
+    color: #d6d9e3;
+    border: 2px solid #0D3268;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.chap-grid > section >a.button:hover {
+    color: #0D3268;
+    background-color: #C1D5E5;
+    }
+
+
+
+/* ---------------CARDS THAT FLIP WHEN HOVER------------ */
+
 .card-container {
   display: flex;
   max-width: 100%;

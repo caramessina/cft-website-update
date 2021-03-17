@@ -11,10 +11,10 @@
 <p>
 <hr>
   <div class="interview-home-grid-container">
-  <a href="{{ url_for('interview_search') }}"><h3>Explore the Interviews</h3></a>
-  <a href="{{ url_for('interview_analysis') }}"><h3>Interview Analysis</h3></a>
-  <a href="{{ url_for('interview_viz') }}"><h3>Coding Visualizations</h3></a>
-  <a href="{{ url_for('interviews_qualitative_coding') }}"><h3>Qualitative Coding</h3></a>
+  <a href="{{ url_for('interview_search') }}">Explore the Interviews</a>
+  <a href="{{ url_for('interview_analysis') }}">Interview Analysis</a>
+  <a href="{{ url_for('interview_viz') }}">Coding Visualizations</a>
+  <a href="{{ url_for('interviews_qualitative_coding') }}">Qualitative Coding</a>
 </div>
 </section>
 <hr>
@@ -26,7 +26,7 @@
 {%  include 'includes/_interview_grid.html'%}
 </div>
 
-<section>
+<!-- <section>
 <h2>Explore Coding Numbers Here</h2>
   <a class="btn btn-secondary btn-lg btn-block" style="color:white" data-toggle="collapse" href="#interview-table" role="button" aria-expanded="false" aria-controls="collapseExample">
       Click To See Coding Results
@@ -35,6 +35,6 @@
   <div class="collapse" id="interview-table">
     {%  include 'includes/_interviewtable.html'%}
     </div>
-</section>
+</section> -->
 
 {% endblock %}

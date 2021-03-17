@@ -3,8 +3,7 @@
   <button class="openbtn" onclick="openNav()">☰ Menu</button>
   <button class="openbtnGloss" onclick="openGlossNav()">☰ Glossary</button>
 
-    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/CFT_Logo.png')}}"  alt="Logo for the Critical Fan Toolkit. The letters CFT, written in silver, are surrounded by a silver hexagon.">
-The Critical Fan Toolkit</a>
+    <a href="{{ url_for('home') }}" class="header"><img class="logo" src="{{url_for('static', filename='images/Small-Shield_Blue.png')}}"  alt="A small version of the logo for the Critical Fan Toolkit. It depicts a shield with the letters 'cft' in the middle.">The Critical Fan Toolkit</a>
 
 </div>
 
@@ -24,9 +23,9 @@ The Critical Fan Toolkit</a>
   <a href="{{ url_for('teaching') }}" class="sidebutton">Teaching Resources</a>
   <a href="{{ url_for('dis_home') }}" class="sidebutton">Disseration Materials</a>
   <a href="{{ url_for('bibliography') }}" class="sidebutton">Bibliography</a>
-<br>
+  <br>
 <center>
-<div class="signin-div">
+<!-- <div class="signin-div">
     {% if current_user.is_authenticated %}
     <a href="{{ url_for('logout') }}" class="engage">Logout</a>
     <a href="{{ url_for('dashboard') }}" class="engage">Dashboard</a>
@@ -34,11 +33,12 @@ The Critical Fan Toolkit</a>
     <a href="{{ url_for('login') }}" class="engage">Login</a>
     <a href="{{ url_for('register') }}" class="engage">Register</a>
     {% endif %}
-</div>
-<hr>
+</div> -->
   <a class="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLScwGqiubQVqV3IapQmGdz3oDcDZRntaXNqEAhNO7KVbrPP8iA/viewform">Give feedback</a>
-</center>
 
+<img height="150px" style="padding: 10px 10px 0px 0px" src="{{url_for('static', filename='images/Shield_Multicolor-Purple.png')}}" alt="This shows the larger logo for the Critical Fan Toolkit, which is an ornate shield that has the letters 'CFT' circled in the middle."/>
+
+</center>
 <div id="glossary" class="glossary"></div>
 
 </div>
