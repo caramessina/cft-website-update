@@ -352,7 +352,7 @@ text-decoration: none;
 }
 
 /* ---------------GLOSSARY---------------- */
-div.sidebar-gloss>p>a.button{
+div.sidebar-gloss>center>a.button{
   background-color: #2F6375;
   color: #D3EDEF;
   width: auto;
@@ -361,13 +361,14 @@ div.sidebar-gloss>p>a.button{
   text-align: center;
   font-weight: normal;
   display: inline-block;
-  font-size: 15px;
+  font-size: 17px;
   margin: 4px 2px;
   cursor: pointer;
+    justify-content: center;
   text-decoration: none;
 }
 
-div.sidebar-gloss>p>a.button:hover{
+div.sidebar-gloss>center>a.button:hover{
   background-color: #D3EDEF;
   color: #2F6375;
   border: 2px solid #2F6375;
@@ -379,8 +380,8 @@ div.sidebar-gloss>p>a.button:hover{
   width: 300px;
   text-align: center;
   display: inline-block;
-  font-size: 15px;
-  margin-left: 20px;
+  font-size: 16px;
+  margin-left: 25px;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
@@ -388,7 +389,7 @@ div.sidebar-gloss>p>a.button:hover{
 
 .definition>p{
   padding: 2px 15px 20px 15px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
 }
 
