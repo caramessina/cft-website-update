@@ -3,80 +3,146 @@
 {% block body %}
 
   <section><h1>About the Critical Fan Toolkit (CFT)</h1>
+<div class="about-search">
+  <div class="about-menu">
+    <button class="about-button" data-toggle="collapse" href="#WhatIsCFT" data->What is the CFT?</button>
 
-    <p>Table of Contents</p>
-    <ul>
-      <li><a href="#CFTgoals">Critical Fan Toolkit Goals.</a></li>
-      <li><a href="#commitments">Project Commitments.</a></li>
-      <li><a href="#whyFF">Why Fanfiction?</a></li>
-      <li><a href="#CFTintervention">CFT as a Scholarly Intervention.</a></li>
-      <li><a href="#frameworks">Frameworks?</a></li>
-    </ul>
-    <p>Everyone is a fan of something. Fan communities can be found everywhere, from online forums, to conventions like Comic Con or RuPaul’s DragCon, to the parking lot of a baseball game, to a concert hall. Fans have shaped our culture and how texts are consumed; they speak, and production companies and textual creators listen. Fan communities develop and implement particular practices, and often these practices shift depending on the context. </p>
-    <p>The CFT explores fanfiction composing practices — specifically fanfiction written about <cite>The Legend of Korra</cite> (TLOK) and Game of Thrones (GOT) — that resist or subvert white supremacy, racism, misogyny, and ableism. Everyday fan practices can challenge harmful, dominant ideologies to instead celebrate all types of bodies, knowledges, and identities that are often ignored, erased, or have violence enacted upon; our practice range from the types of texts we consume and how we choose to respond to these texts. This project specifically examines fanfiction genres — or recurring amd contextualized social actions within fandom communities — and how fanfiction authors uptake these and the canon texts’ genres.</p>
+    <button class="about-button" data-toggle="collapse" href="#CFTgoals" data->Goals</button>
 
-<center>
-<h2 id="CFTgoals">Critical Fan Toolkit Goals</h2>
-<a class="button" data-toggle="collapse" href="#CFT-home1" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Critical Fan Practices
-    </a>
+    <button class="about-button" data-toggle="collapse" href="#CFTcommitments" >Commitments</button>
 
-<a class="button" data-toggle="collapse" href="#CFT-home2" role="button" aria-expanded="false" aria-controls="collapseExample">
-Teaching Resources
-</a>
+    <button class="about-button" data-toggle="collapse" href="#CFTfanfiction" >Why Fanfiction?</button>
 
-<a class="button" data-toggle="collapse" href="#CFT-home3" role="button" aria-expanded="false" aria-controls="collapseExample">
-Data-Driven Arguments
-</a>
+    <button class="about-button" data-toggle="collapse" href="#CFTresearchQs" >Research Questions</button>
 
-<div class="collapse" id="CFT-home1">
-<p><strong>Define and trace composing practices that critical fans implement using various methods, including data analysis, computational text analysis, and interviews.</strong> These composing practices are traced through an analysis of two fandoms — TLOK and GOT — from <em>Archive of Our Own</em> as well as interviews from individual fanfiction writers. Fans who implement critical practices challenge the systems of oppression that are represented in either the cultural materials they take up or the actual fandoms in which they participate. While you may not be a fan of TLOK or GOT, each of us have our own fan communities — from fans of a particular cultural material to political fans to sports fans — in which we’re invested. By defining and tracing critical fan composing practices and uptakes, we can bring these practices into our own fandoms. </p>
-            </div>
+    <button class="about-button" data-toggle="collapse" href="#CFTframework" >Frameworks</button>
 
-<div class="collapse" id="CFT-home2">
-<p><strong>Provide teaching resources for both outside of and within traditional learning spaces, such as classrooms</strong>. . Specifically, the CFT defines and examines <em>critical fan pedagogy</em>. Pedagogy, in its simplest definition, is the theories, methods, and practices of teaching and learning. Critical fan pedagogy — building off anti-racist, feminist, and critical pedagogies — centers challenging systems of oppression through learning and teaching with and through fan practices, including fanfiction. This toolkit can also help you develop your own data literacy and research skills. The CFT offers <a href="{{ url_for('homepath_teacher') }}">teaching resources</a>, <a href="{{ url_for('dis_computational_essays') }}">computational notebooks to practice Python to transform data</a>, and <a href="{{ url_for('ffd_numbers') }}">interactive visualizations to be analyzed</a>.
-            </div>
+    <button class="about-button" data-toggle="collapse" href="#CFTCriticalUptake">Critical Uptakes</button>
+  </div>
 
-<div class="collapse" id="CFT-home3">
-<p><strong>Demonstrate how to conduct research and make arguments using data</strong>. This project uses a mixture of a large corpus (TLOK and GOT fanfiction published on AO3) as well as interview data. Even though this toolkit specifically focuses on the composing practices from two fandoms and writers from each, these methods may be applied across fanfiction and other fan genres.</p>
-            </div>
-</center>
+  <div class="about-results" id="aboutPage">
 
-<section>
-<h2 id="commitments">Project Commitments</h2>
-<p><p>The CFT is a dissertation project created by <a href="{{ url_for('dis_about_cara') }}">Cara Marta Messina</a>, a Ph.D. candidate in the English department focusing on Writing and Rhetoric at Northeastern University (defense date: March 25th, 2021). This project believes deeply in fanfiction and other everyday fandom practices as a method for resisting, reimagining, and refusing to conform to systems of power. However, this critical fan work is not inherent, but is instead developed and learned.  Because of this commitment, CFT is a public dissertation available to all fans with internet access. This toolkit seeks to explore and provide guidelines for bettering our everyday practices to be more ethical, critical, and justice-centered fans.</p>
-<p>This examines just one instance of fan communal practices on just one platform: fanfiction on <cite>Archive of Our Own</cite> (AO3). AO3 is a publishing platform created by fans, for fans to publish, read, and engage with fanfiction. Even just this one instance, there are dozens of genres, thousands of fandoms, and millions of fanfiction works available; at the time I write this in early 2021, there are over seven million fanfictions published on AO3.  This project is invested in tracing writing, publishing, and reading fanfiction as a social practice. Specifically, I am interested in examining how fans use fanfiction to be critical of the systems of power embedded in the cultural materials they love as well as the fan communities with which they engage.</p>
-<p>I specifically focus on a faction of fan practices: <strong>critical fandoms and fans</strong>. Critical fans are fans of any cultural material or icon(s) who challenge or subvert systems of oppression–such as racism, misogyny, heteronormativity, homophobia, and ableism–through their everyday fan engagements, such as writing/reading fanfiction, posting on forums, and creating fan art. The phrase "critical fans" comes from the works of andré carrington, Paul Booth, Rukmini Pande, Alexis Lothian, and other fan scholars, as these fan scholars point to how fans can resist forms of oppression.</p>
-<p>	Because of my investment in tracing fanfiction writing and genre practices as critical interventions, I engage in several disciplines: rhetorical genre studies, fan studies, and digital humanities. Rhetorical genre studies defines genres as “typified, rhetorical social actions” (Miller), which means genres and genre conventions are contextual, localized, and reified by writers’ actions and participations. This is particularly important in fan studies, as the introduction demonstrates, as participating in fanfiction genre participation is contextualized within particular communities and cultures and reified through fanfiction writers and readers’ (inter)actions. Finally, I look to digital humanities (DH) for methods and for a critical perspective on technologies’ constraints and affordances. DH has helped to provide roadmaps for the methods I use tracing genres as well as the actual creation of this project — the CFT — as a digital, open-access platform dedicated to speaking <em>with</em> and <em>to</em>, rather than for, fan communities.</p>
-<h2 id="whyFF">Why Fanfiction?</h2>
-
-<p>Fan communities are created around the enjoyment of cultural materials or artifacts — such as a television show, movie, book, or celebrity. Fans are various ages, races, genders, sexualities, socioeconomic statuses, and educational backgrounds. Fans in fan communities discuss the original cultural materials through forums or other forms of communication, produce materials that reimage the original materials such as fan art or fanfiction, cosplay (or “costume play”), and other modes of engagement. Fans often identify and position ourselves as outliers of mainstream culture, so we form communities as separate from, but still tied to, the original source text to both celebrate the source text as well as our own interpretations of the source texts. </p>
-<p>One important phenomenon that occurs in fan communities is writing fanfiction. While not all fans write fanfiction, all who write fanfiction participate in fan communities. Fanfiction explores, reimagines, and claims democratic ownership over the original cultural materials’ stories, characters, and universes. Storytelling creates and shapes culture and community, and in turn shape our underlying ideologies and politics. The stories we share and tell, and the stories we hear over and over, are “always connected to power” (Thomas & Stornaiuolo, 2016, p. 313). Stories, without critical intervention, can reinscribe dominant ideologies, such as racism and heteronormativity, and enact violence upon women, queer people, people of color, and people with disabilities. Fanfiction offers a space for writers—especially those who dominant ideologies enact violence upon—to tell their stories and explore their identities to other fans.</p>
-<p>Reimagining stories has been around as long as stories have. Virgil’s <cite>Aeneid</cite> (29–19 BC) revolves around the character Aeneas, from Homer’s <cite>Iliad</cite>. Virgil reimagines Homer’s characters. There are also postcolonial retellings that reimagine canonical tales from different perspectives to gain power for stories and perspectives that are often erased. For instance, Jean Rhys’ <cite>Wide Sargasso Sea</cite> is a postcolonial retelling of <cite>Jane Eyre</cite>, examining the patriarchal and racist violence of colonialism in Central America. J.M. Coetzee’s <cite>Foe</cite> reimagines the story of <cite>Robinson Crusoe</cite> by Daniel Defoe. The main character tells Crusoe’s story to Defoe, which he promptly publishes and erases her from the story. Similarly to Rhys’ novel, Coetzee’s novel also examines the violence of colonialism, racism, and patriarchy upon people, as well as how colonialists seize stories to reinscribe colonial power. These instances demonstrate how authors reclaim the power of storytelling, using methods such as postcolonial retellings or counterstorytelling, a method in critical race theory.</p>
-<p>Fanfiction is a form of reimagining source texts. Not every fanfiction resists dominant ideologies or subverts systems of power, but fanfiction as a community-driven practice provides space for authors to claim power and examine themselves and larger social and cultural systems through storytelling. There are also different forms and methods for writing, reading, and publishing fanfictions. Fan community members carve out their own space to tell stories based on source texts. Before the internet became a household technology, non-professional fanfiction writers — writers who are not paid for their labors — used to publish, writer for, and read fan-created zines to share their work. <cite>Star Trek</cite> fans, for instance, wrote, edited, created, disseminated, and read fanzines about Kirk/Spock slashfic; these fans, most of who were women, explored notions of romance that eliminated gender inequality (Russ, 1985). Today, there are various online spaces where fanfiction writers publish their work, such as <cite>Fanfiction.net</cite>, <cite>Tumblr</cite>, <cite>Deviant Art</cite>, <cite>WattPad</cite>, and <cite>Archive of Our Own</cite>.Whether fanfiction online, in-person, or circulated through snail mail, fanfiction writing publics allow fans to engage in conversations with other fans, provide and receive feedback on writing, and celebrate each other as well as the cultural materials that they love.</p>
-
-<h2 id="CFTintervention">CFT as a Scholarly Intervention</h2>
-<p>I build upon the scholarly and public conversations happening in writing/rhetoric studies, fan studies, and in fandoms. Fan studies is an interdisciplinary field that appears in media and new media studies, writing studies, digital humanities, communications, and other fields that examine participatory cultures and cultural texts. Writing studies examines writer-reader relationships, exploring context, rhetoric, agency, action, audience, and positionality— how can writers successfully convey and develop arguments and creative ideas to reach particular audiences in particular times and publics?</p>
-<p>In the past 20 years, writing studies scholars have become specifically invested in exploring the role of power and identity in relation to writing and rhetoric. For instance, Jacqueline Jones Royster examines feminist — specifically Black feminist — rhetorical practices and research methods; Ellen Cushman advocates for decolonial research, especially when working with Indigenous peoples and knowledges; Eric Darnell Pritchard traces Black queer literacy development; and Jo Hsu traces Asian American trans literacy developments. I continue this work, by examining fanfiction writers’ practices, how they define their processes, and how their practices relate to systems of power and dominant ideologies. This toolkit thinks through how fans, specifically critical fans, are always-already rhetorically engaged, engaging in ever-changing media, public, digital, and social media landscapes while simultaneously resisting normative narratives around gender, sexuality, ability status, and race. </p>
-<p>The overarching research question in this dissertation is: How and why do fans resist harmful cultural ideologies – especially white supremacy and heteronormativity – in their uptakes of fanfiction genres? Based on this question, this dissertation will explore three questions below. To learn more about the methods I use to explore these questions, visit the “<a href="{{ url_for('dis_methods') }}">Methods</a>” section.</p>
-<ul>
-  <li>How can the resistance to or the reinforcement of cultural ideologies be traced in fanfiction genres?</li>
-  <li>How can critical fandom practices be traced in fans’ uptakes – specifically what I call “critical uptakes” – of the original cultural material and fanfiction genres?</li>
-  <li>How can critical fan pedagogies be made useable for instructors and fans alike?</li>
-</ul>
-<h2 id="frameworks">Frameworks</h2>
-<p>This dissertation brings together two frameworks: critical fandoms and rhetorical genre studies. <a href="{{ url_for('dis_framework')}}">To read more about both frameworks, visit the dissertation frameworks section</a>.</p>
-
-<div class="card-container">
-    <div class="card">
-        <img src="{{url_for('static', filename='images/cft-criticalfans1.png')}}" class="img-bott" alt="A box of text that reads 'Critical Fan Studies'">
-        <img src="{{url_for('static', filename='images/cft-criticalfans2.png')}}" class="img-top" alt="A box of text. The header reads 'Critical Fan Studies' and the rest of the text reads 'Critical fans recognize and challenge the dominant ideologies embedded within the source text/cultural materials they love and the communities in which they participate. Important scholars include Alexis Lothian, Ebony Elizabeth Thomas, Brianna Dym, andre carrington, Paul Booth, and Rukmini Pande.'">
-    </div>
-    <div class="card">
-        <img src="{{url_for('static', filename='images/cft-rgs-1.png')}}" class="img-bott" alt="A box of text that reads 'Rhetorical Genre Studies'">
-        <img src="{{url_for('static', filename='images/cft-rgs-2.png')}}" class="img-top" alt="A box of text. The header reads 'Rhetorical Genre Studies. The middle has three circles that read ideology, community, and uptake. Uptake also has the words 'individual' and 'anticipated' attached. There is also a definition of genre that reads, 'genres are recurring rhetorical actions, or a series of conventions, deemed appropriate in particular contexts/communities and entangled with particular ideologies.' The bottom reads: 'Important scholars include Dylan Dryer, Anis Bawarshi, Heather Bastian, Anne Freadman, Anthony Pare, and Carolyn Miller.'">
+    <div class="collapse show"  id="WhatIsCFT" data-parent="#aboutPage">
+    <h2>What is the Critical Fan Toolkit?</h2>
+        <p>Everyone is a fan of something. Fan communities are everywhere, from online forums, to conventions like Comic-Con, to the parking lot of a baseball game, to a concert hall. Fans have shaped our culture and how texts are consumed; they speak, and production companies and textual creators listen. Fan communities develop and implement particular practices, and often these practices shift depending on the context.</p>
+    <p>The CFT explores fanfiction composing practices — specifically fanfiction written about <cite>The Legend of Korra</cite> (TLOK) and Game of Thrones (GOT) — that resist or subvert dominant ideologies, such as white supremacy, racism, misogyny, and ableism. Everyday fan practices can challenge these ideologies to instead celebrate all types of bodies, knowledges, and identities that are ignored, erased, or have violence enacted upon in popular culture. Our practices range from the types of texts we consume and how we choose to respond to these texts. This project specifically examines fanfiction genres — or recurring and contextualized social actions within fandom communities —and how fanfiction authors uptake these and the canon texts’ genres.</p>
+    <p>I hope that fans, fans who may not consider themselves critical fans or have not thought about the political ramifications of their composing practices, may use this project to think more critically about their practices. <strong>How can we continue to reimagine a world that combats harmful systems of power like white supremacy, heteronormativity, and misogyny in our own composing and engagement?</strong></p>
     </div>
 
+    <div class="collapse"  id="CFTgoals" data-parent="#aboutPage">
+      <h2>Critical Fan Toolkit Goals</h2>
+      <center>
+      <a class="button" data-toggle="collapse" href="#CFT-home1">
+          Critical Fan Practices
+          </a>
+
+      <a class="button" data-toggle="collapse" href="#CFT-home2">
+      Teaching Resources
+      </a>
+
+      <a class="button" data-toggle="collapse" href="#CFT-home3">
+      Data-Driven Arguments
+      </a>
+
+      <a class="button" data-toggle="collapse" href="#CFT-home4">
+      Open-Access Research
+      </a>
+
+      <div id="cftGoalsData">
+      <div class="collapse" id="CFT-home1" data-parent="#cftGoalsData">
+      <p><strong>Define and trace composing practices, genres, and uptakes that critical fans implement using various methods, including data analysis, computational text analysis, and interviews.</strong> These composing practices are traced through an analysis of two fandoms from Archive of Our Own as well as interviews of fanfiction authors. Fans who implement critical practices challenge the systems of oppression that are represented in either the source text they take up or the actual fandoms in which they participate. While you may not be a fan of TLOK or GOT, each of us have our own fan communities — from fans of a particular cultural material to political fans to sports fans — in which we’re invested. By defining and tracing critical fan composing practices and uptakes, we can bring these practices into our own fandoms. </p>
+                  </div>
+
+      <div class="collapse" id="CFT-home2" data-parent="#cftGoalsData">
+      <p><strong>Provide teaching resources for both outside of and within traditional learning spaces, such as classrooms.</strong> Specifically, the CFT defines and examines <em>critical fan pedagogy</em>. Pedagogy, in its simplest definition, is the theories, methods, and practices of teaching and learning. Critical fan pedagogy — building off anti-racist, feminist, and critical pedagogies — centers challenging systems of oppression through learning and teaching with and through fan practices, including writing and analyzing fanfiction. This toolkit can also help you develop your own data literacy and research skills. The CFT offers <a href="{{ url_for('homepath_teacher') }}">teaching resources</a>, <a href="{{ url_for('dis_computational_essays') }}">computational notebooks to practice Python to transform data</a>, and <a href="{{ url_for('ffd_numbers') }}">interactive visualizations to be analyzed</a>.
+                  </div>
+
+      <div class="collapse" id="CFT-home3" data-parent="#cftGoalsData">
+      <p><strong>Demonstrate how to conduct research and make arguments using data</strong>. This project uses a mixture of large corpus (TLOK and GOT fanfiction published on AO3) and interview data. The quantitative methods demonstrate how to trace normative and generalized practices across communities, while the qualitative methods show how individuals interrupt or embrace these patterns. Even though this toolkit specifically focuses on the composing practices from two fandoms and writers from each, these methods may be applied across fanfiction and other fan generic forms.</p>
+                  </div>
+
+      <div class="collapse" id="CFT-home4" data-parent="#cftGoalsData">
+        <p><strong>Advocate for and demonstrate the importance of open-access research</strong>. How can researchers, teachers, and authors make content accessible to the public and the communities with whom we work? The CFT challenges traditional barriers of scholarship and academia by making <em>all</em> findings accessible to the public, especially fans, instead of hiding them behind paywalls. </p>
+      </div>
+      </div>
+      </center>
+
+    </div>
+
+    <div class="collapse"  id="CFTcommitments" data-parent="#aboutPage">
+      <h2>Project Commitments</h2>
+      <p><p>The CFT is a dissertation project created by <a href="{{ url_for('dis_about_cara') }}">Dr. Cara Marta Messina</a>. This project believes deeply in fanfiction and other everyday fandom practices as a method for resisting, reimagining, and refusing to conform to systems of power. However, this critical fan work is not inherent, but is instead developed and learned. Because of this commitment, the CFT is a public dissertation available to all fans with internet access. This toolkit seeks to explore and provide guidelines for bettering our everyday practices to be more ethical, critical, and justice-centered fans. To read more, visit <a href="{{ url_for('dis_ethics')}}">"Research Ethics and Positionality"</a>.</p>
+      <p>My project examines just one instance of fan communal practices on just one platform: fanfiction on <cite><a href="https://archiveofourown.org/">Archive of Our Own</a></cite> (AO3). AO3 is a publishing platform created by fans, for fans to publish, read, and engage with fanfiction. There are dozens of genres, thousands of fandoms, and millions of fanfiction works available; at the time I write this in early 2021, there are over seven million fanfictions published on AO3. This project is invested in tracing writing, publishing, and reading fanfiction as a social practice. Specifically, I am interested in examining how fans use fanfiction to be critical of the systems of power embedded in the cultural materials they love as well as the fan communities with which they engage.</p>
+      <p>I specifically focus on a faction of fan practices: <strong>critical fandoms and fans</strong>. Critical fans are fans of any cultural material or celebrity who challenge or subvert dominant ideologies through their everyday fan engagements, such as writing/reading fanfiction, posting on forums, and creating fan art. The phrase "critical fans" comes from the works of andré carrington, Paul Booth, Rukmini Pande, Alexis Lothian, and other fan scholars, as these fan scholars point to how fans can resist forms of oppression.</p>
+    </div>
+
+    <div class="collapse" id="CFTfanfiction" data-parent="#aboutPage">
+      <h2>Why Fanfiction?</h2>
+      <p>Fan communities are created around the enjoyment of cultural materials or artifacts — such as a television show, movie, book, or celebrity. Fans are various ages, races, genders, sexualities, socioeconomic statuses, and educational backgrounds. Fans in fan communities discuss the source texts through forums or other forms of communication, produce materials that reimage the original materials such as fan art or fanfiction, cosplay (or “costume play”), and engage in other ways. Fans often identify and position ourselves as outliers of mainstream culture, so we form communities as separate from, but still tied to, the original source text.</p>
+      <p>One important phenomenon that occurs in fan communities is writing <em>fanfiction</em>. While not all fans write fanfiction, all who write fanfiction participate in fandoms. Fanfiction explores, reimagines, and claims democratic ownership over the source text’s stories, characters, and universes. Storytelling creates and shapes culture and community, and in turn shapes our underlying ideologies and politics. The stories we share and tell, and the stories we hear over and over, are “always connected to power” (Thomas & Stornaiuolo, 2016, p. 313). Stories, without critical intervention, can reinscribe dominant ideologies, such as racism and heteronormativity, and enact violence upon women, queer people, people of color, and people with disabilities. Fanfiction offers a space for writers—especially those who dominant ideologies enact violence upon—to tell their stories to and perform their identities with other fans.</p>
+      <p>Reimagining stories has been around as long as stories have. Virgil’s <cite>Aeneid</cite> (29–19 BC) revolves around the character Aeneas, from Homer’s <cite>Iliad</cite>. Virgil reimagines Homer’s characters. There are also postcolonial retellings that reimagine canonical tales from different perspectives to gain power for stories and perspectives that are often erased. For instance, Jean Rhys’ <cite>Wide Sargasso Sea</cite> is a postcolonial retelling of <cite>Jane Eyre</cite>, examining the patriarchal and racist violence of colonialism in Central America. J.M. Coetzee’s <cite>Foe</cite> reimagines the story of <cite>Robinson Crusoe</cite> by Daniel Defoe. The main character tells Crusoe’s story to Defoe, which he promptly publishes and erases her from the story. Similarly to Rhys’ novel, Coetzee’s novel also examines the violence of colonialism, racism, and patriarchy upon people, as well as how colonialists seize stories to reinscribe colonial power. These instances demonstrate how authors reclaim the power of storytelling, using methods such as postcolonial retellings or counterstorytelling, a method founded in critical race theory.</p>
+      <p>Fanfiction is a form of reimagining source texts. Not every fanfiction resists dominant ideologies or subverts systems of power, but fanfiction as a community-driven practice provides space for authors to claim power. Fan authors can examine their positionalities as well as larger social and cultural systems through storytelling. There are also different forms and methods for writing, reading, and publishing fanfictions. Before the internet became a household technology, non-professional fanfiction writers — writers who are not paid for their labors — used to publish, write for, and read fan-created zines to share their work. <cite>Star Trek</cite> fans, for instance, wrote, edited, created, disseminated, and read fanzines about Kirk/Spock slashfic; these fans, most of who were women, explored notions of romance that eliminated gender inequality (Russ, 1985). Today, there are various online spaces where fanfiction writers publish their work, such as <cite>Fanfiction.net</cite>, <cite>Tumblr</cite>, <cite>Deviant Art</cite>, <cite>WattPad</cite>, and <cite>Archive of Our Own</cite>. Whether fanfiction online, in-person, or circulated through snail mail, fanfiction writing communities allow fans to engage in conversations with other fans, provide and receive feedback on writing, and celebrate each other as well as the source materials that we love. </p>
+    </div>
+
+    <div class="collapse" id="CFTresearchQs" data-parent="#aboutPage">
+      <h2>Research Questions</h2>
+      <p>The overarching research question in this dissertation is: How and why do fans resist harmful dominant ideologies in their uptakes of fanfiction genres? Based on this question, this dissertation will explore three questions below. To learn more about the methods I use to explore these questions, visit the “<a href="{{ url_for('dis_methods') }}">Methods</a>” section.</p>
+      <ol>
+        <li>How can fans’ tagging practices reveal a resistance to or reinforcement of dominant ideologies?</li>
+        <li>How do fanfiction authors define their uptakes, including their acceptance, negotiation, and resistance to the original source text as well as fandom politics?</li>
+        <li>How can mixed methods help us reveal the complex and contextual interactions in fanfiction texts between individual authors’ uptakes and fan genres and politics?</li>
+        <li>How can critical fan pedagogies be made useable and accessible for teachers and fans alike?</li>
+      </ol>
+    </div>
+
+    <div class="collapse" id="CFTframework" data-parent="#aboutPage">
+      <h2>Frameworks</h2>
+      <p>Because of my investment in tracing fanfiction writing and genre practices as critical interventions, I engage in several disciplines. To read more about the frameworks I build off, visit the <a href="{{ url_for('dis_framework')}}">"Frameworks" section</a> and the <a href="{{ url_for('dis_ethics')}}">"Research Ethics and Positionality" section</a>. I engage with:</p>
+        <ul>
+          <li>rhetorical genre studies,</li>
+          <li>fan studies,</li>
+          <li>feminist digital humanities (DH).</li>
+      </ul>
+      <p>I build upon the scholarly and public conversations happening in writing and rhetoric studies, fan studies, and in fandoms. Fan studies is an interdisciplinary field that appears in media studies, writing studies, digital humanities, communications, and other fields that examine participatory cultures and cultural texts. Writing studies examines writer-reader relationships, exploring context, rhetoric, agency, action, audience, and positionality— how can writers successfully convey and develop arguments and creative ideas to reach particular audiences in particular times and publics? </p>
+      <p>In the past 20 years, writing studies scholars have become specifically invested in exploring the role of power and identity in relation to writing and rhetoric. For instance, Jacqueline Jones Royster examines feminist — specifically Black feminist — rhetorical practices and research methods; Ellen Cushman advocates for decolonial research, especially when working with Indigenous peoples and knowledges; Eric Darnell Pritchard traces Black queer restorative literacies; and Jo Hsu traces Asian American trans literacy developments. I continue this work, by examining fanfiction writers’ practices, how they define their processes, and how their practices relate to systems of power and dominant ideologies. This toolkit thinks through how fans, specifically critical fans, are always-already rhetorically engaged, participating in ever-changing media, public, digital, and social media landscapes while simultaneously resisting normative narratives around gender, sexuality, ability status, and race.</p>
+    </div>
+
+    <div class="collapse" id="CFTCriticalUptake" data-parent="#aboutPage">
+      <h2>Critical Uptakes</h2>
+      <p>The Critical Fan Toolkit both defines and explores fans’ critical uptake and is a critical uptake, itself.</p>
+      <center>
+      <a class="button" data-toggle="collapse" href="#CFTdefineUptake" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Uptake Definition
+          </a>
+
+      <a class="button" data-toggle="collapse" href="#CFTdefineCriticalUptake" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Critical Uptake Definition
+      </a>
+
+      <a class="button" data-toggle="collapse" href="#CFTAsCriticalUptake" role="button" aria-expanded="false" aria-controls="collapseExample">
+      CFT as Critical Uptake
+      </a>
+
+      <div id="CFTuptakes">
+      <div class="collapse" id="CFTdefineUptake" data-parent="#CFTuptakes">
+      <p>Uptakes, first defined by Anne Fredman in 1994, are the appropriate generic responses in particular contexts that have been deemed appropriate based on place, time, frame, and function. Because genres are molded through recurrence, these uptakes have expectations and constraints that are either followed or challenged to produce results. An example of an uptake is when you get a wedding invitation in the mail and you fill out an RSVP response in return.
+      <p>Uptakes are not just responses, but rather the expected responses around a particular genre. Online genres, especially fan uptakes, complicate what an “uptake” means as well as who deems what type of generic responses are appropriate to particular genres. While writers of a television show may imagine fans writing Tweets in response to particular moments, do the shows’ writers get to deem which uptakes are appropriate? No — fan communities choose the uptakes that are appropriate in their own spaces. In fan communities, reimagined or direct responses to canonical moments are the appropriate response. And there are usually a series of expectations around these uptakes: critiques of the show, reimagining particular moments from the show, expanding on characters’ backstories, or expressing affective responses.</p>
+                  </div>
+
+      <div class="collapse" id="CFTdefineCriticalUptake" data-parent="#CFTuptakes">
+      <p>My research centers around what I call critical uptakes, or when writers resist harmful and exclusive cultural ideologies in their uptake. Because uptakes are driven by the notion of expectation, critical uptakes call into question who gate-keeps uptake expectations as well as how everyday composers can push against these potentially harmful expectations. Critical uptake may challenge the expected uptake because it is ideologically exclusive, or they may uptake the ideology from the genre that prompted them.</p>.
+                  </div>
+
+      <div class="collapse" id="CFTAsCriticalUptake" data-parent="#CFTuptakes">
+      <p>The dissertation as a genre, a PhD candidate’s social action in the context of a grad program, shifts depending on discipline, cultural context, framework, and institution. Across most institutions, dissertations have one thing in common: their form and publication method. Usually they are longer textual documents — some with charts, images, and tables — that are then stored in a database like ProQuest and printed out for a hardcover copy. And often, because they are stored in databases like ProQuest, they are often inaccessible to people outside of academia or who do not have institutional access to a particular database.</p>
+      <p>What happens when we envision the dissertation — and more generally, all disciplinary research — as not something to be read only by our committee and maybe one or two other academics perusing ProQuest? What happens when our research centers public engagement, rather than just academic community engagement?</p>
+      <p>Because I am researching fan communities and fan writers, I wanted to create a project that fans can both access and that they may find useful. This project builds upon what a lot of fan activists and authors, such as <a href="https://www.teenvogue.com/tag/stitch-fan-service-column">Stitch’s Fan Service Column in Teen Vogue</a>, have been advocating for: combating white supremacy, heteronormativity, and ableism in fandoms. I hope the data and finding from this project can be used by fan activists, and I also provide methods for them to analyze some data, themselves. I also hope this project can guide fans who want to enact critical fan uptakes in their everyday fan composing practices. I imagine this project, then as a critical uptake, where I still act upon the generic expectations of graduate students, but transform expectations by making this entirely digital and entirely open-access.</p>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 
