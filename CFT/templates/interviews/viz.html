@@ -4,7 +4,7 @@
 
 <h1 align="center">Qualitative Coding Visualizations</h1>
 
-<p>These two visualizations represent an adjacency matrix and a correlation matrix across the different qualitative codes used to mark up the interviews. <a href="#qual-vizdesc">Description and screenreader-friendly write up available below</a>.</p>
+<p>These two visualizations represent an adjacency matrix and a correlation matrix across the different qualitative codes used to mark up the interviews. <a href="#qual-vizdesc">Description and screen reader-friendly write up available below</a>.</p>
 
 <iframe class="visualizations" src="{{url_for('static', filename='visualizations/correlation_and_cooccurrence.html')}}"></iframe>
 
@@ -12,6 +12,6 @@
 <p>The full analysis of this visualization and all the interviews is available on the "<a href="{{ url_for('interview_analysis') }}">Interview Analysis: Fan Authors' Perspectives of Fandom Politics, Genres, and their Uptakes</a>" section.</p>
 <p>The adjacency matrix and correlation matrix reveal similar results. The adjacency matrix shows a raw count of how often particular codes appear together, while the correlation matrix shows how likely two codes are to appear together. In both visualizations, there are strong relationships between identity markers and fan practices. For instance, several identity markers also overlap with how fans respond to the canon. The LGBTQ+ code appears frequently with the identity-bending generic forms and how fans relate to the canon. The feminism code appears frequently with fans complimenting the canon. The cultural difference tag appears frequently when fans express how they relate to the canon.</p>
 <p>There are also higher relationships show between resisting and reinscribing dominant ideologies and fandom politics. For instance, heteronormativity appears frequently with fandom politics and antiracism appears frequently when fans describe their critical uptakes. This demonstrates the correlation between fanfiction authors’ positionalities with their fandom practices. </p>
-<p>The code for creating these visualizations using the XML-encoded interview transcripts is available in the <a href="{{url_for('dis_computational_essays_XML')}}">XML Parser Computational Notebook</a>.</p>
+<p>The code for creating these visualizations using the XML-encoded interview transcripts is available in the <a href="{{url_for('dis_computational_essays_XML')}}">XML Parser Computational Essay</a>.</p>
 
 {% endblock %}
