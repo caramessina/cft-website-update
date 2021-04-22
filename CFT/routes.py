@@ -144,6 +144,14 @@ def dis_computational_essays_metadata():
 def dis_computational_essays_tagExploration():
     return  render_template('/about_dissertation/computational_essays/tag_exploration.html', title='Computational Essay - Exploring Additional Tags')
 
+@app.route("/about_dissertation/computational_essays/preparing_textual_data")
+def dis_computational_essays_textualData():
+    return  render_template('/about_dissertation/computational_essays/textual_preparation.html', title='Computational Essay - Preparing Textual Data')
+
+@app.route("/about_dissertation/computational_essays/word_embedding")
+def dis_computational_essays_w2v():
+    return  render_template('/about_dissertation/computational_essays/w2v.html', title='Computational Essay - Word Embedding Models')
+
 @app.route("/about_dissertation/computational_essays/missandei")
 def dis_computational_essays_missandei():
     return  render_template('/about_dissertation/computational_essays/missandei.html', title='Computational Essay - Missandei Deserves Better')
